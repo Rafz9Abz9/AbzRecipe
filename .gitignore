@@ -1,0 +1,8 @@
+*.pyc
+_pycache_/
+/env/
+
+/lib/
+/lib64/
+/include/
+/bin/

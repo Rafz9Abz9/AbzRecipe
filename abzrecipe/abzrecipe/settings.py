@@ -122,3 +122,27 @@ STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7  # You can adjust the expiration time
+
+
+
+# Application Mmailing setup 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+Gmail_SMTP_name = 'ABZRECIPE'
+DEFAULT_FROM_EMAIL = 'abzrecipe@gmail.com'
+EMAIL_HOST_USER = 'abzrecipe@gmail.com'
+EMAIL_HOST_PASSWORD = 'izlzpfazfwszmtox'
+
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+# Redirect URLs
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT = '/'
+
+

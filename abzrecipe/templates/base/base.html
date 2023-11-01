@@ -11,7 +11,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>ABZRECIPE | {% block title %}{% endblock %}</title>
+    <title>ABZRECIPE{% block title %}{% endblock %}</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'img/core-img/favicon.ico' %}" type="image/x-icon">>
@@ -114,10 +114,10 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="#">Home</a></li>
+                                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
                                     <li><a href="#">About Us</a>
                                     </li>
-                                    <li><a href="#">Receipies</a></li>
+                                    <li><a href="#">Recipes</a></li>
                                     <li><a href="#">Favorites Recipes</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
@@ -126,7 +126,7 @@
                                         <a href="#">Login</a>
                                     </li>
                                     <li>
-                                        <a href="#">Register</a>
+                                        <a href="{% url 'register' %}">Register</a>
                                     </li>
                                 </ul>
 
@@ -144,6 +144,9 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
+
+    {% comment %} Inclde message templates here {% endcomment %}
+    {% include 'message.html' %}
 
     <main>
         {% block content%}
@@ -194,3 +197,5 @@
 </body>
 
 </html>
+
+{% comment %} .\env\Scripts\activate {% endcomment %}

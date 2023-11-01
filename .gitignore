@@ -6,3 +6,5 @@ _pycache_/
 /lib64/
 /include/
 /bin/
+.env
+.env.example

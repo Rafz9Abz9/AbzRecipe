@@ -52,7 +52,7 @@ def register(request):
             domain = get_current_site(request).domain
             activate_url = 'http://'+domain+link
             email_body = "Hi " + user.username+ " Please use this link to veify your account\n"+activate_url
-            
+            # setup email
             email = EmailMessage(
                 email_subject,
                 email_body,
@@ -60,6 +60,7 @@ def register(request):
                 [user.email],
                 headers={"Message-ID": "abzrecipe"},
             )
+            # send email
             email.send(fail_silently=False)
             
             messages.success(request, "Registration Successful, check your mailbox to activate your accouint before login")

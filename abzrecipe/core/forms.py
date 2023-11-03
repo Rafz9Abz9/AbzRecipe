@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.core.validators import EmailValidator
+from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 from .models import Profile
 
@@ -43,6 +44,9 @@ class RegistrationForm(UserCreationForm):
 
         email = cleaned_data.get('email')
         email_validator = EmailValidator(message="Enter a valid email address.")
+
+        if User.objects.filter(email=email).exists():
+            self.add_error('email', 'An account with this email already exists. Please use a different email address.')
         
         try:
             email_validator(email)

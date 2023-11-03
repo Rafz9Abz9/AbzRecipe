@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.core.validators import EmailValidator
 from django.contrib.auth.models import User
+from .models import Profile
 
 class RegistrationForm(UserCreationForm):
 
@@ -68,3 +69,47 @@ class LoginForm(AuthenticationForm):
         }),
         required=True,
     )
+
+
+class ProfileUpdateForm(forms.ModelForm):
+
+    # Additional fields from the Profile model
+    username = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'User name',
+        'class': 'form-control input-lg'
+        }), required=False)
+    
+    first_name = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Firstname',
+        'class': 'form-control input-lg',
+    }), max_length=15, required=False)
+
+    last_name = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Lastname',
+        'class': 'form-control input-lg',
+    }), max_length=15, required=False)
+
+    email = forms.EmailField(widget=forms.EmailInput(attrs={
+            'placeholder': 'Email Address',
+            'class': 'form-control input-lg'
+        }), required=False)
+    
+
+    address = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Address',
+        'class': 'form-control input-lg',
+    }), max_length=250, required=False)
+
+    phone = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Phone',
+        'class': 'form-control input-lg',
+    }), max_length=20, required=False)
+
+    country = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Username',
+        'class': 'form-control input-lg',
+    }), max_length=20, required=False)
+
+    class Meta:
+        model = User  # Use the User model
+        fields = ['username', 'first_name', 'last_name', 'email','address', 'phone', 'country']

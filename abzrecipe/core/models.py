@@ -7,6 +7,7 @@ class Profile(models.Model):
     id_user = models.IntegerField()
     phone = models.TextField(max_length=15, blank=True)
     address = models.TextField(max_length=250, blank=True)
+    country = models.TextField(max_length=250, blank=True)
     
     def __str__(self):
         return self.user.username

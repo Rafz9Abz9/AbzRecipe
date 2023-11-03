@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect
-from .forms import RegistrationForm
+from .forms import RegistrationForm, LoginForm
 from .models import Profile
 # from django.utils import timezone
 import json
 from django.http import JsonResponse
 from django.contrib.auth.models import User
 from validate_email import validate_email
-from django.contrib import auth 
+from django.contrib.auth import login, logout
 
 from django.core.mail import EmailMessage
 from django.utils.encoding import force_bytes, force_str
@@ -70,11 +70,27 @@ def register(request):
 
     return render(request, 'auth/register.html', {'form': form})
 
-def login(request):
-    if request.method == 'POST':
-        pass
+def logout_view(request):
+    logout(request)
+    messages.success(request, "You've been logged out successfully")
+    # Redirect to login
+    return redirect('login')
 
-    return render(request, 'auth/login.html')
+def login_view(request):
+    if request.method == 'POST':
+        form = LoginForm(request, request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            greetings = "You're Welcome "+user.username
+            messages.success(request, greetings)
+            return redirect('home')
+        else:
+            messages.error(request, "Invalid Credentials")
+    else:
+        form = LoginForm()
+
+    return render(request, 'auth/login.html', {'form': form})
 
 
 class VerifivationView(View):
@@ -85,7 +101,11 @@ class VerifivationView(View):
             
             if user.is_active:
                 messages.info(request, "user account is alreeady acivated.")
-                return redirect("login")
+                login(request,user)
+                # Redirect to a success page, e.g., user's profile page
+                greetings = "You're Welcome "+user.username
+                messages.success(request, greetings)
+                return redirect("home")
             user.is_active = True
             user.save()
             messages.success(request, "Account Activated Successfully.")

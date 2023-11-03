@@ -6,7 +6,7 @@
         position: absolute;
         top: 100px;
         right: 40px;
-        animation: hideMesage .8s ease-in-out;
+        z-index: 200;
       }
       
       .messages .success{
@@ -28,14 +28,11 @@
         color:rgb(232, 114, 17);
       }
 
-    @keyframes hideMesage {
-    0%{
-        opacity: 1;
-    }
-    0%{
-        opacity: 0;
-    }
-    }
+      @media  and (max-with: 1343px) {
+        .messages{
+        top: 250px;
+      }
+      }
 </style>
 
 {% if messages %}
@@ -45,4 +42,14 @@
     {% endfor %}
 </ul>
 {% endif %}
+
+<!-- Hide message after 5 secs -->
+<script>
+  setTimeout(function() {
+    var message = document.querySelector('.messages');
+    if (message) {
+      message.style.display = 'none';
+    }
+  }, 5000);
+</script>
 

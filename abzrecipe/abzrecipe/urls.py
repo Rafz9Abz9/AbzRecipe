@@ -8,6 +8,7 @@ from core.views import index, VerifivationView
 urlpatterns = [
     path('', index, name="home"),
     path('auth/', include('core.urls')),
+    path('recipes/', include('recipe.urls')),
     path('admin/', admin.site.urls),
     path('activate/<uidb64>/<token>', VerifivationView.as_view(), name='activate'),
 ]

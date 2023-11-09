@@ -18,6 +18,8 @@ from .utils import token_generator
 from django.views.generic.base import View
 from django.contrib import messages
 
+from django.contrib.auth.decorators import login_required
+
 
 def index(request):
     return render(request, 'index.html')
@@ -95,6 +97,7 @@ def login_view(request):
     return render(request, 'auth/login.html', {'form': form})
 
 
+@login_required(login_url='login')
 def update_profile_view(request):
     if request.method == 'POST':
         form = ProfileUpdateForm(request.POST, instance=request.user)

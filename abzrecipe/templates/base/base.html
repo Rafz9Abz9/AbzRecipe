@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ABZRECIPE platform, where you read to know about foods, and their recipe ">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
@@ -114,10 +115,10 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="{% if request.path == '/'%} active {% endif %}"><a href="{% url 'home' %}">Home</a></li>
                                     <li><a href="#">About Us</a>
                                     </li>
-                                    <li><a href="#">Recipes</a></li>
+                                    <li class="{% if request.path == '/recipes/'%} active {% endif %}"><a href="{% url 'recipes' %}">Recipes</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                                 <ul>

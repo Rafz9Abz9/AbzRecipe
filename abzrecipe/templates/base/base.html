@@ -97,7 +97,7 @@
                     <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="{% static 'img/core-img/logo.png' %}" alt="" width="115"></a>
+                        <a class="nav-brand" href="index.html"><img src="{% static 'img/core-img/logo.png' %}" alt="" width="100"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -116,10 +116,10 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="{% if request.path == '/'%} active {% endif %}"><a href="{% url 'home' %}">Home</a></li>
-                                    <li><a href="#">About Us</a>
+                                    <li  class="{% if request.path == '/about-us/'%} active {% endif %}"><a href="{% url 'about' %}">About Us</a>
                                     </li>
                                     <li class="{% if request.path == '/recipes/'%} active {% endif %}"><a href="{% url 'recipes' %}">Recipes</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li class="{% if request.path == '/contact-us/'%} active {% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
                                 </ul>
                                 <ul>
                                     <!-- {{  user.username }} -->
@@ -162,7 +162,7 @@
     <!-- ##### Header Area End ##### -->
 
     {% comment %} Inclde message templates here {% endcomment %}
-    {% include 'message.html' %}
+    {% include 'message/message.html' %}
 
     <main>
         {% block content%}
@@ -186,7 +186,7 @@
                     </div>
                     <!-- Footer Logo -->
                     <div class="footer-logo">
-                        <a href="index.html"><img src="{% static 'img/core-img/logo.png' %}" alt="" width="115"></a>
+                        <a href="index.html"><img src="{% static 'img/core-img/logo.png' %}" alt="" width="100"></a>
                     </div>
                     <!-- Copywrite -->
                     <p>

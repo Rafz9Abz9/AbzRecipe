@@ -20,6 +20,7 @@ class Recipe(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     special = models.BooleanField(default=False);
 
+
     def __str__(self):
         return f"{self.title}"
 
@@ -61,20 +62,19 @@ class FavoriteRecipe(models.Model):
     def __str__(self):
         return f"Favorite recipe for {self.user.username} is {self.recipe.title}"
     
-# class Group(models.Model):
-#     title = models.CharField(max_length=100)
-#     user = user = models.ForeignKey(User, on_delete=models.CASCADE)
+class Comment(models.Model):
+    name = models.CharField(max_length=100)
+    subject = models.CharField(max_length=250)
+    message = models.CharField(max_length=1050)
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
 
-#     def __str__(self):
-#         return f"Group {self.title} created by  {self.user.username}"
+
+    def __str__(self):
+        return f"Comment by {self.name} for  {self.recipe.title}"
     
     
-# class GroupedRecipe(models.Model):
-#     group = models.ForeignKey(Group, on_delete=models.CASCADE)
-#     recipe = models.ForeignKey(Recipe)
 
-#     def __str__(self):
-#         return f"Recipe {self.recipe.title} is in group {self.group.title}"
     
 
     

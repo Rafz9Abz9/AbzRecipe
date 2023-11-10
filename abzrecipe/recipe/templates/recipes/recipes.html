@@ -7,7 +7,7 @@
 {% block content %}
 
 <!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/breadcumb1.jpg' %})">
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/breadcumb2.jpg' %})">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12">
@@ -20,6 +20,200 @@
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    {% if recipes|length > 0 %}
+                        <div class="blog-posts-area">
+
+
+                            {% for recipe in recipes %}
+                            <!-- Single Blog Area -->
+                            <div class="single-blog-area mb-80">
+                                <!-- Thumbnail -->
+                                <div class="blog-thumbnail">
+                                    <img src="{{ recipe.image.url }}" alt="{{recipe.title}}" class="recipe-img">
+                                    <!-- Post Date -->
+                                    <div class="post-date text-capitalize">
+                                        <a href="#">
+                                            <span>{{ recipe.created_at|date:"d" }}</span>{{ recipe.created_at|date:"b" }}<br>
+                                            {{ recipe.created_at|date:"Y" }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                                <div class="blog-content">
+                                    <a href="#" class="post-title">{{ recipe.title }}</a>
+                                    <div class="meta-data">by <a href="#">{{ recipe.created_by }}</a>
+                                    </div>
+                                    <p>{{ recipe.description }}</p>
+                                    <a href="{% url 'recipe_detail' recipe_id=recipe.id %}" class="btn delicious-btn mt-30">Read More</a>
+                                </div>
+                            </div>
+                            {%  endfor  %}
+
+                        </div>
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                {% if recipes.has_previous %}
+                                    <li class="mr-2">
+                                        <a href="?page=1{% if category %}&category={{ category }}{% endif %}">&laquo; first</a>
+                                    </li>
+                                    <li>
+                                        <a href="?page={{ recipes.previous_page_number }}{% if category %}&category={{ category }}{% endif %}">previous</a>
+                                    </li>
+                                {% endif %}
+
+                                {% for page in recipes.paginator.page_range %}
+                                    <li class="page-item {% if page == recipes.number %}active{% endif %} mx-2">
+                                        <a class="page-link" href="?page={{ page }}{% if category %}&category={{ category }}{% endif %}">{{ page|add:0 }}</a>
+                                    </li>
+                                {% endfor %}
+                                
+
+                                {% if recipes.has_next %}
+                                    <li class="mr-2">
+                                        <a href="?page={{ recipes.next_page_number }}{% if category %}&category={{ category }}{% endif %}">next</a>     
+                                    </li>
+                                    <li>
+                                        <a href="?page={{ recipes.paginator.num_pages }}{% if category %}&category={{ category }}{% endif %}">last &raquo;</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    {% else %}
+                        <p>No recipes found.</p>
+                    {% endif %}
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="blog-sidebar-area">
+
+                        <!-- Widget -->
+                        <div class="single-widget mb-80">
+                            <h6>Categories</h6>
+                            <ul class="list text-capitalize">
+                                <li><a href="{% url 'recipes' %}">all</a></li>  
+                                {% for category in categories %}
+                                    <li><a href="?category={{ category.id }}">{{ category }}</a></li>  
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- Widget -->
+                        <div class="single-widget mb-80">
+                            <h6>Newsletter</h6>
+
+                            <!-- Form -->
+                            <div class="newsletter-form bg-img bg-overlay" style="background-image: url(img/bg-img/bg1.jpg);">
+                                <form action="#" method="post">
+                                    <input type="email" name="email" placeholder="Subscribe to newsletter">
+                                    <button type="submit" class="btn delicious-btn w-100">Subscribe</button>
+                                </form>
+                                <p>Fusce nec ante vitae lacus aliquet vulputate. Donec sceleri sque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                            </div>
+                        </div>
+
+                        <!-- Widget -->
+                        <div class="single-widget mb-80">
+                            <div class="quote-area text-center">
+                                <span>"</span>
+                                <h4>Nothing is better than going home to family and eating good food and relaxing</h4>
+                                <p>John Smith</p>
+                                <div class="date-comments d-flex justify-content-between">
+                                    <div class="date">January 04, 2018</div>
+                                    <div class="comments">2 Comments</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### Follow Us Instagram Area Start ##### -->
+    <div class="follow-us-instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Follow Us Instragram</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Instagram Feeds -->
+        <div class="insta-feeds d-flex flex-wrap">
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta1.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta2.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta3.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta4.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta5.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta6.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Insta Feeds -->
+            <div class="single-insta-feeds">
+                <img src="img/bg-img/insta7.jpg" alt="">
+                <!-- Icon -->
+                <div class="insta-icon">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Follow Us Instagram Area End ##### -->
 
 
 

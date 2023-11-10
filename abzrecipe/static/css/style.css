@@ -856,6 +856,13 @@ textarea:focus {
   .single-blog-area .blog-thumbnail {
     position: relative;
     z-index: 1; }
+  .single-blog-area .blog-thumbnail .recipe-img{
+    width: 600px;
+    height: 350px;
+    border: 1px solid #35185A;
+    object-fit:fill;
+  }
+
     .single-blog-area .blog-thumbnail .post-date {
       width: 75px;
       height: 100px;
@@ -954,11 +961,24 @@ textarea:focus {
     .receipe-post-search .col-12 {
       margin-bottom: 15px; } }
 
-.receipe-slider {
+.receipe-slider , .related_recipe{
   position: relative;
   z-index: 1; }
+.receipe-slider .recipe-img{
+ width: 53.2rem;
+ height: 30rem;
+ object-fit: fill;
+ object-position: top;
+}
+.receipe-slider .related-recipe-img{
+ width: 12.5rem;
+ height: 9.4rem;
+ object-fit: fill;
+ object-position: top;
+ border: 1px solid #35185A;
+}
   .receipe-slider .owl-prev,
-  .receipe-slider .owl-next {
+  .receipe-slider .owl-next, .related_recipe .owl-prev,  .related_recipe .owl-next{
     background-color: transparent;
     width: 40px;
     height: 40px;
@@ -979,12 +999,12 @@ textarea:focus {
     border-bottom: 3px solid #35185A; }
     @media only screen and (max-width: 767px) {
       .receipe-slider .owl-prev,
-      .receipe-slider .owl-next {
+      .receipe-slider .owl-next,  .related_recipe .owl-prev,  .related_recipe .owl-next  {
         font-size: 14px; } }
-  .receipe-slider .owl-next {
+  .receipe-slider .owl-next, .related_recipe .owl-next {
     left: auto;
     right: 4%; }
-  .receipe-slider:hover .owl-prev, .receipe-slider:hover .owl-next {
+  .receipe-slider:hover .owl-prev, .receipe-slider:hover .owl-next, .related_recipe:hover .owl-prev, .related_recipe:hover .owl-next {
     opacity: 1;
     visibility: visible; }
 
@@ -1008,6 +1028,8 @@ textarea:focus {
     margin-bottom: 5px; }
     .receipe-headline .receipe-duration h6:last-child {
       margin-bottom: 0; }
+  
+
 
 .receipe-ratings .ratings {
   margin-bottom: 30px; }
@@ -1015,6 +1037,10 @@ textarea:focus {
   font-size: 18px;
   color: #fbb710;
   padding: 0 3px; }
+
+  .liked{
+    color: #35185A !important;
+  }
 
 .single-preparation-step {
   position: relative;

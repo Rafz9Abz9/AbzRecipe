@@ -97,6 +97,20 @@ def login_view(request):
     return render(request, 'auth/login.html', {'form': form})
 
 
+def about(request):
+    if request.method == 'POST':
+        pass
+
+    return render(request, 'about/about.html')
+
+
+def contact(request):
+    if request.method == 'POST':
+        pass
+
+    return render(request, 'contact/contact.html')
+
+
 @login_required(login_url='login')
 def update_profile_view(request):
     if request.method == 'POST':

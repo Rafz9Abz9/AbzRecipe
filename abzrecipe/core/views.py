@@ -20,6 +20,8 @@ from django.contrib import messages
 
 from django.contrib.auth.decorators import login_required
 
+from recipe.models import Recipe, Category, RecipeCategory
+
 
 def index(request):
     return render(request, 'index.html')
@@ -100,8 +102,27 @@ def login_view(request):
 def about(request):
     if request.method == 'POST':
         pass
+    else:
+        all_recipe_count = len(Recipe.objects.all())
+        breakfast_recipe_count = RecipeCategory.objects.filter(category__title='breakfast').count()
+        lunch_recipe_count = RecipeCategory.objects.filter(category__title='lunch').count()
+        dinner_recipe_count = RecipeCategory.objects.filter(category__title='dinner').count()
+        beverages_recipe_count = RecipeCategory.objects.filter(category__title='beverages').count()
+        snacks_recipe_count = RecipeCategory.objects.filter(category__title='snacks').count()
+        soups_recipe_count = RecipeCategory.objects.filter(category__title='soups').count()
+        salads_recipe_count = RecipeCategory.objects.filter(category__title='salads').count()
 
-    return render(request, 'about/about.html')
+    return render(request, 'about/about.html',
+        {
+        'all_recipe_count': all_recipe_count,
+        'breakfast_recipe_count': breakfast_recipe_count,
+        'lunch_recipe_count': lunch_recipe_count,
+        'dinner_recipe_count': dinner_recipe_count,
+        'beverages_recipe_count': beverages_recipe_count,
+        'snacks_recipe_count': snacks_recipe_count,
+        'soups_recipe_count': soups_recipe_count,
+        'salads_recipe_count': salads_recipe_count
+    })
 
 
 def contact(request):

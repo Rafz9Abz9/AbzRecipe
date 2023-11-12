@@ -66,7 +66,10 @@ def recipe_detail(request, recipe_id):
         # Get all comments
         comments = Comment.objects.filter(recipe=recipe)
         recipe_favorite_list = FavoriteRecipe.objects.filter(recipe=recipe)
-        like_by_user = FavoriteRecipe.objects.filter(user=request.user, recipe=recipe)
+        like_by_user = ''
+        # Check if the user is authenticated
+        if request.user.is_authenticated:
+            like_by_user = FavoriteRecipe.objects.filter(user=request.user.get(), recipe=recipe)
 
         
 

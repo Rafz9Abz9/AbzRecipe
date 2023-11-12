@@ -1055,6 +1055,18 @@ textarea:focus {
     width: 60px;
     margin-bottom: 0; }
 
+.cmt-img{
+  height: 3.75rem;
+  height: 3.75rem;
+  border: 1px solid #35185A;
+  border-radius: 50%;
+}
+
+.active-category a{
+  color: #35185A !important;
+  font-weight: bold !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ingredients {
     margin-bottom: 80px; } }

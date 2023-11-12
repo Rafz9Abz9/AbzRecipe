@@ -88,18 +88,17 @@
                                 <span class="mr-2">0 Comment</span>
                             {% endif %}
 
-                            {% if recipe_favorite_list|length == 1 %}
-                                <span class="mr-2">{{ recipe_favorite_list|length }} Like</span>
-                            {% elif recipe_favorite_list|length > 1 %}
-                                <span class="mr-2">{{ recipe_favorite_list|length }} Likes</span>
-                            {% else %}
-                                <span class="mr-2">0 Like</span>
-                            {% endif %}
-                           
-                            <a href="{% url 'like_recipe' recipe_id=recipe.id %}" class="{% if like_by_user|length > 0 %} liked {% endif %}">
-                                <span title="Click to like recipe">
-                                    Like <i class="fa fa-heart  {% if like_by_user|length > 0 %} liked {% endif %}" aria-hidden="true" ></i>
-                              
+                            <a href="{% url 'like_recipe' recipe_id=recipe.id %}" class="{% if like_by_user|length > 0 %} liked {% endif %}" title="{% if like_by_user|length > 0 %}  Click to unlike recipe {% else %} Click to like recipe {% endif %}">
+                                {% if recipe_favorite_list|length == 1 %}
+                                    <span class="mr-2">{{ recipe_favorite_list|length }} Like</span>
+                                {% elif recipe_favorite_list|length > 1 %}
+                                    <span class="mr-2">{{ recipe_favorite_list|length }} Likes</span>
+                                {% else %}
+                                    <span class="mr-2">0 Like</span>
+                                {% endif %}
+                                <span>
+                                    <i class="fa fa-heart  {% if like_by_user|length > 0 %} liked {% endif %}" aria-hidden="true" ></i>
+                            
                                 </span>
                             </a>
                         </div>
@@ -185,6 +184,27 @@
                         </form>
                     </div>
                 </div>
+               {%  if comments|length > 0 %}
+                    <div class="col-12 mt-4">
+                        <h4>Comments</h4>
+                        {%  for comment in comments %}
+                        <div class="single-preparation-step d-flex">
+                            <img class="cmt-img" src="{% static 'img/blog-img/user.png' %}" alt="{{comment.name}}">
+                            <div class="ml-4 w-100 flex-1">
+                                <h5 class="text-capitalize">{{ comment.name }}</h5>
+                                <span style="font-style: italic;">{{comment.created_at}}</span>
+                                <p>{{ comment.message}}</p>
+                                <hr>
+                            </div>
+                        </div>
+                    {%  endfor %}
+                    </div>
+                {%  else %}
+                <div class="col-12 mt-4">
+                    <p class="text-center">No comment yet..</p>
+
+                </div>
+                 {%  endif %}
             </div>
         </div>
     </div>

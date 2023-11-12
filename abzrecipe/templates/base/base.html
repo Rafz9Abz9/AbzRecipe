@@ -118,7 +118,7 @@
                                     <li class="{% if request.path == '/'%} active {% endif %}"><a href="{% url 'home' %}">Home</a></li>
                                     <li  class="{% if request.path == '/about-us/'%} active {% endif %}"><a href="{% url 'about' %}">About Us</a>
                                     </li>
-                                    <li class="{% if request.path == '/recipes/'%} active {% endif %}"><a href="{% url 'recipes' %}">Recipes</a></li>
+                                    <li class="{% if '/recipes/' in request.path %} active {% endif %}"><a href="{% url 'recipes' %}">Recipes</a></li>
                                     <li class="{% if request.path == '/contact-us/'%} active {% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
                                 </ul>
                                 <ul>

@@ -96,10 +96,11 @@
                         <!-- Widget -->
                         <div class="single-widget mb-80">
                             <h6>Categories</h6>
+                            
                             <ul class="list text-capitalize">
-                                <li><a href="{% url 'recipes' %}">all</a></li>  
+                                <li class="{% if not request.GET.category %} active-category {% endif %}"><a href="{% url 'recipes' %}">all</a></li>  
                                 {% for category in categories %}
-                                    <li><a href="?category={{ category.id }}">{{ category }}</a></li>  
+                                    <li class="{% if category.id|add:0 == request.GET.category|add:0 %} active-category {% endif %}"><a href="?category={{ category.id }}">{{ category }}</a></li>  
                                 {% endfor %}
                             </ul>
                         </div>

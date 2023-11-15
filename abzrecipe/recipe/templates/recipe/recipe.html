@@ -24,29 +24,6 @@
 
 <div class="receipe-post-area section-padding-80">
 
-    <!-- Receipe Post Search -->
-    <div class="receipe-post-search mb-80">
-        <div class="container">
-            <form action="#" method="post">
-                <div class="row">
-                    <div class="col-12 col-lg-3">
-                        <select name="select1" id="select1">
-                            {% for category in categories %}
-                                <option>{{ category }}</option>  
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <input type="search" name="search" placeholder="Search Receipies">
-                    </div>
-                    <div class="col-12 col-lg-3 text-right">
-                        <button type="submit" class="btn delicious-btn">Search</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
     <!-- Receipe Slider -->
     <div class="container">
         <div class="row">
@@ -138,7 +115,7 @@
                     </div>
 
                     <div class="mt-3">
-                        <h5>Related Recipe</h5>
+                        <h5>Other Recipes</h5>
                         <div class="receipe-slider owl-carousel  owl-theme">
                             {% for related_recipe in related_recipes%}
                                 <div class="item">
@@ -171,14 +148,12 @@
                                 <div class="col-12 col-lg-6">
                                     {{ comment_form.email }}
                                 </div>
-                                <div class="col-12">
-                                    {{ comment_form.subject }}
-                                </div>
+
                                 <div class="col-12">
                                     {{ comment_form.message }}
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn delicious-btn mt-30" type="submit">Post Comments</button>
+                                    <button class="btn delicious-btn mt-30" type="submit">Post Comment</button>
                                 </div>
                             </div>
                         </form>
@@ -194,6 +169,9 @@
                                 <h5 class="text-capitalize">{{ comment.name }}</h5>
                                 <span style="font-style: italic;">{{comment.created_at}}</span>
                                 <p>{{ comment.message}}</p>
+                                {% if comment.name == request.user.username %}
+                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id comment_id=comment.id %}" class="text-capitalize text-danger" style="font-style: italic;">delete comment</a>
+                                {% endif %}
                                 <hr>
                             </div>
                         </div>
@@ -210,6 +188,10 @@
     </div>
 </div>
 
+
+    <!-- ##### Follow Us Instagram Area Start ##### -->
+    {% include 'social/social.html' %}
+    <!-- ##### Follow Us Instagram Area End ##### -->
 
 
 {% endblock %}

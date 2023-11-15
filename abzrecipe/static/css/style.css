@@ -628,6 +628,10 @@ textarea:focus {
   overflow: hidden; }
   .single-top-catagory img {
     width: 100%; }
+  .limited_recipe_img{
+    width: 400px;
+    height: 400px;
+  }
   .single-top-catagory::after {
     content: "";
     position: absolute;
@@ -675,7 +679,10 @@ textarea:focus {
   position: relative;
   z-index: 1; }
   .single-best-receipe-area img {
-    border-bottom: 3px solid #35185A; }
+    border-bottom: 3px solid #35185A; 
+    height: 300px;
+    width: 350px;
+  }
   .single-best-receipe-area .receipe-content {
     padding-top: 30px;
     text-align: center; }
@@ -860,7 +867,7 @@ textarea:focus {
     width: 600px;
     height: 350px;
     border: 1px solid #35185A;
-    object-fit:fill;
+    object-fit:cover;
   }
 
     .single-blog-area .blog-thumbnail .post-date {
@@ -967,8 +974,8 @@ textarea:focus {
 .receipe-slider .recipe-img{
  width: 53.2rem;
  height: 30rem;
- object-fit: fill;
- object-position: top;
+ object-fit: contain;
+ object-position: center;
 }
 .receipe-slider .related-recipe-img{
  width: 12.5rem;
@@ -983,7 +990,7 @@ textarea:focus {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    color: #ffffff;
+    color: #35185A;
     top: 50%;
     margin-top: -20px;
     left: 4%;

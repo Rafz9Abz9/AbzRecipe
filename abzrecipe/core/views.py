@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import RegistrationForm, LoginForm, ProfileUpdateForm
+from .forms import RegistrationForm, LoginForm, ProfileUpdateForm, ContactForm
 from .models import Profile
 # from django.utils import timezone
 import json
@@ -21,10 +21,43 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 from recipe.models import Recipe, Category, RecipeCategory
+from random import shuffle
+from recipe.models import Comment
+from collections import defaultdict
+from django.db.models import Count
+from django.template.defaulttags import register
+
+
+...
+@register.filter
+def get_item(dictionary, key):
+    return dictionary.get(key)
 
 
 def index(request):
-    return render(request, 'index.html')
+    if request.POST:
+        pass
+    
+    best_recipes = Recipe.objects.filter(special=True).order_by('-created_at') 
+    recipes = Recipe.objects.all().order_by('-created_at') 
+    other_recipes = Recipe.objects.filter(special=False).order_by('-created_at') 
+    shuffled_recipes = list(recipes)
+    shuffled_best_recipes = list(best_recipes)
+    shuffle(shuffled_recipes)
+    shuffle(shuffled_best_recipes)
+
+        # Get all comments
+    comments = Comment.objects.all()
+    # Get comment counts for each recipe
+    comment_counts = Comment.objects.values('recipe').annotate(count=Count('recipe'))
+    comment_count_dict = {item['recipe']: item['count'] for item in comment_counts}
+
+    return render(request, 'index.html', {
+        'limited_best_recipe': shuffled_best_recipes[:6],
+        'other_recipes': other_recipes[:9],
+        'limited_recipes': shuffled_recipes[:2],
+        'comment_counts': comment_count_dict
+    })
 
 
 def register(request):
@@ -70,8 +103,8 @@ def register(request):
             messages.success(request, "Registration Successful, check your mailbox to activate your accouint before login")
 
             return redirect('login')
-    else:
-        form = RegistrationForm()
+    
+    form = RegistrationForm()
 
     return render(request, 'auth/register.html', {'form': form})
 
@@ -93,8 +126,8 @@ def login_view(request):
             return redirect('home')
         else:
             messages.error(request, "Invalid Credentials")
-    else:
-        form = LoginForm()
+    
+    form = LoginForm()
 
     return render(request, 'auth/login.html', {'form': form})
 
@@ -102,15 +135,14 @@ def login_view(request):
 def about(request):
     if request.method == 'POST':
         pass
-    else:
-        all_recipe_count = len(Recipe.objects.all())
-        breakfast_recipe_count = RecipeCategory.objects.filter(category__title='breakfast').count()
-        lunch_recipe_count = RecipeCategory.objects.filter(category__title='lunch').count()
-        dinner_recipe_count = RecipeCategory.objects.filter(category__title='dinner').count()
-        beverages_recipe_count = RecipeCategory.objects.filter(category__title='beverages').count()
-        snacks_recipe_count = RecipeCategory.objects.filter(category__title='snacks').count()
-        soups_recipe_count = RecipeCategory.objects.filter(category__title='soups').count()
-        salads_recipe_count = RecipeCategory.objects.filter(category__title='salads').count()
+    all_recipe_count = len(Recipe.objects.all())
+    breakfast_recipe_count = RecipeCategory.objects.filter(category__title='breakfast').count()
+    lunch_recipe_count = RecipeCategory.objects.filter(category__title='lunch').count()
+    dinner_recipe_count = RecipeCategory.objects.filter(category__title='dinner').count()
+    beverages_recipe_count = RecipeCategory.objects.filter(category__title='beverages').count()
+    snacks_recipe_count = RecipeCategory.objects.filter(category__title='snacks').count()
+    soups_recipe_count = RecipeCategory.objects.filter(category__title='soups').count()
+    salads_recipe_count = RecipeCategory.objects.filter(category__title='salads').count()
 
     return render(request, 'about/about.html',
         {
@@ -127,9 +159,36 @@ def about(request):
 
 def contact(request):
     if request.method == 'POST':
-        pass
+       contact_form = ContactForm(request.POST)
 
-    return render(request, 'contact/contact.html')
+       if contact_form.is_valid():
+
+        contact = contact_form.save()
+
+        email_subject = '@abzrecipehotdesk'
+                
+        email_body = "Hi " + contact.name + " Your message has been submitted. We'll get in touch with you soon."
+            # setup email
+        email = EmailMessage(
+                email_subject,
+                email_body,
+                "noreply@abzrecipe.com",
+                [contact.email],
+                headers={"Message-ID": "abzrecipe"},
+            )
+            # send email
+        email.send(fail_silently=False)
+        messages.success(request, "Comment submitted successfully")
+        return redirect('contact')
+       else:
+        messages.error(request, "Invalid Form")
+
+    contact_form = ContactForm()
+
+    return render(request, 'contact/contact.html',
+        {
+            'contact_form': contact_form,
+        })
 
 
 @login_required(login_url='login')
@@ -148,20 +207,20 @@ def update_profile_view(request):
             return redirect('profile') 
         else:
             messages.error(request, "Error  in Completing profile update")
-    else:
-        form = ProfileUpdateForm()
-        user = request.user
-        profile, created = Profile.objects.get_or_create(user=user)
-        initial_data = {
-            'first_name': user.first_name,
-            'last_name': user.last_name,
-            'username': user.username,
-            'email': user.email,
-            'address': profile.address,
-            'phone': profile.phone,
-            'country': profile.country,
-        }
-        form = ProfileUpdateForm(instance=user, initial=initial_data)
+
+    form = ProfileUpdateForm()
+    user = request.user
+    profile, created = Profile.objects.get_or_create(user=user)
+    initial_data = {
+        'first_name': user.first_name,
+        'last_name': user.last_name,
+        'username': user.username,
+        'email': user.email,
+        'address': profile.address,
+        'phone': profile.phone,
+        'country': profile.country,
+    }
+    form = ProfileUpdateForm(instance=user, initial=initial_data)
 
     return render(request, 'profile/profile.html', {'form': form})
 

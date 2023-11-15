@@ -60,11 +60,11 @@ class FavoriteRecipe(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"Favorite recipe for {self.user.username} is {self.recipe.title}"
+        return f" {self.user.username} favrecipe>> {self.recipe.title}"
     
 class Comment(models.Model):
     name = models.CharField(max_length=100)
-    subject = models.CharField(max_length=250)
+    email = models.CharField(max_length=150)
     message = models.CharField(max_length=1050)
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True, null=True)

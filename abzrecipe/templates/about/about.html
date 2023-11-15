@@ -38,7 +38,7 @@
                 <h6 class="sub-heading pb-5">Welcome to Abz Recipe, your go-to place for easy and enjoyable cooking! Excited to share the joy of simple, creative recipes with you. At Abz Recipe, every dish is a unique creation made for experimenting with flavors. Whether you're trying out new recipes or getting creative with what's in your kitchen, this is your space for culinary fun.
                 </h6>
 
-                <p class="text-center">t's not just about sharing recipes here; it's about enjoying the process together. Favorite the dishes you love, share your feedback or twists to a recipe. Abz Recipe is a friendly space where the love for food is celebrated. So, dive into Abz Recipe, discover tasty flavors, and make this your virtual kitchen. Let the cooking adventure begin!
+                <p class="text-center">It's not just about sharing recipes here; it's about enjoying the process together. Favorite the dishes you love, share your feedback or twists to a recipe. Abz Recipe is a friendly space where the love for food is celebrated. So, dive into Abz Recipe, discover tasty flavors, and make this your virtual kitchen. Let the cooking adventure begin!
                 </p>
                 <span class="text-center w-100 d-block">Happy cooking!</span>
             </div>
@@ -50,7 +50,7 @@
                 <div class="single-cool-fact">
                     <img src="img/core-img/salad.png" alt="">
                     <h3><span class="counter">{{ all_recipe_count }}</span></h3>
-                    <h6>All recipes</h6>
+                    <h6>All Recipes</h6>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                 <div class="single-cool-fact">
                     <img src="img/core-img/hamburger.png" alt="">
                     <h3><span class="counter">{{  breakfast_recipe_count }}</span></h3>
-                    <h6>Breakfast recipes</h6>
+                    <h6>Breakfast Recipes</h6>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                 <div class="single-cool-fact">
                     <img src="img/core-img/pancake.png" alt="">
                     <h3><span class="counter">{{ beverages_recipe_count }}</span></h3>
-                    <h6>Beverages recipes</h6>
+                    <h6>Beverages Recipes</h6>
                 </div>
             </div>
 
@@ -76,7 +76,7 @@
                 <div class="single-cool-fact">
                     <img src="img/core-img/rib.png" alt="">
                     <h3><span class="counter">{{  lunch_recipe_count }}</span></h3>
-                    <h6>Lunch recipes</h6>
+                    <h6>Lunch Recipes</h6>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
                 <div class="single-cool-fact">
                     <img src="img/core-img/pancake.png" alt="">
                     <h3><span class="counter">{{ dinner_recipe_count }}</span></h3>
-                    <h6>Dinner recipes</h6>
+                    <h6>Dinner Recipes</h6>
                 </div>
             </div>
 
@@ -94,14 +94,14 @@
                 <div class="single-cool-fact">
                     <img src="img/core-img/pancake.png" alt="">
                     <h3><span class="counter">{{ salads_recipe_count }}</span></h3>
-                    <h6>Salads recipes</h6>
+                    <h6>Salads Recipes</h6>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="single-cool-fact">
                     <img src="img/core-img/pancake.png" alt="">
                     <h3><span class="counter">{{ soups_recipe_count }}</span></h3>
-                    <h6>Soups recipes</h6>
+                    <h6>Soups Recipes</h6>
                 </div>
             </div>
            
@@ -112,13 +112,17 @@
 <!-- ##### About Area End ##### -->
 
 <!-- ##### Contact Area Start ##### -->
-<div class="row">
+<div class="row mb-5 mt-0">
     <div class="col-12 text-center">
         <a href="{% url 'contact' %}" class="btn delicious-btn mt-30">Contact Us</a>
     </div>
 </div>
 
 <!-- ##### Contact Area End ##### -->
+
+<div class="mt-5">
+    {% include 'social/social.html' %}
+</div>
 
 
 {% endblock %}

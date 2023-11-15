@@ -12,11 +12,6 @@ class CommentForm(forms.ModelForm):
             'placeholder': 'Enter your email address',
             'class': 'form-control input-lg'
         }), required=True)
-    
-    subject = forms.CharField(widget=forms.TextInput(attrs={
-        'placeholder': 'Enter Subject',
-        'class': 'form-control input-lg'
-        }), required=True)
         
     message = forms.CharField(widget=forms.Textarea(attrs={
         'placeholder': 'Enter Message',
@@ -26,5 +21,5 @@ class CommentForm(forms.ModelForm):
     
     class Meta:
         model = Comment
-        fields = ('name', 'email',  'subject', 'message' )
+        fields = ('name', 'email', 'message' )
 

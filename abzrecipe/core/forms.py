@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.core.validators import EmailValidator
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
-from .models import Profile
+from .models import Profile, Contact
 
 class RegistrationForm(UserCreationForm):
 
@@ -117,3 +117,31 @@ class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = User  # Use the User model
         fields = ['username', 'first_name', 'last_name', 'email','address', 'phone', 'country']
+
+
+class ContactForm(forms.ModelForm):
+
+    name = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Enter your name',
+        'class': 'form-control input-lg'
+        }), required=True)
+    
+    email = forms.EmailField(widget=forms.EmailInput(attrs={
+            'placeholder': 'Enter your email address',
+            'class': 'form-control input-lg'
+        }), required=True)
+    
+    subject = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Enter Subject',
+        'class': 'form-control input-lg'
+        }), required=True)
+        
+    message = forms.CharField(widget=forms.Textarea(attrs={
+        'placeholder': 'Enter Message',
+        'class': 'form-control input-lg'
+        }), required=True)
+            
+    
+    class Meta:
+        model = Contact
+        fields = ('name', 'email',  'subject', 'message' )

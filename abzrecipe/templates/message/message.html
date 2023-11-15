@@ -4,27 +4,32 @@
         width: 250px;
         border-radius: 20%;
         position: absolute;
-        top: 100px;
-        right: 40px;
+        top: 12.75rem;
+        right: 10%;
+        opacity: 1;
         z-index: 200;
+        transition: all 1s ease-in-out;
       }
       
       .messages .success{
         width: 100%;
         padding: 15px;
-        background-color: rgba(0, 128, 47, 0.271);
-        color:rgb(0, 128, 21);
+        background-color: rgba(0, 128, 47, 0.15);
+        font-weight: 800;
+        color:rgb(3, 214, 112);
       }
       .messages .error{
+        font-weight: 800;
         width: 100%;
         padding: 15px;
-        background-color: rgba(128, 0, 0, 0.271);
+        background-color: rgba(128, 0, 0, 0.15);
         color:rgb(128, 0, 0);
       }
       .messages .info{
+        font-weight: 800;
         width: 100%;
         padding: 15px;
-        background-color: rgba(232, 114, 17, 0.271);
+        background-color: rgba(232, 114, 17, 0.15);
         color:rgb(232, 114, 17);
       }
 
@@ -48,7 +53,7 @@
   setTimeout(function() {
     var message = document.querySelector('.messages');
     if (message) {
-      message.style.display = 'none';
+      message.style.opacity = 0;
     }
   }, 10000);
 </script>

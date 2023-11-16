@@ -39,7 +39,51 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 # Agile Methodologies
 
+# Features
 
+## CRUD Functionality
+
+## Authentication and Authorization
+
+## Navigation
+
+## Home Page
+
+## Register Page
+
+## Login Page
+
+## Profile Page
+
+## About Us Page
+
+## Contact Page
+
+## Recipes Page
+
+## Recipe Page
+
+## Favorites Page
+
+# Roadmap
+
+# Technologies Used
+
+## Core Development Technologies
+
+## Libraries, Frameworks, and Packages
+
+## Python/Django Packages
+
+## Ingrastructural Technologies
+
+# Testing
+
+## Automatic Testing
+
+## Manual Testing
+
+## General Testing
 
 
 

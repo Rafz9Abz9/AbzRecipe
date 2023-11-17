@@ -8,3 +8,5 @@ _pycache_/
 /bin/
 .env
 .env.example
+
+db.sqlite3

@@ -65,14 +65,14 @@ def recipe_detail(request, recipe_id):
 
     comment_form = CommentForm()
     # Check if the user is authenticated
-    user = request.user
     if request.user.is_authenticated:
+        user = request.user
+        comment_form = CommentForm(instance=user, initial=initial_data)
         initial_data = {
         'name': user.username,
         'email': user.email,
     }
         
-    comment_form = CommentForm(instance=user, initial=initial_data)
     categories = Category.objects.all()
     recipe = get_object_or_404(Recipe, pk=recipe_id)
     #Get all recupe ingrdient
@@ -107,7 +107,6 @@ def recipe_detail(request, recipe_id):
         })
 
 
-login_required(login_url='login')
 def delete_comment(request, recipe_id, comment_id):
     if request.method == 'POST':
         pass
@@ -128,7 +127,6 @@ def delete_comment(request, recipe_id, comment_id):
     return redirect('recipe_detail', recipe_id=recipe_id)
 
 
-login_required(login_url='login')
 def like_recipe(request, recipe_id):
     if request.method == 'POST':
         pass
@@ -150,24 +148,27 @@ def like_recipe(request, recipe_id):
     return redirect('recipe_detail', recipe_id=recipe_id)
 
 
-login_required
 def favorite_recipe(request):
     if request.method == 'POST':
         pass
-    # Get all favorite recipes for the current user
-    all_favorite_recipes = FavoriteRecipe.objects.filter(user=request.user)
 
-    # Pagination
-    paginator = Paginator(all_favorite_recipes, 8)
-    page = request.GET.get('page')
+    if request.user.is_authenticated:
+        # Get all favorite recipes for the current user
+        all_favorite_recipes = FavoriteRecipe.objects.filter(user=request.user)
 
-    try:
-        favorite_recipes = paginator.page(page)
-    except PageNotAnInteger:
-        favorite_recipes = paginator.page(1)
-    except EmptyPage:
-        favorite_recipes = paginator.page(paginator.num_pages)
+        # Pagination
+        paginator = Paginator(all_favorite_recipes, 8)
+        page = request.GET.get('page')
 
+        try:
+            favorite_recipes = paginator.page(page)
+        except PageNotAnInteger:
+            favorite_recipes = paginator.page(1)
+        except EmptyPage:
+            favorite_recipes = paginator.page(paginator.num_pages)
+    else:
+        messages.error(request, "Login is required")
+        return redirect('login')
     return render(request, 'favorite/favorite.html', {
         'favorite_recipes': favorite_recipes
     })

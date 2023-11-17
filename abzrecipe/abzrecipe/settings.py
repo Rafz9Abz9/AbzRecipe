@@ -10,6 +10,7 @@ import os
 
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -135,13 +136,13 @@ ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7  # You can adjust the expiration time
 
 
 # Application Mmailing setup 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-Gmail_SMTP_name = 'ABZRECIPE'
-DEFAULT_FROM_EMAIL = 'abzrecipe@gmail.com'
-EMAIL_HOST_USER = 'abzrecipe@gmail.com'
-EMAIL_HOST_PASSWORD = 'izlzpfazfwszmtox'
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', default=587, cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
+Email_SMTP_NAME = config('Email_SMTP_NAME')
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'

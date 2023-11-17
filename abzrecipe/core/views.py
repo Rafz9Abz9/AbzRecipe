@@ -209,18 +209,23 @@ def update_profile_view(request):
             messages.error(request, "Error  in Completing profile update")
 
     form = ProfileUpdateForm()
-    user = request.user
-    profile, created = Profile.objects.get_or_create(user=user)
-    initial_data = {
-        'first_name': user.first_name,
-        'last_name': user.last_name,
-        'username': user.username,
-        'email': user.email,
-        'address': profile.address,
-        'phone': profile.phone,
-        'country': profile.country,
-    }
-    form = ProfileUpdateForm(instance=user, initial=initial_data)
+    
+    if request.user.is_authenticated:
+        user = request.user
+        profile, created = Profile.objects.get_or_create(user=user)
+        initial_data = {
+            'first_name': user.first_name,
+            'last_name': user.last_name,
+            'username': user.username,
+            'email': user.email,
+            'address': profile.address,
+            'phone': profile.phone,
+            'country': profile.country,
+        }
+        form = ProfileUpdateForm(instance=user, initial=initial_data)
+    else:
+        messages.error(request, "Login is required")
+        return redirect('login')
 
     return render(request, 'profile/profile.html', {'form': form})
 

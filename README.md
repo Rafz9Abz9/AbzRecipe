@@ -42,12 +42,28 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 # Features
 
 ## CRUD Functionality
+- Create: users can create a comment under different recipes when logged in and can save their favorite recipes.
+- Read: users can view their saved recipes in the favorite's page when logged in.
+- Update: users can update their profile details when logged in.
+- Delete: users can delete the comments that they made under recipes when logged in. 
+- Admin CRUD functionality implementation done from the Django Admin dashboard.
 
 ## Authentication and Authorization
-
+- Users can create an account on the register page.
+- Users can receive a notification notifying them that their registration was successful.
+- Users can receive an email with a link to activate their account.
+- Users can log in from the login page.
+- Users can receive a notification notifying them that their login was successful.
+- Authorisation is required in order to update the profile page, save favorite recipes, view the saved recipes, and write a comment under the recipes.
+  
 ## Navigation
-
+- The primary navigation is located in the header section and is present on all pages.
+  
 ## Home Page
+- This page includes images and introductory messages that summarize the purpose of the website.
+- In the first image, there's an image slideshow that includes a button that says 'Go To Recipes', and if user clicks on this button, it automatically takes them to the recipe page.
+- Home page also includes 2 images of dishes alog with their names, and a button that says 'Read More'. If user clicks on this button, it will take them to the recipe page of that particular dish.
+- Underneath the 2 images, there is a section named 'The Best Recipes'. This has 6 enticing images of some dishes.
 
 ## Register Page
 

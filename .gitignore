@@ -6,6 +6,7 @@ _pycache_/
 /lib64/
 /include/
 /bin/
+/media/
 .env
 .env.example
 

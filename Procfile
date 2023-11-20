@@ -1,1 +1,0 @@
-web: gunicorn abzrecipe.wsgi

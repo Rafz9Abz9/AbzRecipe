@@ -134,6 +134,13 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3f5b71c2-9edb-4e30-8ec4-5d4650a4067f)
 
 ## Contact Page
+- This page includes the details necessary for the user to contact in case of any questions or assistance they may require.
+- It includes a contact form where the user can input their name, email address, the subject of the email, and the actual message.
+- There's a 'Send' button and if user clicks on it, it will allow them to submit the form.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/438f5800-e3f8-4f56-9927-c23a3eff5c56)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7eb9242a-bfac-4341-813b-5a3bb5249364)
 
 ## Recipes Page
 

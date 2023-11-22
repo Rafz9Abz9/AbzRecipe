@@ -14,6 +14,9 @@ from dotenv import load_dotenv
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path) 
 
+import django_heroku
+import dj_database_url
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +30,7 @@ SECRET_KEY = 'django-insecure-f$ge*#7_%4#*r$#-#u(+um5+at-+jv3g8ja-!m#gyi$+q@4%oj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['abzrecipe-72c82cf99b18.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -46,6 +49,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -80,8 +84,12 @@ WSGI_APPLICATION = 'abzrecipe.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'ec2-44-213-228-107.compute-1.amazonaws.com',
+        'NAME': 'd13asghphn2ti0',
+        'USER': 'jdgwbfxibhlbgz',
+        'PASSWORD': '1b160bc1c3b1085b0393a808ae83b3856fd16e234a1e6e50f16c2f697ab29c77',
+        'PORT': '5432',
     }
 }
 
@@ -122,12 +130,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'), 
+STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles')
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# setup media folder
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -140,12 +148,12 @@ ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7  # You can adjust the expiration time
 
 
 # Application Mmailing setup 
-EMAIL_HOST = str(os.getenv('EMAIL_HOST'))
-EMAIL_PORT = str(os.getenv('EMAIL_PORT')) 
-EMAIL_USE_TLS = str(os.getenv('EMAIL_USE_TLS')) 
-DEFAULT_FROM_EMAIL = str(os.getenv('DEFAULT_FROM_EMAIL')) 
-EMAIL_HOST_USER = str(os.getenv('EMAIL_HOST_USER')) 
-EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD')) 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'ABZRECIPE'
+EMAIL_HOST_USER = 'abzrecipe@gmail.com'
+EMAIL_HOST_PASSWORD = 'izlzpfazfwszmtox'
 
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -155,3 +163,4 @@ LOGIN_REDIRECT_URL = '/'
 ACCOUNT_LOGOUT_REDIRECT = '/'
 
 
+django_heroku.settings(locals())

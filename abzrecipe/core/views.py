@@ -75,11 +75,7 @@ def register(request):
             # email subject here
             email_subject = 'Activate Your Account'
             # email body
-            #path to view
-            # - get app domain
-            # - relative url
-            # encode uuid
-            # get token
+           
             token = token_generator.make_token(user)
             uidb64 = urlsafe_base64_encode(force_bytes(user.pk))
             link = reverse('activate', kwargs={
@@ -89,20 +85,24 @@ def register(request):
             domain = get_current_site(request).domain
             activate_url = 'http://'+domain+link
             email_body = "Hi " + user.username+ " Please use this link to veify your account\n"+activate_url
-            # setup email
-            email = EmailMessage(
-                email_subject,
-                email_body,
-                "noreply@abzrecipe.com",
-                [user.email],
-                headers={"Message-ID": "abzrecipe"},
-            )
-            # send email
-            email.send(fail_silently=False)
-            
-            messages.success(request, "Registration Successful, check your mailbox to activate your accouint before login")
+            try:
+                # setup email
+                email = EmailMessage(
+                    email_subject,
+                    email_body,
+                    "noreply@abzrecipe.com",
+                    [user.email],
+                    headers={"Message-ID": "abzrecipe"},
+                )
+                # send email
+                email.send(fail_silently=False)
+                
+                messages.success(request, "Registration Successful, check your mailbox to activate your accouint before login")
+                return redirect('login')
+            except Exception as e:
+                print(f"Error sending email: {e}")
+                
 
-            return redirect('login')
     
     form = RegistrationForm()
 
@@ -137,6 +137,7 @@ def about(request):
         pass
     all_recipe_count = len(Recipe.objects.all())
     breakfast_recipe_count = RecipeCategory.objects.filter(category__title='breakfast').count()
+    dessert_recipe_count = RecipeCategory.objects.filter(category__title='dessert').count()
     lunch_recipe_count = RecipeCategory.objects.filter(category__title='lunch').count()
     dinner_recipe_count = RecipeCategory.objects.filter(category__title='dinner').count()
     beverages_recipe_count = RecipeCategory.objects.filter(category__title='beverages').count()
@@ -148,6 +149,7 @@ def about(request):
         {
         'all_recipe_count': all_recipe_count,
         'breakfast_recipe_count': breakfast_recipe_count,
+        'dessert_recipe_count': salads_recipe_count,
         'lunch_recipe_count': lunch_recipe_count,
         'dinner_recipe_count': dinner_recipe_count,
         'beverages_recipe_count': beverages_recipe_count,
@@ -168,18 +170,22 @@ def contact(request):
         email_subject = '@abzrecipehotdesk'
                 
         email_body = "Hi " + contact.name + " Your message has been submitted. We'll get in touch with you soon."
-            # setup email
-        email = EmailMessage(
-                email_subject,
-                email_body,
-                "noreply@abzrecipe.com",
-                [contact.email],
-                headers={"Message-ID": "abzrecipe"},
-            )
-            # send email
-        email.send(fail_silently=False)
-        messages.success(request, "Comment submitted successfully")
-        return redirect('contact')
+        try:
+                     # setup email
+            email = EmailMessage(
+                    email_subject,
+                    email_body,
+                    "noreply@abzrecipe.com",
+                    [contact.email],
+                    headers={"Message-ID": "abzrecipe"},
+                )
+                # send email
+            email.send(fail_silently=False)
+            messages.success(request, "Comment submitted successfully")
+            return redirect('contact')
+        except Exception as e:
+            print(f"Error sending email: {e}")
+       
        else:
         messages.error(request, "Invalid Form")
 

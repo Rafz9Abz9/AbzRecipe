@@ -48,18 +48,21 @@ def recipe_detail(request, recipe_id):
             email_subject = '@abzrecipehotdesk'
             
             email_body = "Hi " + comment.name + " Your comment has been submitted."
-            # setup email
-            email = EmailMessage(
-                email_subject,
-                email_body,
-                "noreply@abzrecipe.com",
-                [comment.email],
-                headers={"Message-ID": "abzrecipe"},
-            )
-            # send email
-            email.send(fail_silently=False)
-            messages.success(request, "Comment submitted successfully")
-            return redirect('recipe_detail', recipe_id=recipe_id)
+            try:
+                # setup email
+                email = EmailMessage(
+                    email_subject,
+                    email_body,
+                    "noreply@abzrecipe.com",
+                    [comment.email],
+                    headers={"Message-ID": "abzrecipe"},
+                )
+                # send email
+                email.send(fail_silently=False)
+                messages.success(request, "Comment submitted successfully")
+                return redirect('recipe_detail', recipe_id=recipe_id)
+            except Exception as e:
+                print(f"Error sending email: {e}")
        else:
            messages.error(request, "Invalid form")
 
@@ -67,11 +70,11 @@ def recipe_detail(request, recipe_id):
     # Check if the user is authenticated
     if request.user.is_authenticated:
         user = request.user
-        comment_form = CommentForm(instance=user, initial=initial_data)
         initial_data = {
         'name': user.username,
         'email': user.email,
-    }
+         }
+        comment_form = CommentForm(instance=user, initial=initial_data)
         
     categories = Category.objects.all()
     recipe = get_object_or_404(Recipe, pk=recipe_id)

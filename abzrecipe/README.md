@@ -93,9 +93,33 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/52d1b45f-3dd2-45cd-8ace-208da2461fe7)
 
+- This is when the user has logged out:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/51aa19a8-c1ad-4287-9072-045e0db39870)
+
 ## Register Page
+- This page includes many fields that is required to be filled in by all users. These fields are: username, email address, password, and confirm password.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/217e9b43-be85-4b4a-a1dd-0ac0c409da49)
+
+- User must fill in all the fields otherwise user won't be able to register.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f92a7bad-4222-4492-a7f1-511f7ff91301)
 
 ## Login Page
+- This page requires a username and password field.
+- It also includes a 'Remember Me' feature with a box that a user can tick if they want their details to be remembered for easy access.
+- It also includes a 'Login' and 'Register' button.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/368a8f33-5b57-4d50-b4dc-43b87aed4b52)
+
+- User must fill in all the fields otherwise user won't be able to login.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/500d2f25-4299-4c66-a484-2dfd29efaa17)
+
+- Once user has logged in, they are notified with a welcome message at the top of the page:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1a809e47-72a7-4120-a7c2-01fc8b31412d)
 
 ## Profile Page
 

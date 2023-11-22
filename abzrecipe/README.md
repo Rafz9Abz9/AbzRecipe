@@ -154,7 +154,12 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## Recipe Page
 - This page has the ingredients, steps, and a comment section that allows the user to leave a comment under the dish.
-- For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section which allos the user to leave a comment under the recipe of the dish, and a favorite feature which allows the user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page.
+- For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section that allows the user to leave a comment under the recipe of the dish, and a favorite feature that allows the user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page.
+- There is a feature that says 'Other Recipes' which includes some images of the other dishes.
+- The dishes being grouped into categories makes it easier for the user to access the dishes. It contributes to the purpose of making this a user-friendly website.
+- Other features that have been put into place to make the page nicer to look at are the 'Newsletter' and a quote.
+- The newsletter is a part of a future implementation so that the user can subscribe to it but for the purpose of this project, this feature has been displayed there to make the page look better. 
+
 ## Favorites Page
 
 # Roadmap

@@ -145,22 +145,35 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7eb9242a-bfac-4341-813b-5a3bb5249364)
 
 ## Recipes Page
+- This page includes a list of all the dishes on the website.
+- It displays images, the titles, introductory messages, and a 'Read More' button for each dish.
+- If the user clicks on the 'Read More' button, it will take the user to a separate page which is the 'Recipe' page for the particular dish. 
+- The page also has the 'Categories' feature displayed on the right side of the page. The categories include these sections: 'All, Breakfast, Lunch, Dinner, Soups, Salads, Beverages, Snacks, and Desserts'.
+- Just to make this website more appealing to the user, there is a quote displayed in a box and a cookbook offer. This was added to make the page look better.
+
 
 ## Recipe Page
-
+- This page has the ingredients, steps, and a comment section that allows the user to leave a comment under the dish.
+- For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section which allos the user to leave a comment under the recipe of the dish, and a favorite feature which allows the user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page.
 ## Favorites Page
 
 # Roadmap
 
 # Technologies Used
-
+- Django: for full-stack framework in order to develop the app.
+- JavaScript:
+- HTML:
+- CSS:
+  
 ## Core Development Technologies
 
 ## Libraries, Frameworks, and Packages
 
 ## Python/Django Packages
 
-## Ingrastructural Technologies
+## Infrastructural Technologies
+- Heroku: for hosting the application.
+- 
 
 # Testing
 
@@ -170,8 +183,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## General Testing
 
-
-
+# Credits
+- ChatGPT: used this for getting the recipes for the dishes.
 
 
 

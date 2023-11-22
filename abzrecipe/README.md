@@ -58,12 +58,40 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
   
 ## Navigation
 - The primary navigation is located in the header section and is present on all pages.
-  
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b684d567-a0e1-4aa8-ab58-f038441adcd3)
+
 ## Home Page
 - This page includes images and introductory messages that summarize the purpose of the website.
 - In the first image, there's an image slideshow that includes a button that says 'Go To Recipes', and if user clicks on this button, it automatically takes them to the recipe page.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8eb65926-82d0-42d7-9b3e-966f121a78be)
+
 - Home page also includes 2 images of dishes alog with their names, and a button that says 'Read More'. If user clicks on this button, it will take them to the recipe page of that particular dish.
+
 - Underneath the 2 images, there is a section named 'The Best Recipes'. This has 6 enticing images of some dishes.
+  
+- There is also a feature titled 'Explore Deliciousness' which also includes a 'Discover More Recipes' button. If user clicks on this button, it will take user to the 'Recipes' page.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6ed1ab53-c0f5-4a85-8ab4-cb9dcd941f5b)
+
+- After this, there is a feature that displays some dishes and the amount of comments submitted for them.
+  
+- Just to make this website more appealing to the user, there is a quote displayed in a box and a cookbook offer. This was added to make the page look better.
+  
+- This page also displays a compilation of images of dishes and if user hovers over them, there would be an instagram icon. If user clicks on the image, they will be taken to the instagram page.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bf411619-5970-41a0-bf8b-b8ec50fec23d)
+
+- This is what the website looks like if the user isn't registered or logged into the account:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/54c6fbaf-5422-44d1-be5f-ba30d6bf578d)
+
+- This is what the website looks like when the user has logged into the account:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2b44411b-aee1-44a5-9eeb-62ce914a7c40)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/52d1b45f-3dd2-45cd-8ace-208da2461fe7)
 
 ## Register Page
 

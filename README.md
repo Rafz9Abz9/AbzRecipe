@@ -122,7 +122,9 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f92a7bad-4222-4492-a7f1-511f7ff91301)
 
-- After the user has clicked the 'Register' button, the user will be sent an email to activate their account via a link. Once they click on the link, they'll be logged in,
+- After the user has clicked the 'Register' button, they will be sent an email to activate their account via a link. Once they click on the link, they'll be logged in.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa72bcb5-5bf7-4d4d-8b62-9f000ab801c6)
 
 ## Login Page
 - This page requires a username and password field.

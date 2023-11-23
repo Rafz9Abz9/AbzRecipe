@@ -1,6 +1,15 @@
 # ABZRECIPE
 
 # Table Contents
+1. [Introduction](#introduction)
+2. [Project Goals](#project-goals)
+3. [User Experience](#user-experience)
+4. [Agile Methodologies](#agile-methodologies)
+5. [Features](#features)
+6. [Technologies Used](#technologies-used)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
 
 # Introduction
 ABZRECIPE is a user-friendly recipe platform designed to make your cooking experience enjoyable and hassle-free. With a vast collection of mouthwatering recipes, each offering a visual feast of images, detailed ingredient lists, and step-by-step instructions, you’ll find the perfect recipe for any occasion. The path to the heart is through the stomach, and with this website, the journey would be more delightful and accessible than ever. This recipe website is your passport to a world of culinary creativity, where you can explore, create, and savour delicious dishes from every corner of the globe.
@@ -309,6 +318,9 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 
 ## General Testing
+
+# Deployment
+
 
 # Credits
 - ChatGPT: used this for getting the recipes for the dishes.

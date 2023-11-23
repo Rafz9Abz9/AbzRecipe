@@ -67,7 +67,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ## Navigation
 - The primary navigation is located in the header section and is present on all pages.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b684d567-a0e1-4aa8-ab58-f038441adcd3)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9346aa23-507b-4011-9f5a-dda1d980d13f)
 
 ## Home Page
 - This page includes images and introductory messages that summarize the purpose of the website.

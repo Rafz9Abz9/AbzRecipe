@@ -168,8 +168,8 @@ def contact(request):
         contact = contact_form.save()
 
         email_subject = '@abzrecipehotdesk'
-                
-        email_body = "Hi " + contact.name + " Your message has been submitted. We'll get in touch with you soon."
+        email_msg = " Your message has been submitted. We'll get in touch with you soon."       
+        email_body = "Hi " + contact.name + email_msg
         try:
                      # setup email
             email = EmailMessage(

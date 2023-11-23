@@ -110,7 +110,7 @@ class ProfileUpdateForm(forms.ModelForm):
     }), max_length=20, required=False)
 
     country = forms.CharField(widget=forms.TextInput(attrs={
-        'placeholder': 'Username',
+        'placeholder': 'Country',
         'class': 'form-control input-lg',
     }), max_length=20, required=False)
 

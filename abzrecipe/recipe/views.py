@@ -49,9 +49,9 @@ def recipe_detail(request, recipe_id):
             comment.save()
 
             email_subject = '@abzrecipehotdesk'
-            email_body = "Hi " + comment.name
-            + " Your comment has been submitted."
-
+            email_msg = " Your comment has been submitted."
+            email_body = "Hi " + comment.name + email_msg
+       
             try:
                 email = EmailMessage(
                     email_subject,

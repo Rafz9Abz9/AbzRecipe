@@ -336,9 +336,43 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 # Deployment
 
+## Local Deployment
+1. Repository cloning performed by clicking the "Code" button.
+2. Copy the URL.
+3. Open your preferred IDE and open the terminal section.
+4. Type "git clone" followed by the URL copied from earlier, and press enter.
+5. Install the required dependencies by typing "pip install -r requirements.txt" in the terminal.
+6. You will be required to set up the environment variables in the local environment.
+7. Connect to your preferred database and run the migrations by typing in "python manage.py migrate" in the terminal.
+8. Create a superuser by typing "python manage.py createsuperuser" in the terminal and following the prompts.
+9. Run the app by typing in "python manage.py runserver".
+
+## Heroku Deployment
+1. Access the Heroku dashboard and initiate the creation of a new application.
+2. Establish a connection between your GitHub repository and the newly created Heroku app.
+3. Navigate to the Settings tab on Heroku and verify the inclusion of the Python Buildpack.
+4. Set necessary environment variables within the Config Vars section, located in the Settings tab.
+5. Proceed to the Deploy tab and activate automatic deployment from your GitHub repository.
+6. Trigger the deployment process by selecting the "Deploy Branch" button.
+7. After the deployment is complete, access the app by clicking the "Open App" button.
+
+### Environment Variables
+- If using a Postgres database:
+1. DATABASE_URL - the URL for your Postgres database.
+2. NAME - the name of your database.
+3. USER - the username for your database.
+4. PASSWORD - the password for your database.
+5. HOST - the host for your database.
+6. PORT - the port for your database.
+
+- Django Settings:
+1. SECRET_KEY - the secret key for your Django project.
+2. DEBUG - set to True for development, False for production.
 
 # Credits
 - ChatGPT: used this for getting the recipes for the dishes.
+- Favicon: to create favicon.
+- Fontawesome
 
 
 

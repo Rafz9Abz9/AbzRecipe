@@ -55,6 +55,14 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Users can log in from the login page.
 - Users can receive a notification notifying them that their login was successful.
 - Authorisation is required in order to update the profile page, save favorite recipes, view the saved recipes, and write a comment under the recipes.
+
+1. Register Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8e8e9c6f-5b47-49d1-b873-4b30bfbac701)
+
+2. Login Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3799a49b-61bc-4553-9426-9c06fde6aeb1)
   
 ## Navigation
 - The primary navigation is located in the header section and is present on all pages.

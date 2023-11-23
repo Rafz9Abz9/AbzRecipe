@@ -334,6 +334,38 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## General Testing
 
+### Home Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/65b19fc2-dc0f-45ba-923b-af50659cc163)
+
+### About Us Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/903d7a8b-91f8-41ec-b3da-85e72caad3fa)
+
+### Recipes Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8e3c9482-8e7b-47f3-b1c9-624410eec389)
+
+### Contact Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b45e83cf-a0a9-4d39-9ce8-22babe662787)
+
+### Login Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/04739cf8-8fae-4c50-85d2-3d737b47b643)
+
+### Register Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c4ed0631-2d5b-406a-a460-027321d534dd)
+
+### Favorite Recipe Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3e7d4799-ecad-4560-9eb3-ad3cf6edd20d)
+
+### Profile Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
+
 # Deployment
 
 ## Local Deployment

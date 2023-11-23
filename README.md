@@ -54,6 +54,13 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Implemented Agile methodology for development, emphasizing iterative progress and continuous enhancement.
 - Managed project tasks and user stories using a GitHub Project board.
 - Ensured a structured and organized workflow for effective project management.
+- User stories contain tasks and acceptance criteria.
+
+## MoSCoW Method in Agile
+- Prioritized project elements into 'must haves,' 'should haves,' 'could haves,' and more.
+- Ensured that essential features were tackled first.
+- Facilitated development by establishing a solid foundation for easy adjustments and styling later on.
+- Improved flexibility for changes or enhancements in subsequent stages.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5d46fe61-6c05-4e93-b010-00313d51b66a)
 

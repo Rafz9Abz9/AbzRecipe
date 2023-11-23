@@ -198,16 +198,34 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - It displays images, the titles, introductory messages, and a 'Read More' button for each dish.
 - If the user clicks on the 'Read More' button, it will take the user to a separate page which is the 'Recipe' page for the particular dish. 
 - The page also has the 'Categories' feature displayed on the right side of the page. The categories include these sections: 'All, Breakfast, Lunch, Dinner, Soups, Salads, Beverages, Snacks, and Desserts'.
-- Just to make this website more appealing to the user, there is a quote displayed in a box and a cookbook offer. This was added to make the page look better.
+- Just to make this website more appealing to the user, there is a quote displayed in a box and a newsletter that will be part of a future implementation. This was added to make the page look better.
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/17ad862f-ed1a-4761-8336-3547e05ed112)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d25f81e5-1cc6-47ad-8bf1-56c681514277)
 
 ## Recipe Page
 - This page has the ingredients, steps, and a comment section that allows the user to leave a comment under the dish.
 - For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section that allows the user to leave a comment under the recipe of the dish, and a favorite feature that allows the user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page.
 - There is a feature that says 'Other Recipes' which includes some images of the other dishes.
-- The dishes being grouped into categories makes it easier for the user to access the dishes. It contributes to the purpose of making this a user-friendly website.
-- Other features that have been put into place to make the page nicer to look at are the 'Newsletter' and a quote.
-- The newsletter is a part of a future implementation so that the user can subscribe to it but for the purpose of this project, this feature has been displayed there to make the page look better. 
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fa789733-2856-4353-848c-90d56ebe83d0)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/71b51fd8-9ded-4852-9ce5-516364984268)
+
+- The above image shows that no comment has been submited, but once a user submits a comment, it will be displayed for everyone to see. User does not have to be logged in for them to leave a comment. For future implementation, user will have to be logged in to leave a comment.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/554d35c4-edf8-4c3f-8919-e78b4c6a42ba)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8521991b-e8d4-49b4-90d0-3023e8da84e7)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/722993f9-946a-43b8-a450-c53b251cd1c1)
+
+- User can also delete their comments.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9efc05ca-1dc8-407f-806e-057de723c986)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2ee1eeae-d204-48d7-8dce-ae51605d8a04)
 
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
@@ -215,6 +233,20 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/073f97df-f677-4817-a2b5-368ff9255c71)
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2161f6c2-a16e-4feb-a140-61b88d516529)
+
+- User can favorite a dish. Unfavorited shows a yellow heart. Favorited dish shows a purple heart.
+
+- Unfavorited
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f27ce44c-ed9c-452f-b18d-23917c6652af)
+
+- Favorited
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2f098c74-3bfc-443a-b1db-705650219f1f)
+
+- User can unfavorite a dish
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0c7b87d7-282f-4bb1-8b79-8f326118929f)
 
 # Roadmap
 

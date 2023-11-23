@@ -77,17 +77,25 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 - Home page also includes 2 images of dishes alog with their names, and a button that says 'Read More'. If user clicks on this button, it will take them to the recipe page of that particular dish.
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61694321-0165-413f-b505-c8f20b68eaa6)
+
 - Underneath the 2 images, there is a section named 'The Best Recipes'. This has 6 enticing images of some dishes.
-  
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5299aeaa-7aa8-4a3d-9ff2-793262d616ca)
+ 
 - There is also a feature titled 'Explore Deliciousness' which also includes a 'Discover More Recipes' button. If user clicks on this button, it will take user to the 'Recipes' page.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6ed1ab53-c0f5-4a85-8ab4-cb9dcd941f5b)
 
 - After this, there is a feature that displays some dishes and the amount of comments submitted for them.
-  
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fb90a7f4-59c4-45e9-a277-8568a0a041be)
+
 - Just to make this website more appealing to the user, there is a quote displayed in a box and a cookbook offer. This was added to make the page look better.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/75843929-5f3d-4029-a474-e86465da5852)
   
-- This page also displays a compilation of images of dishes and if user hovers over them, there would be an instagram icon. If user clicks on the image, they will be taken to the instagram page.
+- This page also displays a compilation of images of dishes, and if the user hovers over them, there will be an Instagram icon. If user clicks on the image, they will be taken to the Instagram page.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bf411619-5970-41a0-bf8b-b8ec50fec23d)
 

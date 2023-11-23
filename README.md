@@ -303,10 +303,24 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## Manual Testing
 - W3C HTML Validation: https://validator.w3.org/
-  
+
+1. Errors found:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9f0f61bc-c419-43a7-8ca5-7b89979d307b)
+
+2. After fixing the errors:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)
 
 - W3C CSS Validation: https://jigsaw.w3.org/css-validator/
   
+1. Errors found:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/16fb4045-3d79-428f-86dc-7a1b0d69b3fc)
+
+2. After fixing the errors:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9405d7e4-59c6-4372-a3a8-b5bdf043d2d5)
 
 - JavaScript Validation: https://jshint.com/
   

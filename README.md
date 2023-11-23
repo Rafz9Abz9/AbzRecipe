@@ -62,6 +62,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Facilitated development by establishing a solid foundation for easy adjustments and styling later on.
 - Improved flexibility for changes or enhancements in subsequent stages.
 
+- NOTE: I had some issues with my GitHub and laptop which made it harder for me to work better on the agile methodology section. By the time I was able to sort it out, I had very little time. But this is what I was able to complete:
+  
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5d46fe61-6c05-4e93-b010-00313d51b66a)
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2d28ed4d-a97c-4ab0-bc39-efa6fa6b44ad)
@@ -348,6 +350,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - No errors found.
 
 ### Lighthouse Testing
+- Due to deadline, I was unable to work on fixing the web performance but this is the result:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3ea3f385-71b5-45f8-92e1-a4c5f2577f66)
 

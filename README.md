@@ -142,6 +142,29 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1a809e47-72a7-4120-a7c2-01fc8b31412d)
 
 ## Profile Page
+- This page includes details of the user: first name, last name, username, emaial, phone number, address, country.
+- The username and email fields will be automatically filled in because to access the profile page, the user must be logged in.
+- User can edit their details.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0efab5a2-f923-4791-90a0-cecde91e80e6)
+
+- The above image shows that the user's username is 'rafz', but the user can edit this username and will be notified if they do so.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8b484668-f1f4-48c2-85d0-8effb5360e70)
+
+- The user can choose to add extra information if they like.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/28639070-c8a4-4be4-aa59-443f64316018)
+
+- Since the user changed their username from 'rafz' to 'babz', when they want to login later, their previous username will not work, they will receive a notification of "Invalid credentials".
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/4f78e7ab-b166-46da-9191-921cf0ec4408)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/30e8737f-47c9-48f1-b1c7-1a2c11968e57)
+
+- If they now use their new username 'babz', they will be logged in successfully.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f2b29e91-5abb-4b7a-99dc-9ed9c05c343d)
 
 ## About Us Page
 - This page is a reflection of the purpose and personality of the website.

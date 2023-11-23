@@ -185,6 +185,14 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7eb9242a-bfac-4341-813b-5a3bb5249364)
 
+- Once the message has been sent, the user will be notified that their message has been sent.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/34f24aa1-72b3-4726-9de6-880a3dd18afd)
+
+- They will also receive an email notification.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/41da74d5-cb41-4baf-8cda-481db549b631)
+
 ## Recipes Page
 - This page includes a list of all the dishes on the website.
 - It displays images, the titles, introductory messages, and a 'Read More' button for each dish.

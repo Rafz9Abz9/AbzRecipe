@@ -177,3 +177,7 @@ def favorite_recipe(request):
     })
         
         
+is_liked_by_user = FavoriteRecipe.objects.filter(
+    recipe=recipe,
+    user=request.user
+)

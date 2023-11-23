@@ -349,6 +349,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ### Lighthouse Testing
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3ea3f385-71b5-45f8-92e1-a4c5f2577f66)
 
 ## General Testing
 

@@ -5,10 +5,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="ABZRECIPE is a platform where you read to know about foods, and their recipe ">
+    <meta name="keywords" content="Recipe, Foods, Cooking">
+    <meta name="author" content="Rafat Ramoni">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="ABZRECIPE platform, where you read to know about foods, and their recipe ">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
@@ -29,6 +30,47 @@
     <link rel="stylesheet" href="{% static 'css/nice-select.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+
+    <style>
+        .messages{
+            width: 250px;
+            border-radius: 20%;
+            position: absolute;
+            top: 12.75rem;
+            right: 10%;
+            opacity: 1;
+            z-index: 200;
+            transition: all 1s ease-in-out;
+            }
+            
+        .messages .success{
+        width: 100%;
+        padding: 15px;
+        background-color: rgba(0, 128, 47, 0.15);
+        font-weight: 800;
+        color:rgb(3, 214, 112);
+        }
+        .messages .error{
+        font-weight: 800;
+        width: 100%;
+        padding: 15px;
+        background-color: rgba(128, 0, 0, 0.15);
+        color:rgb(128, 0, 0);
+        }
+        .messages .info{
+        font-weight: 800;
+        width: 100%;
+        padding: 15px;
+        background-color: rgba(232, 114, 17, 0.15);
+        color:rgb(232, 114, 17);
+        }
+    
+        @media screen and (max-with: 1343px) {
+        .messages{
+        top: 250px;
+        }
+        }
+    </style>
 
 </head>
 
@@ -132,7 +174,7 @@
 
                                 <!-- User dropdown menu -->
                                 <div class="dropdown ml-4">
-                                    <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>

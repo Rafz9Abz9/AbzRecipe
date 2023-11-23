@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'abzrecipe.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'ec2-44-213-228-107.compute-1.amazonaws.com',
-        'NAME': 'd13asghphn2ti0',
-        'USER': 'jdgwbfxibhlbgz',
-        'PASSWORD': '1b160bc1c3b1085b0393a808ae83b3856fd16e234a1e6e50f16c2f697ab29c77',
-        'PORT': '5432',
+        'HOST':str(os.getenv('DB_HOST')),
+        'NAME': str(os.getenv('DB_NAME')),
+        'USER':  str(os.getenv('DB_USER')),
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'PORT':  str(os.getenv('DB_PORT')),
     }
 }
 
@@ -148,12 +148,12 @@ ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7  # You can adjust the expiration time
 
 
 # Application Mmailing setup 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = str(os.getenv('EMAIL_HOST'))
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'ABZRECIPE'
-EMAIL_HOST_USER = 'abzrecipe@gmail.com'
-EMAIL_HOST_PASSWORD = 'izlzpfazfwszmtox'
+DEFAULT_FROM_EMAIL = str(os.getenv('Email_SMTP_NAME'))
+EMAIL_HOST_USER = str(os.getenv('EMAIL_HOST_USER'))
+EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD'))
 
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'

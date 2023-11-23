@@ -292,9 +292,21 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 # Testing
 
-## Automatic Testing
-
 ## Manual Testing
+- W3C HTML Validation: https://validator.w3.org/
+  
+
+- W3C CSS Validation: https://jigsaw.w3.org/css-validator/
+  
+
+- JavaScript Validation: https://jshint.com/
+  
+
+- PEP8 Validation: https://pep8ci.herokuapp.com/#
+  
+
+- Lighthouse Testing: https://www.webpagetest.org/lighthouse
+
 
 ## General Testing
 

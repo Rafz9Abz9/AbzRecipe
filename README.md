@@ -210,6 +210,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - The newsletter is a part of a future implementation so that the user can subscribe to it but for the purpose of this project, this feature has been displayed there to make the page look better. 
 
 ## Favorites Page
+- This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/073f97df-f677-4817-a2b5-368ff9255c71)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2161f6c2-a16e-4feb-a140-61b88d516529)
 
 # Roadmap
 

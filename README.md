@@ -1,6 +1,15 @@
 # ABZRECIPE
 
 # Table Contents
+1. [Introduction](#introduction)
+2. [Project Goals](#project-goals)
+3. [User Experience](#user-experience)
+4. [Agile Methodologies](#agile-methodologies)
+5. [Features](#features)
+6. [Technologies Used](#technologies-used)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
 
 # Introduction
 ABZRECIPE is a user-friendly recipe platform designed to make your cooking experience enjoyable and hassle-free. With a vast collection of mouthwatering recipes, each offering a visual feast of images, detailed ingredient lists, and step-by-step instructions, you’ll find the perfect recipe for any occasion. The path to the heart is through the stomach, and with this website, the journey would be more delightful and accessible than ever. This recipe website is your passport to a world of culinary creativity, where you can explore, create, and savour delicious dishes from every corner of the globe.
@@ -8,7 +17,7 @@ ABZRECIPE is a user-friendly recipe platform designed to make your cooking exper
 # Project Goals
 The primary goal of ABZRECIPE is to empower users by creating a comprehensive online culinary resource. We aim to foster a thriving community of passionate food lovers, and providing a platform where users can easily discover and save a collection of recipes, with the goal of making every visit to the website an inspiring and delightful culinary experience. 
 
-# User Experience - UX
+# User Experience 
 
 ## User Goals
 - Ability to register an account.
@@ -293,25 +302,109 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 # Testing
 
 ## Manual Testing
-- W3C HTML Validation: https://validator.w3.org/
-  
 
-- W3C CSS Validation: https://jigsaw.w3.org/css-validator/
-  
+### W3C HTML Validation
 
-- JavaScript Validation: https://jshint.com/
-  
+1. Errors found:
 
-- PEP8 Validation: https://pep8ci.herokuapp.com/#
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9f0f61bc-c419-43a7-8ca5-7b89979d307b)
 
-- Lighthouse Testing: https://www.webpagetest.org/lighthouse
+2. After fixing the errors:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)
+
+### W3C CSS Validation
+  
+1. Errors found:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/16fb4045-3d79-428f-86dc-7a1b0d69b3fc)
+
+2. After fixing the errors:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9405d7e4-59c6-4372-a3a8-b5bdf043d2d5)
+
+### JavaScript Validation
+- JavaScript from Bootstrap file. 
+
+### PEP8 Validation
+- No errors found.
+
+### Lighthouse Testing
 
 
 ## General Testing
 
+### Home Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/65b19fc2-dc0f-45ba-923b-af50659cc163)
+
+### About Us Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/903d7a8b-91f8-41ec-b3da-85e72caad3fa)
+
+### Recipes Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8e3c9482-8e7b-47f3-b1c9-624410eec389)
+
+### Contact Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b45e83cf-a0a9-4d39-9ce8-22babe662787)
+
+### Login Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/04739cf8-8fae-4c50-85d2-3d737b47b643)
+
+### Register Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c4ed0631-2d5b-406a-a460-027321d534dd)
+
+### Favorite Recipe Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3e7d4799-ecad-4560-9eb3-ad3cf6edd20d)
+
+### Profile Page
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
+
+# Deployment
+
+## Local Deployment
+1. Repository cloning performed by clicking the "Code" button.
+2. Copy the URL.
+3. Open your preferred IDE and open the terminal section.
+4. Type "git clone" followed by the URL copied from earlier, and press enter.
+5. Install the required dependencies by typing "pip install -r requirements.txt" in the terminal.
+6. You will be required to set up the environment variables in the local environment.
+7. Connect to your preferred database and run the migrations by typing in "python manage.py migrate" in the terminal.
+8. Create a superuser by typing "python manage.py createsuperuser" in the terminal and following the prompts.
+9. Run the app by typing in "python manage.py runserver".
+
+## Heroku Deployment
+1. Access the Heroku dashboard and initiate the creation of a new application.
+2. Establish a connection between your GitHub repository and the newly created Heroku app.
+3. Navigate to the Settings tab on Heroku and verify the inclusion of the Python Buildpack.
+4. Set necessary environment variables within the Config Vars section, located in the Settings tab.
+5. Proceed to the Deploy tab and activate automatic deployment from your GitHub repository.
+6. Trigger the deployment process by selecting the "Deploy Branch" button.
+7. After the deployment is complete, access the app by clicking the "Open App" button.
+
+### Environment Variables
+- If using a Postgres database:
+1. DATABASE_URL - the URL for your Postgres database.
+2. NAME - the name of your database.
+3. USER - the username for your database.
+4. PASSWORD - the password for your database.
+5. HOST - the host for your database.
+6. PORT - the port for your database.
+
+- Django Settings:
+1. SECRET_KEY - the secret key for your Django project.
+2. DEBUG - set to True for development, False for production.
+
 # Credits
 - ChatGPT: used this for getting the recipes for the dishes.
+- Favicon: to create favicon.
+- Fontawesome
 
 
 

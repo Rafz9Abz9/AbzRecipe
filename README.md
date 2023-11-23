@@ -29,7 +29,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Ability to update their profile.
 - Ability to view recipes of dishes.
 - Ability to save their favorite recipes.
-- Ability to access their saved recipes for easy access.
+- Ability to access their saved recipes in a separate page for easy access.
 - Ability to leave a comment under recipes.
 
 ## Website Owner Goals

@@ -42,11 +42,22 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Admin login: to manage CRUD functionality.
 
 ## Developer Goals
-- The site should restrict users that don't have an account created from saving recipes, accessing profile page, and accessing the favourite page.
-- Users should receive an email when their account is registered with a link in order to activate their account.
-- Users should receie
+- Enable users to create accounts, log in, and log out securely.
+- Goal: Allow users to access a diverse range of dishes easily.
+- Provide users with the ability to edit their profiles.
+- Allow users to save their favorite recipes for quick access.
+- Enable users to post comments on recipes.
+-  Implement interactive features to engage users.
+-  Enhance account security through email verification.
 
 # Agile Methodologies
+- Implemented Agile methodology for development, emphasizing iterative progress and continuous enhancement.
+- Managed project tasks and user stories using a GitHub Project board.
+- Ensured a structured and organized workflow for effective project management.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5d46fe61-6c05-4e93-b010-00313d51b66a)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2d28ed4d-a97c-4ab0-bc39-efa6fa6b44ad)
 
 # Features
 

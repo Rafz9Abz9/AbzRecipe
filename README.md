@@ -69,6 +69,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9346aa23-507b-4011-9f5a-dda1d980d13f)
 
+## Search
+- There is a search feature, but it has not been implemented yet. This will be a future implementation. With this feature, the user will be able to search for any dish without having to scroll through the recipe page.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d14e1501-e1c2-4923-b407-df632a6471d9)
+
 ## Home Page
 - This page includes images and introductory messages that summarize the purpose of the website.
 - In the first image, there's an image slideshow that includes a button that says 'Go To Recipes', and if user clicks on this button, it automatically takes them to the recipe page.

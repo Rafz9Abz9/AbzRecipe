@@ -253,23 +253,42 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0c7b87d7-282f-4bb1-8b79-8f326118929f)
 
-# Roadmap
-
 # Technologies Used
-- Django: for full-stack framework in order to develop the app.
-- JavaScript:
-- HTML:
-- CSS:
   
 ## Core Development Technologies
+- Django: for full-stack framework in order to develop the app.
+- JavaScript: for enhancement of overall functionality and user experience. For client-side interaction and validation.
+- HTML: for building pages.
+- CSS: for building pages.
 
 ## Libraries, Frameworks, and Packages
+- Bootstrap: library of pre-designed HTML, CSS, and JavaScript components and tools for building responsive and visually appealing user interfaces.
 
 ## Python/Django Packages
+- Gunicorn: provides HTTP server.
+- psycopg2: PostgreSQL adapter for Python, allowing Django to interact with PostgreSQL databases.
+- Pillow: for handling image-related tasks.
+- Whitenoise: to serve static files.
+- Django-heroku: simplifies process of deploying Django applications to Heroku.
+- Django: simplifies web development.
+- asgiref: ASGI implementation that Django uses for handling asynchronous operations.
+- dj-database-url: allows for utilization of the DATABASE_URL environment variable to configure the Django application's database.
+- python-dotenv: loads environment variables from a .env file, making it easy to manage configuration in development.
+- setuptools: simplifies process of distributing and installing Python packages.
+- six: for writing code that works across both Python 2 and 3.
+- sqlparse: SQL parsing library used by Django for formatting SQL queries.
+- validate-email: for validating email addresses in Python.
 
 ## Infrastructural Technologies
-- Heroku: for hosting the application.
-- 
+- Heroku: for deploying and hosting the application.
+- Code Institute: for notes on project.
+- GitHub and Git: collaborate seamlessly, track changes, and manage project's version control.
+- Visual Studio Code: for writing code.
+- PostgreSQL: for efficient data storage.
+- Lighthouse Testing: ensures high performance, accessibility, and SEO standards for web application.
+- CL PEP8 Validator: maintain consistent and readable Python code by adhering to PEP8 style guidelines.
+- W3C CSS and HTML Validator: validate and ensure compliance with web standards for CSS and HTML code.
+- Balsamiq: for wireframes: create wireframes for project's user interface.
 
 # Testing
 

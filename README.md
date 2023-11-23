@@ -302,7 +302,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 # Testing
 
 ## Manual Testing
-- W3C HTML Validation: https://validator.w3.org/
+
+### W3C HTML Validation
 
 1. Errors found:
 
@@ -312,7 +313,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)
 
-- W3C CSS Validation: https://jigsaw.w3.org/css-validator/
+### W3C CSS Validation
   
 1. Errors found:
 
@@ -322,13 +323,13 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9405d7e4-59c6-4372-a3a8-b5bdf043d2d5)
 
-- JavaScript Validation: https://jshint.com/
-  
+### JavaScript Validation
+- JavaScript from Bootstrap file. 
 
-- PEP8 Validation: https://pep8ci.herokuapp.com/#
-  
+### PEP8 Validation
+- No errors found.
 
-- Lighthouse Testing: https://www.webpagetest.org/lighthouse
+### Lighthouse Testing
 
 
 ## General Testing

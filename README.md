@@ -17,7 +17,7 @@ ABZRECIPE is a user-friendly recipe platform designed to make your cooking exper
 # Project Goals
 The primary goal of ABZRECIPE is to empower users by creating a comprehensive online culinary resource. We aim to foster a thriving community of passionate food lovers, and providing a platform where users can easily discover and save a collection of recipes, with the goal of making every visit to the website an inspiring and delightful culinary experience. 
 
-# User Experience - UX
+# User Experience 
 
 ## User Goals
 - Ability to register an account.

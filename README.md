@@ -168,13 +168,13 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## About Us Page
 - This page is a reflection of the purpose and personality of the website.
-- Includes a feature that shows the amount of dishes on the website, amount of dishes in each category (breakfast, lunch, dinner, beverages, salads, soups, snacks, and desserts).
+- Includes a feature that shows the number of dishes on the website and the number of dishes in each category (breakfast, lunch, dinner, beverages, salads, soups, snacks, and desserts).
 - Underneath these features is a 'Contact Us' button.
-- If user clicks on this button, it will take the user to the Contact page.
+- If user clicks on this button, it will take them to the contact page.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f7f2998f-d936-406b-91b6-f561e1526faa)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/febef813-d557-43f2-8ad4-e76410347c94)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3f5b71c2-9edb-4e30-8ec4-5d4650a4067f)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/de566d73-015c-4823-82fb-3dff4d4cbca6)
 
 ## Contact Page
 - This page includes the details necessary for the user to contact in case of any questions or assistance they may require.

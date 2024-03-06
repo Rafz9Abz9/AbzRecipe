@@ -1,0 +1,191 @@
+{% extends 'base/base.html'%}
+
+{% block title %}  |  Recipe{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/breadcumb1.jpg' %})">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-text text-center text-capitalize">
+                    <h2>Recipes  |  {{ recipe.title }}</h2>  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+
+<div class="receipe-post-area section-padding-80">
+
+    <!-- Receipe Slider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="receipe-slider owl-carousel">
+                    <img src="{{ recipe.image.url }}" alt="{{recipe.title}}" class="recipe-img">
+                    <img src="{{ recipe.image.url }}" alt="{{recipe.title}}" class="recipe-img">
+                    <img src="{{ recipe.image.url }}" alt="{{recipe.title}}" class="recipe-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipe Content Area -->
+    <div class="receipe-content-area">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="receipe-headline my-5">
+                        <span>{{ recipe.created_at }}</span>
+                        <h2 class="text-capitalize">{{ recipe.title}}</h2>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="receipe-ratings text-right my-5">
+                        <div class="ratings">
+                            {% if comments|length == 1 %}
+                                <span class="mr-2">{{ comments|length }} Comment</span>
+                            {% elif comments|length > 1 %}
+                                <span class="mr-2">{{ comments|length }} Comments</span>
+                            {% else %}
+                                <span class="mr-2">0 Comment</span>
+                            {% endif %}
+
+                            <a href="{% url 'like_recipe' recipe_id=recipe.id %}" class="{% if like_by_user|length > 0 %} liked {% endif %}" title="{% if like_by_user|length > 0 %}  Click to unlike recipe {% else %} Click to like recipe {% endif %}">
+                                {% if recipe_favorite_list|length == 1 %}
+                                    <span class="mr-2">{{ recipe_favorite_list|length }} Like</span>
+                                {% elif recipe_favorite_list|length > 1 %}
+                                    <span class="mr-2">{{ recipe_favorite_list|length }} Likes</span>
+                                {% else %}
+                                    <span class="mr-2">0 Like</span>
+                                {% endif %}
+                                <span>
+                                    <i class="fa fa-heart  {% if like_by_user|length > 0 %} liked {% endif %}" aria-hidden="true" ></i>
+                            
+                                </span>
+                            </a>
+                        </div>
+                        <!-- <a href="#" class="btn delicious-btn">For Begginers</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <!-- Single Preparation Step -->
+                    {%  for step in steps %}
+                        <div class="single-preparation-step d-flex">
+                            <h5>{{ forloop.counter }}.</h5>
+                            <div class="ml-4">
+                                <h3>{{ step.title }}</h3>
+                                <p>{{ step.content}}</p>
+                            </div>
+                        </div>
+                    {%  endfor %}
+                </div>
+
+                <!-- Ingredients -->
+                <div class="col-12 col-lg-4">
+                    <div class="ingredients">
+                        <h4>Ingredients</h4>
+
+                        <!-- Custom Checkbox -->
+                        {% for ingredient in ingredients %}
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="{{ingredient.id}}">
+                                <label class="custom-control-label" for="customCheck1">{{ ingredient.quantity }} {{ ingredient.ingredient }}</label>
+                            </div>
+                        {% endfor %}
+
+                       
+                    </div>
+
+                    <div class="mt-3">
+                        <h5>Other Recipes</h5>
+                        <div class="receipe-slider owl-carousel  owl-theme">
+                            {% for related_recipe in related_recipes%}
+                                <div class="item">
+                                    <img src="{{ related_recipe.image.url }}" class="related-recipe-img mb-2" alt="">
+                                    <a href="{% url 'recipe_detail' recipe_id=related_recipe.id %}" class="my-2"><h6>{{related_recipe.title}}</h6></a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-left">
+                        <h3>Leave a comment</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-form-area">
+                        <form action="{% url 'recipe_detail' recipe_id=recipe.id %}" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    {{ comment_form.name }}
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    {{ comment_form.email }}
+                                </div>
+
+                                <div class="col-12">
+                                    {{ comment_form.message }}
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn delicious-btn mt-30" type="submit">Post Comment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               {%  if comments|length > 0 %}
+                    <div class="col-12 mt-4">
+                        <h4>Comments</h4>
+                        {%  for comment in comments %}
+                        <div class="single-preparation-step d-flex">
+                            <img class="cmt-img" src="{% static 'img/blog-img/user.png' %}" alt="{{comment.name}}">
+                            <div class="ml-4 w-100 flex-1">
+                                <h5 class="text-capitalize">{{ comment.name }}</h5>
+                                <span style="font-style: italic;">{{comment.created_at}}</span>
+                                <p>{{ comment.message}}</p>
+                                {% if comment.name == request.user.username %}
+                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id comment_id=comment.id %}" class="text-capitalize text-danger" style="font-style: italic;">delete comment</a>
+                                {% endif %}
+                                <hr>
+                            </div>
+                        </div>
+                    {%  endfor %}
+                    </div>
+                {%  else %}
+                <div class="col-12 mt-4">
+                    <p class="text-center">No comment yet..</p>
+
+                </div>
+                 {%  endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ##### Follow Us Instagram Area Start ##### -->
+    {% include 'social/social.html' %}
+    <!-- ##### Follow Us Instagram Area End ##### -->
+
+
+{% endblock %}

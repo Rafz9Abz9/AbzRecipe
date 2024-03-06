@@ -1,0 +1,13 @@
+*.pyc
+_pycache_/
+/env/
+
+/lib/
+/lib64/
+/include/
+/bin/
+/media/
+.env
+.env.example
+
+db.sqlite3

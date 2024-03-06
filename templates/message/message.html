@@ -1,0 +1,18 @@
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<!-- Hide message after 5 secs -->
+<script>
+  setTimeout(function() {
+    var message = document.querySelector('.messages');
+    if (message) {
+      message.style.opacity = 0;
+    }
+  }, 10000);
+</script>
+

@@ -1,0 +1,149 @@
+{% extends 'base/base.html'%}
+
+{% block title %}  |  Recipes{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/breadcumb2.jpg' %})">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-text text-center text-capitalize">
+                    <h2>Recipes</h2>  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    {% if recipes|length > 0 %}
+                        <div class="blog-posts-area">
+
+
+                            {% for recipe in recipes %}
+                            <!-- Single Blog Area -->
+                            <div class="single-blog-area mb-80">
+                                <!-- Thumbnail -->
+                                <div class="blog-thumbnail">
+                                    <img src="{{ recipe.image.url }}" alt="{{recipe.title}}" class="recipe-img">
+                                    <!-- Post Date -->
+                                    <div class="post-date text-capitalize">
+                                        <a href="#">
+                                            <span>{{ recipe.created_at|date:"d" }}</span>{{ recipe.created_at|date:"b" }}<br>
+                                            {{ recipe.created_at|date:"Y" }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                                <div class="blog-content">
+                                    <a href="#" class="post-title">{{ recipe.title }}</a>
+                                    <div class="meta-data">by <a href="#">{{ recipe.created_by }}</a>
+                                    </div>
+                                    <p>{{ recipe.description }}</p>
+                                    <a href="{% url 'recipe_detail' recipe_id=recipe.id %}" class="btn delicious-btn mt-30">Read More</a>
+                                </div>
+                            </div>
+                            {%  endfor  %}
+
+                        </div>
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                {% if recipes.has_previous %}
+                                    <li class="mr-2">
+                                        <a href="?page=1{% if category %}&category={{ category }}{% endif %}">&laquo; first</a>
+                                    </li>
+                                    <li>
+                                        <a href="?page={{ recipes.previous_page_number }}{% if category %}&category={{ category }}{% endif %}">previous</a>
+                                    </li>
+                                {% endif %}
+
+                                {% for page in recipes.paginator.page_range %}
+                                    <li class="page-item {% if page == recipes.number %}active{% endif %} mx-2">
+                                        <a class="page-link" href="?page={{ page }}{% if category %}&category={{ category }}{% endif %}">{{ page|add:0 }}</a>
+                                    </li>
+                                {% endfor %}
+                                
+
+                                {% if recipes.has_next %}
+                                    <li class="mr-2">
+                                        <a href="?page={{ recipes.next_page_number }}{% if category %}&category={{ category }}{% endif %}">next</a>     
+                                    </li>
+                                    <li>
+                                        <a href="?page={{ recipes.paginator.num_pages }}{% if category %}&category={{ category }}{% endif %}">last &raquo;</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    {% else %}
+                        <p>No recipes found.</p>
+                    {% endif %}
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="blog-sidebar-area">
+
+                        <!-- Widget -->
+                        <div class="single-widget mb-80">
+                            <h6>Categories</h6>
+                            
+                            <ul class="list text-capitalize">
+                                <li class="{% if not request.GET.category %} active-category {% endif %}"><a href="{% url 'recipes' %}">all</a></li>  
+                                {% for category in categories %}
+                                    <li class="{% if category.id|add:0 == request.GET.category|add:0 %} active-category {% endif %}"><a href="?category={{ category.id }}">{{ category }}</a></li>  
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- Widget -->
+                        <div class="single-widget mb-80">
+                            <h6>Newsletter</h6>
+
+                            <!-- Form -->
+                            <div class="newsletter-form bg-img bg-overlay" style="background-image: url(img/bg-img/bg1.jpg);">
+                                <form action="#" method="post">
+                                    <input type="email" name="email" placeholder="Subscribe to newsletter">
+                                    <button type="submit" class="btn delicious-btn w-100">Subscribe</button>
+                                </form>
+                                <p>Be part of our growing community of passionate home cooks. Share, learn, and savor the joy of cooking together!</p>
+                            </div>
+                        </div>
+
+                        <!-- Widget -->
+                        <div class="single-widget mb-80">
+                            <div class="quote-area text-center">
+                                <span>"</span>
+                                <h4>Nothing is better than going home to family and eating good food and relaxing</h4>
+                                <p>Annalise</p>
+                                <div class="date-comments d-flex justify-content-between">
+                                    <div class="date">November 16, 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Area End ##### -->
+
+       <!-- ##### Follow Us Instagram Area Start ##### -->
+       {% include 'social/social.html' %}
+       <!-- ##### Follow Us Instagram Area End ##### -->
+
+
+
+
+
+{% endblock %}

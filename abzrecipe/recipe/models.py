@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -16,9 +17,9 @@ class Recipe(models.Model):
     title = models.TextField(max_length=100, blank=True)
     description = models.TextField(max_length=500, blank=True)
     created_by = models.ForeignKey(User,  on_delete=models.SET_NULL, null=True)
-    image = models.ImageField(upload_to='media/recipe_images/')
+    image = CloudinaryField('recipe_images', null=True, blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
-    special = models.BooleanField(default=False);
+    special = models.BooleanField(default=False)
 
 
     def __str__(self):

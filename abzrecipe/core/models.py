@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    id_user = models.IntegerField()
+    id_user = models.IntegerField(null=True, default='')
     phone = models.TextField(max_length=15, blank=True)
     address = models.TextField(max_length=250, blank=True)
     country = models.TextField(max_length=250, blank=True)

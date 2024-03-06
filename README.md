@@ -115,19 +115,19 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 - Home page also includes 2 images of dishes alog with their names, and a button that says 'Read More'. If user clicks on this button, it will take them to the recipe page of that particular dish.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61694321-0165-413f-b505-c8f20b68eaa6)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/65a54c27-8abb-4e95-bb86-1b3345585d3d)
 
 - Underneath the 2 images, there is a section named 'The Best Recipes'. This has 6 enticing images of some dishes.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5299aeaa-7aa8-4a3d-9ff2-793262d616ca)
- 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5417afbf-1870-4231-9006-d8d3e027a7e3)
+
 - There is also a feature titled 'Explore Deliciousness' which also includes a 'Discover More Recipes' button. If user clicks on this button, it will take user to the 'Recipes' page.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6ed1ab53-c0f5-4a85-8ab4-cb9dcd941f5b)
 
 - After this, there is a feature that displays some dishes and the amount of comments submitted for them.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fb90a7f4-59c4-45e9-a277-8568a0a041be)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/502b1d26-8610-492e-bd7c-812edee97868)
 
 - Just to make this website more appealing to the user, there is a quote displayed in a box and a cookbook offer. This was added to make the page look better.
 
@@ -166,7 +166,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## Login Page
 - This page requires a username and password field.
-- It also includes a 'Remember Me' feature with a box that a user can tick if they want their details to be remembered for easy access.
+- It also includes a 'Remember Me' feature but this has not been implemented, just like how it makes the login form look more appealing. 
 - It also includes a 'Login' and 'Register' button.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/368a8f33-5b57-4d50-b4dc-43b87aed4b52)
@@ -180,7 +180,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1a809e47-72a7-4120-a7c2-01fc8b31412d)
 
 ## Profile Page
-- This page includes details of the user: first name, last name, username, emaial, phone number, address, country.
+- This page includes details of the user: first name, last name, username, email, phone number, address, country.
 - The username and email fields will be automatically filled in because to access the profile page, the user must be logged in.
 - User can edit their details.
 

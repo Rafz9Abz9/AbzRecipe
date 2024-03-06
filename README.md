@@ -409,6 +409,59 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 </Details>
 
+<Details>
+
+  <Summary>User Navigation Tests</Summary>
+
+| Test                                            | Result |
+|-------------------------------------------------|--------|
+| User can navigate to recipes                   | Pass   |
+| User can access recipe details                 | Pass   |
+| Logged In User can navigate to the profile section | Pass   |
+| Logged In User can edit their profile information | Pass   |
+| Logged In User can access favourites page      | Pass   |
+| Logged In User can save recipes                | Pass   |
+| User can leave a comment under recipes         | Pass   |
+| User can access the contact page and form      | Pass   |
+| All links on footer open to correct pages      | Pass   |
+| All links on Heading Navigation open to correct option | Pass   |
+
+</Details>
+
+<Details>
+
+  <Summary>Account Security Tests</Summary>
+
+| Test                                                 | Result |
+|------------------------------------------------------|--------|
+| Unregistered user cannot access profile page         | Pass   |
+| Registered user can access profile page              | Pass   |
+| All users can access the contact form page          | Pass   |
+| Unregistered user cannot save recipes               | Pass   |
+| Registered user can save recipes                    | Pass   |
+| All users can post a comment under recipes          | Pass   |
+| All users can view comments posted by other users   | Pass   |
+
+</Details>
+
+<Details>
+
+  <Summary>Profile Tests</Summary>
+
+| Test                                                 | Result |
+|------------------------------------------------------|--------|
+| Unregistered user cannot access profile page         | Pass   |
+| Registered user can access profile page              | Pass   |
+| Registered user can see their details on the profile page | Pass   |
+| Registered user can update their first name         | Pass   |
+| Registered user can update their last name          | Pass   |
+| Registered user can update their email              | Pass   |
+| Registered user can update their username           | Pass   |
+| Registered user can update their phone number       | Pass   |
+| Registered user can update their address           | Pass   |
+| Registered user can update country                 | Pass   |
+
+</Details>
 
 
 # Deployment

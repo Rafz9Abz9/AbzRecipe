@@ -392,6 +392,25 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
 
+# Manual Testing
+
+<Details>
+
+  <Summary>Account Registration Tests</Summary>
+
+| Test                                | Result |
+|-------------------------------------|--------|
+| User can create an account         | Pass   |
+| Verified User can log into account | Pass   |
+| User can log out of account        | Pass   |
+| User is notified of logging in     | Pass   |
+| User is notified of logging out    | Pass   |
+| User receives email verification   | Pass   |
+
+</Details>
+
+
+
 # Deployment
 
 ## Local Deployment

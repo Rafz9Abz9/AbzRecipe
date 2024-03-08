@@ -467,9 +467,42 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 </Details>
 
 ### Lighthouse Testing
-- Due to deadline, I was unable to work on fixing the web performance but this is the result:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3ea3f385-71b5-45f8-92e1-a4c5f2577f66)
+**Mobile View**
+
+<Details>
+
+<Summary>Home Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/694111b2-a4fc-408d-998d-56212d462d32)
+
+</Details>
+
+<Details>
+
+<Summary>Recipe Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5fce410e-c544-468c-b96b-649cbcb7425b)
+
+</Details>
+
+**Desktop View**
+
+<Details>
+
+<Summary>Home Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bea8b593-54d3-4bed-b74b-dddf99f3905f)
+
+</Details>
+
+<Details>
+
+<Summary>Recipe Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a9f4c03a-7582-4438-86c0-c9c559a341c8)
+
+</Details>
 
 ## General Testing
 

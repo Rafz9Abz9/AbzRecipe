@@ -51,26 +51,22 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Provide users with the ability to edit their profiles.
 - Allow users to save their favorite recipes for quick access.
 - Enable users to post comments on recipes.
--  Implement interactive features to engage users.
--  Enhance account security through email verification.
+- Implement interactive features to engage users.
+- Enhance account security through email verification.
 
 # Agile Methodologies
 - Implemented Agile methodology for development, emphasizing iterative progress and continuous enhancement.
 - Managed project tasks and user stories using a GitHub Project board.
 - Ensured a structured and organized workflow for effective project management.
 - User stories contain tasks and acceptance criteria.
+- Prioritized project elements into 'must haves,' 'should haves,' 'could haves,' and 'won't haves'.
+- NOTE: I updated my user stories and amended the prioritization labels and acceptance criteria. 
 
-## MoSCoW Method in Agile
-- Prioritized project elements into 'must haves,' 'should haves,' 'could haves,' and more.
-- Ensured that essential features were tackled first.
-- Facilitated development by establishing a solid foundation for easy adjustments and styling later on.
-- Improved flexibility for changes or enhancements in subsequent stages.
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/02a6bf9a-9e62-4854-84f6-975fd37b4805)
 
-- NOTE: I had some issues with my GitHub and laptop which made it harder for me to work better on the agile methodology section. By the time I was able to sort it out, I had very little time. But this is what I was able to complete:
-  
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5d46fe61-6c05-4e93-b010-00313d51b66a)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/93e19b79-497a-460a-8a89-06b28707d85a)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2d28ed4d-a97c-4ab0-bc39-efa6fa6b44ad)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6a57bc21-da94-4e90-b50b-840eae5d7b70)
 
 # Features
 
@@ -95,8 +91,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 2. Login Page
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3799a49b-61bc-4553-9426-9c06fde6aeb1)
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d366223f-a1a4-4073-aaec-e212263cb303)
+
 ## Navigation
 - The primary navigation is located in the header section and is present on all pages.
 
@@ -149,7 +145,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 - This is when the user has logged out:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/51aa19a8-c1ad-4287-9072-045e0db39870)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0e81fd88-7ba7-43f2-95db-bbbbb795eabf)
 
 ## Register Page
 - This page includes many fields that is required to be filled in by all users. These fields are: username, email address, password, and confirm password.

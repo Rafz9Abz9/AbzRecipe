@@ -55,64 +55,17 @@
             </div>
 
             <!-- Single Cool Fact -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/hamburger.png" alt="">
-                    <h3><span class="counter">{{  breakfast_recipe_count }}</span></h3>
-                    <h6>Breakfast Recipes</h6>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/pancake.png" alt="">
-                    <h3><span class="counter">{{ beverages_recipe_count }}</span></h3>
-                    <h6>Beverages Recipes</h6>
-                </div>
-            </div>
-
-            <!-- Single Cool Fact -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/rib.png" alt="">
-                    <h3><span class="counter">{{  lunch_recipe_count }}</span></h3>
-                    <h6>Lunch Recipes</h6>
-                </div>
-            </div>
-
-            <!-- Single Cool Fact -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/pancake.png" alt="">
-                    <h3><span class="counter">{{ dessert_recipe_count }}</span></h3>
-                    <h6>Dessert Recipes</h6>
-                </div>
-            </div>
-            <!-- Single Cool Fact -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/pancake.png" alt="">
-                    <h3><span class="counter">{{ dinner_recipe_count }}</span></h3>
-                    <h6>Dinner Recipes</h6>
-                </div>
-            </div>
-
-            <!-- Single cool fact -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/pancake.png" alt="">
-                    <h3><span class="counter">{{ salads_recipe_count }}</span></h3>
-                    <h6>Salads Recipes</h6>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-cool-fact">
-                    <img src="img/core-img/pancake.png" alt="">
-                    <h3><span class="counter">{{ soups_recipe_count }}</span></h3>
-                    <h6>Soups Recipes</h6>
-                </div>
-            </div>
-           
+            {% if all_categories%}
+                {% for category in all_categories%}
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-cool-fact">
+                            <img src="img/core-img/hamburger.png" alt="">
+                            <h3><span class="counter">{{  category.count_recipes_by_category }}</span></h3>
+                            <h6>{{category.title}}</h6>
+                        </div>
+                    </div>
+                {%endfor%}
+            {% {% endif %}%}       
         </div>
 
     </div>

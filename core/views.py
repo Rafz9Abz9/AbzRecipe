@@ -136,26 +136,12 @@ def about(request):
     if request.method == 'POST':
         pass
     all_recipe_count = len(Recipe.objects.all())
-    breakfast_recipe_count = RecipeCategory.objects.filter(category__title='breakfast').count()
-    dessert_recipe_count = RecipeCategory.objects.filter(category__title='dessert').count()
-    lunch_recipe_count = RecipeCategory.objects.filter(category__title='lunch').count()
-    dinner_recipe_count = RecipeCategory.objects.filter(category__title='dinner').count()
-    beverages_recipe_count = RecipeCategory.objects.filter(category__title='beverages').count()
-    snacks_recipe_count = RecipeCategory.objects.filter(category__title='snacks').count()
-    soups_recipe_count = RecipeCategory.objects.filter(category__title='soups').count()
-    salads_recipe_count = RecipeCategory.objects.filter(category__title='salads').count()
+    all_categories = Category.objects.all()
 
     return render(request, 'about/about.html',
         {
         'all_recipe_count': all_recipe_count,
-        'breakfast_recipe_count': breakfast_recipe_count,
-        'dessert_recipe_count': salads_recipe_count,
-        'lunch_recipe_count': lunch_recipe_count,
-        'dinner_recipe_count': dinner_recipe_count,
-        'beverages_recipe_count': beverages_recipe_count,
-        'snacks_recipe_count': snacks_recipe_count,
-        'soups_recipe_count': soups_recipe_count,
-        'salads_recipe_count': salads_recipe_count
+        'all_categories':all_categories
     })
 
 

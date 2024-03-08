@@ -7,6 +7,12 @@ from cloudinary.models import CloudinaryField
 class Category(models.Model):
     title = models.TextField(max_length=10, blank=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    
+    
+    def count_recipes_by_category(self):
+        recipe_count = RecipeCategory.objects.filter(category__title=self.title).count()
+        
+        return recipe_count
 
     def __str__(self):
         return f"{self.title}"

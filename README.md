@@ -165,11 +165,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - It also includes a 'Remember Me' feature but this has not been implemented, just like how it makes the login form look more appealing. 
 - It also includes a 'Login' and 'Register' button.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/368a8f33-5b57-4d50-b4dc-43b87aed4b52)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/89996aeb-7b5b-4912-abb6-6b13c25da799)
 
 - User must fill in all the fields otherwise user won't be able to login.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/500d2f25-4299-4c66-a484-2dfd29efaa17)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/87cb978f-7e1b-4415-90bb-deeff3e417de)
 
 - Once user has logged in, they are notified with a welcome message at the top of the page:
 
@@ -208,7 +208,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/febef813-d557-43f2-8ad4-e76410347c94)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/de566d73-015c-4823-82fb-3dff4d4cbca6)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/942df87c-8852-441e-8d45-0f1c3288a0ee)
 
 ## Contact Page
 - This page includes the details necessary for the user to contact in case of any questions or assistance they may require.
@@ -759,6 +759,7 @@ As a site user, I want to have a contact form so that I can submit my inquiries,
 - ChatGPT: used this for getting the recipes for the dishes.
 - Favicon: to create favicon.
 - Fontawesome
+- Cloudinary: simplifies handling images and videos for web apps. 
 
 
 

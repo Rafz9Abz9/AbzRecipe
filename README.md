@@ -325,7 +325,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 # Testing
 
-## Manual Testing
+## Code Validation
 
 ### W3C HTML Validation
 

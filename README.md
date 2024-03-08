@@ -445,8 +445,26 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 </Details>
 
-### PEP8 Validation
-- No errors found.
+### Python Validation
+
+<Details>
+
+<Summary>Python Results</Summary>
+
+| APP        | FILE    | RESULT |
+|------------|---------|--------|
+| abzrecipe | settings | PASS   |
+| abzrecipe | urls     | PASS   |
+| core       | forms   | PASS   |
+| core       | models  | PASS   |
+| core       | utils   | PASS   |
+| core       | views   | PASS   |
+| recipe     | forms   | PASS   |
+| recipe     | models  | PASS   |
+| recipe     | urls    | PASS   |
+| recipe     | views   | PASS   |
+ 
+</Details>
 
 ### Lighthouse Testing
 - Due to deadline, I was unable to work on fixing the web performance but this is the result:

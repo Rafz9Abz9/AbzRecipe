@@ -329,16 +329,82 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ### W3C HTML Validation
 
+<Details>
+
+<Summary>Home Page</Summary>
+
 1. Errors found:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9f0f61bc-c419-43a7-8ca5-7b89979d307b)
 
 2. After fixing the errors:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)  
+
+</Details>
+
+<Details>
+
+<Summary>About Us Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Contact Us Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Register Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Login Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Profile Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Favourites Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Recipes Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Recipe Details Page</Summary>
+
+  
+</Details>
 
 ### W3C CSS Validation
-  
+
+<Details>
+
+<Summary>CSS Validation</Summary>
+
 1. Errors found:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/16fb4045-3d79-428f-86dc-7a1b0d69b3fc)
@@ -346,9 +412,30 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 2. After fixing the errors:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9405d7e4-59c6-4372-a3a8-b5bdf043d2d5)
+  
+</Details>
 
 ### JavaScript Validation
-- JavaScript from Bootstrap file. 
+- JavaScript from Bootstrap file.
+- I did test for these files: map-active.js and active.js.
+- Map-active.js file showed no warnings.
+- Active.js file showed a missing semicolon in one of the lines which was amended.
+
+<Details>
+
+<Summary>Map-active.js File</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/e8c3175c-45bf-476b-993a-49ce3c2e3192)
+
+</Details>
+
+<Details>
+
+<Summary>Active.js File</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bebcb757-fb81-4869-b315-6cd225c76c2b)
+
+</Details>
 
 ### PEP8 Validation
 - No errors found.

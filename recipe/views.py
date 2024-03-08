@@ -139,7 +139,7 @@ def like_recipe(request, recipe_id):
             is_liked_by_user.delete()
             messages.success(request, 'Recipe removed from favorites.')
         else:
-            FavoriteRecipe.objects.create(recipe=recipe, use=request.user)
+            FavoriteRecipe.objects.create(recipe=recipe, user=request.user)
             messages.success(request, 'Recipe added to favorites.')
     else:
         messages.error(request, "Login is required")

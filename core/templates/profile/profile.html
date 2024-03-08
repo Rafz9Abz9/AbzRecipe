@@ -29,7 +29,7 @@
 
 <div class="row justify-content-center" style="margin-top:100px; margin-bottom: 65px;">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-2">
-        <form role="form" method="post" action="{% url 'profile' %}">
+        <form method="post" action="{% url 'profile' %}">
             {% csrf_token %}
             <fieldset class="row">
                 <label class="col-sm-3 col-12">First Name</label>

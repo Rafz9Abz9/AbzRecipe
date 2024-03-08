@@ -1,4 +1,4 @@
-# ABZRECIPE
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bab72667-78ea-4d27-8647-42d6c6d9de96)# ABZRECIPE
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/35ac0a6f-8721-4936-81fc-4592c81e8741)
 
@@ -539,7 +539,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
 
-# Manual Testing
+## Manual Testing
 
 <Details>
 
@@ -630,6 +630,95 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 | Confirmation Email | When account is created – user will receive an activation link. | PASS    |
 | Confirmation Email | When user sends a message through the contact form, user will receive an email confirmation. | PASS    |
 | Confirmation Email | When user comments under recipes, user will receive an email confirmation. | PASS    |
+
+</Details>
+
+## User Story Testing
+
+<Details>
+
+  <Summary>Features Implemented</Summary>
+
+As a site user, I want to easily register for an account so that I can access my personal profile and saved recipes.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61972767-77ca-4e84-8689-cbf98021bea0)
+
+As a registered user I can log in or log out of my account so that I can have the ability to access my account when needed or log out for security purposes.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c0ea50a9-26bf-4224-9195-e547627ba86a)
+
+As a registered user, I can view and edit my account information such as name, email address, address, country, and phone, so that I can have control over my account.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f3f6f41b-b14a-4e7e-b92c-eda7e1bfef09)
+
+As a site user I can easily navigate and explore the home page which includes clear navigation links to different sections and visually appealing design elements so that it can enhance my overall experience and guide me to relevant areas of the website efficiently.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c2f7d9d7-f127-4107-acbf-42bc3668d062)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0e413798-f54b-4c55-80c4-44fcfec2b319)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/af2205b2-f87a-44f8-a41a-f96dbeab4468)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7d95b444-a3d6-4e6b-8394-de9f3a6e0c91)
+
+As a registered user, I want to have a favourites page so that I can save and easily access recipes I like.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/09e21d78-f87e-42c9-98e3-a4e475d4b054)
+
+As a registered user, I can add recipes to my favourites so that I can easily access them later without having to search for them again.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2ee1a1a9-ff79-4522-8eac-3a8cab19503a)
+
+As a registered user, I can remove recipes from the list of saved recipes so that I can efficiently manage my recipe collection.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/dd3be8cb-1fdf-4328-8e58-29f9f12f82ab)
+
+As a site user, I can browse the recipe page so that I can easily explore the diverse range of recipes available on the website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/13a165e5-5bc3-48d7-b599-61639beb56db)
+
+As a site user, I can view the recipe details page so that I can gather detailed information about a specific recipe.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b0739461-5039-40c4-a07c-f2776839c370)
+
+As a site user, I can view each recipe’s images, title, and brief description so that I can quickly assess the content and decide if the recipe aligns with my preferences.
+
+
+As a site user, I can view images of various dishes so that I can have a visual of what the dishes look like.
+
+
+As a site user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7e27ccc3-a480-4a9c-afd6-58668534f509)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/056b03ed-6e6f-41ef-97a7-ddd7819caa4e)
+
+As a site user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1753ec83-3ef2-44a4-83a3-177e8be6dbbd)
+
+As a site user, I want to have a contact form so that I can submit my inquiries, questions, or feedback easily.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9acbb7b4-93d0-4b73-a0fb-6144e13bd7f5)
+
+
+| USER STORY                                                                                            | RESULTS |
+|-------------------------------------------------------------------------------------------------------|---------|
+| As an admin, I want to enforce validation for all information entered by users to ensure accuracy and completeness. | PASS    |
+| As an admin, I want to configure an auto-response email system to provide users with confirmation of any submissions. | PASS    |
+| As an admin, I can manage some productivities for the website so that I can create, read, update, and delete details. | PASS    |
+
+</Details>
+
+<Details>
+
+  <Summary>Features NOT Implemented - Future Features</Summary>
+
+| USER STORY                                                                       | RESULTS |
+|----------------------------------------------------------------------------------|---------|
+| As a site user I can have a live chat option so that I can get quick assistance while browsing. | N/A     |
+| As a site user, I can search for specific recipes or content easily, so that I can quickly find relevant information and recipes matching my preferences. | N/A     |
+| As a site user, I can subscribe to a newsletter, so that I can receive regular updates, news, and notifications about new recipes, features, and promotions on the website. | N/A     |
 
 </Details>
 

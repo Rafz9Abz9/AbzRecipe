@@ -347,6 +347,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 <Summary>About Us Page</Summary>
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/eea3b7ad-408d-45ef-8193-e0ef6b1c5b9d)
   
 </Details>
 
@@ -354,13 +355,15 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 <Summary>Contact Us Page</Summary>
 
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7409c387-32f2-49fd-adb7-4eacf9cdc19c)
+
 </Details>
 
 <Details>
 
 <Summary>Register Page</Summary>
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/96df88d7-c6bf-4c49-a4cf-491c12307183)
   
 </Details>
 
@@ -368,6 +371,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 <Summary>Login Page</Summary>
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b615d3fb-9709-4e3e-855c-db115a8ba515)
   
 </Details>
 
@@ -375,28 +379,32 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 <Summary>Profile Page</Summary>
 
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a9cb41b1-f8ba-4069-9456-763a808cfa64)
+ 
 </Details>
 
 <Details>
 
 <Summary>Favourites Page</Summary>
 
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d0750add-5274-4823-ae6a-fc40168ebccf)
+
 </Details>
 
 <Details>
 
 <Summary>Recipes Page</Summary>
 
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa6699a3-4136-4b94-ac69-bf7796eae465)
+ 
 </Details>
 
 <Details>
 
 <Summary>Recipe Details Page</Summary>
 
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/df6092fe-2f25-4135-b0d0-abff2d191bae)
+
 </Details>
 
 ### W3C CSS Validation

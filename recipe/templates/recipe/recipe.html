@@ -102,7 +102,7 @@
                         {% for ingredient in ingredients %}
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="{{ingredient.id}}">
-                                <label class="custom-control-label" for="customCheck1">{{ ingredient.quantity }} {{ ingredient.ingredient }}</label>
+                                <label class="custom-control-label" for="{{ingredient.id}}">{{ ingredient.quantity }} {{ ingredient.ingredient }}</label>
                             </div>
                         {% endfor %}
 

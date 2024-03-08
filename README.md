@@ -486,6 +486,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 </Details>
 
+
 **Desktop View**
 
 <Details>
@@ -609,6 +610,28 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 </Details>
 
+<Details>
+
+  <Summary>Feature Testing</Summary>
+
+  | WHO/WHAT            | FEATURE                                                         | RESULTS |
+|---------------------|-----------------------------------------------------------------|---------|
+| Registered User     | Can access profile page.                                        | PASS    |
+| Registered User     | Can save a recipe.                                              | PASS    |
+| Registered User     | Can access favourites page.                                     | PASS    |
+| Unregistered User   | Can’t access profile page                                       | PASS    |
+| Unregistered User   | Can’t save a recipe.                                            | PASS    |
+| Unregistered User   | Can’t access favourites page.                                   | PASS    |
+| All Users           | Can leave a comment under recipes.                              | PASS    |
+| All Users           | Can access contact page.                                        | PASS    |
+| All Users           | Can access the contact form and submit an enquiry.              | PASS    |
+| All Users           | Can access the recipes pages.                                   | PASS    |
+| All Users           | Receive confirmation on the screen when they update, add, or delete something on the website. For example, if registered user saves a recipe, they’ll receive a confirmation of the action being done on the screen. | PASS    |
+| Confirmation Email | When account is created – user will receive an activation link. | PASS    |
+| Confirmation Email | When user sends a message through the contact form, user will receive an email confirmation. | PASS    |
+| Confirmation Email | When user comments under recipes, user will receive an email confirmation. | PASS    |
+
+</Details>
 
 # Deployment
 

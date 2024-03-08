@@ -229,14 +229,14 @@ def update_profile_view(request):
     return render(request, 'profile/profile.html', {'form': form})
 
 
-class VerificationView(View):
+class VerifivationView(View):
     def get(self, request, uidb64, token):
         try:
             id = force_str(urlsafe_base64_decode(uidb64))
             user = User.objects.get(pk=id)
             greetings = "You're Welcome "+user.username + "Account activated successfully."
             if user.is_active:
-                messages.info(request, "user account is already activated.")
+                messages.info(request, "user account is alreeady activated.")
                 login(request, user)
                 # Redirect to a success page, e.g., user's profile page
                 messages.success(request, greetings)

@@ -1,4 +1,4 @@
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bab72667-78ea-4d27-8647-42d6c6d9de96)# ABZRECIPE
+# ABZRECIPE
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/35ac0a6f-8721-4936-81fc-4592c81e8741)
 

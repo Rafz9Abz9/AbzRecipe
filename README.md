@@ -51,26 +51,22 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Provide users with the ability to edit their profiles.
 - Allow users to save their favorite recipes for quick access.
 - Enable users to post comments on recipes.
--  Implement interactive features to engage users.
--  Enhance account security through email verification.
+- Implement interactive features to engage users.
+- Enhance account security through email verification.
 
 # Agile Methodologies
 - Implemented Agile methodology for development, emphasizing iterative progress and continuous enhancement.
 - Managed project tasks and user stories using a GitHub Project board.
 - Ensured a structured and organized workflow for effective project management.
 - User stories contain tasks and acceptance criteria.
+- Prioritized project elements into 'must haves,' 'should haves,' 'could haves,' and 'won't haves'.
+- NOTE: I updated my user stories and amended the prioritization labels and acceptance criteria. 
 
-## MoSCoW Method in Agile
-- Prioritized project elements into 'must haves,' 'should haves,' 'could haves,' and more.
-- Ensured that essential features were tackled first.
-- Facilitated development by establishing a solid foundation for easy adjustments and styling later on.
-- Improved flexibility for changes or enhancements in subsequent stages.
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/02a6bf9a-9e62-4854-84f6-975fd37b4805)
 
-- NOTE: I had some issues with my GitHub and laptop which made it harder for me to work better on the agile methodology section. By the time I was able to sort it out, I had very little time. But this is what I was able to complete:
-  
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5d46fe61-6c05-4e93-b010-00313d51b66a)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/93e19b79-497a-460a-8a89-06b28707d85a)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2d28ed4d-a97c-4ab0-bc39-efa6fa6b44ad)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6a57bc21-da94-4e90-b50b-840eae5d7b70)
 
 # Features
 
@@ -95,8 +91,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 2. Login Page
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3799a49b-61bc-4553-9426-9c06fde6aeb1)
-  
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d366223f-a1a4-4073-aaec-e212263cb303)
+
 ## Navigation
 - The primary navigation is located in the header section and is present on all pages.
 
@@ -149,7 +145,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 - This is when the user has logged out:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/51aa19a8-c1ad-4287-9072-045e0db39870)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0e81fd88-7ba7-43f2-95db-bbbbb795eabf)
 
 ## Register Page
 - This page includes many fields that is required to be filled in by all users. These fields are: username, email address, password, and confirm password.
@@ -169,11 +165,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - It also includes a 'Remember Me' feature but this has not been implemented, just like how it makes the login form look more appealing. 
 - It also includes a 'Login' and 'Register' button.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/368a8f33-5b57-4d50-b4dc-43b87aed4b52)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/89996aeb-7b5b-4912-abb6-6b13c25da799)
 
 - User must fill in all the fields otherwise user won't be able to login.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/500d2f25-4299-4c66-a484-2dfd29efaa17)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/87cb978f-7e1b-4415-90bb-deeff3e417de)
 
 - Once user has logged in, they are notified with a welcome message at the top of the page:
 
@@ -212,7 +208,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/febef813-d557-43f2-8ad4-e76410347c94)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/de566d73-015c-4823-82fb-3dff4d4cbca6)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/942df87c-8852-441e-8d45-0f1c3288a0ee)
 
 ## Contact Page
 - This page includes the details necessary for the user to contact in case of any questions or assistance they may require.
@@ -445,13 +441,65 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 </Details>
 
-### PEP8 Validation
-- No errors found.
+### Python Validation
+
+<Details>
+
+<Summary>Python Results</Summary>
+
+| APP        | FILE    | RESULT |
+|------------|---------|--------|
+| abzrecipe | settings | PASS   |
+| abzrecipe | urls     | PASS   |
+| core       | forms   | PASS   |
+| core       | models  | PASS   |
+| core       | utils   | PASS   |
+| core       | views   | PASS   |
+| recipe     | forms   | PASS   |
+| recipe     | models  | PASS   |
+| recipe     | urls    | PASS   |
+| recipe     | views   | PASS   |
+ 
+</Details>
 
 ### Lighthouse Testing
-- Due to deadline, I was unable to work on fixing the web performance but this is the result:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3ea3f385-71b5-45f8-92e1-a4c5f2577f66)
+**Mobile View**
+
+<Details>
+
+<Summary>Home Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/694111b2-a4fc-408d-998d-56212d462d32)
+
+</Details>
+
+<Details>
+
+<Summary>Recipe Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5fce410e-c544-468c-b96b-649cbcb7425b)
+
+</Details>
+
+
+**Desktop View**
+
+<Details>
+
+<Summary>Home Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bea8b593-54d3-4bed-b74b-dddf99f3905f)
+
+</Details>
+
+<Details>
+
+<Summary>Recipe Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a9f4c03a-7582-4438-86c0-c9c559a341c8)
+
+</Details>
 
 ## General Testing
 
@@ -487,7 +535,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
 
-# Manual Testing
+## Manual Testing
 
 <Details>
 
@@ -558,6 +606,119 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 </Details>
 
+<Details>
+
+  <Summary>Feature Testing</Summary>
+
+  | WHO/WHAT            | FEATURE                                                         | RESULTS |
+|---------------------|-----------------------------------------------------------------|---------|
+| Registered User     | Can access profile page.                                        | PASS    |
+| Registered User     | Can save a recipe.                                              | PASS    |
+| Registered User     | Can access favourites page.                                     | PASS    |
+| Unregistered User   | Can’t access profile page                                       | PASS    |
+| Unregistered User   | Can’t save a recipe.                                            | PASS    |
+| Unregistered User   | Can’t access favourites page.                                   | PASS    |
+| All Users           | Can leave a comment under recipes.                              | PASS    |
+| All Users           | Can access contact page.                                        | PASS    |
+| All Users           | Can access the contact form and submit an enquiry.              | PASS    |
+| All Users           | Can access the recipes pages.                                   | PASS    |
+| All Users           | Receive confirmation on the screen when they update, add, or delete something on the website. For example, if registered user saves a recipe, they’ll receive a confirmation of the action being done on the screen. | PASS    |
+| Confirmation Email | When account is created – user will receive an activation link. | PASS    |
+| Confirmation Email | When user sends a message through the contact form, user will receive an email confirmation. | PASS    |
+| Confirmation Email | When user comments under recipes, user will receive an email confirmation. | PASS    |
+
+</Details>
+
+## User Story Testing
+
+<Details>
+
+  <Summary>Features Implemented</Summary>
+
+As a site user, I want to easily register for an account so that I can access my personal profile and saved recipes.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61972767-77ca-4e84-8689-cbf98021bea0)
+
+As a registered user I can log in or log out of my account so that I can have the ability to access my account when needed or log out for security purposes.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c0ea50a9-26bf-4224-9195-e547627ba86a)
+
+As a registered user, I can view and edit my account information such as name, email address, address, country, and phone, so that I can have control over my account.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f3f6f41b-b14a-4e7e-b92c-eda7e1bfef09)
+
+As a site user I can easily navigate and explore the home page which includes clear navigation links to different sections and visually appealing design elements so that it can enhance my overall experience and guide me to relevant areas of the website efficiently.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c2f7d9d7-f127-4107-acbf-42bc3668d062)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0e413798-f54b-4c55-80c4-44fcfec2b319)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/af2205b2-f87a-44f8-a41a-f96dbeab4468)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7d95b444-a3d6-4e6b-8394-de9f3a6e0c91)
+
+As a registered user, I want to have a favourites page so that I can save and easily access recipes I like.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/09e21d78-f87e-42c9-98e3-a4e475d4b054)
+
+As a registered user, I can add recipes to my favourites so that I can easily access them later without having to search for them again.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2ee1a1a9-ff79-4522-8eac-3a8cab19503a)
+
+As a registered user, I can remove recipes from the list of saved recipes so that I can efficiently manage my recipe collection.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/dd3be8cb-1fdf-4328-8e58-29f9f12f82ab)
+
+As a site user, I can browse the recipe page so that I can easily explore the diverse range of recipes available on the website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/13a165e5-5bc3-48d7-b599-61639beb56db)
+
+As a site user, I can view the recipe details page so that I can gather detailed information about a specific recipe.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b0739461-5039-40c4-a07c-f2776839c370)
+
+As a site user, I can view each recipe’s images, title, and brief description so that I can quickly assess the content and decide if the recipe aligns with my preferences.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8c4f91cb-7872-4f9c-99d9-c1a113eed470)
+
+As a site user, I can view images of various dishes so that I can have a visual of what the dishes look like.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fbdf6f43-15ee-4575-b48d-6e2e0e92fcf7)
+
+As a site user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7e27ccc3-a480-4a9c-afd6-58668534f509)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/056b03ed-6e6f-41ef-97a7-ddd7819caa4e)
+
+As a site user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1753ec83-3ef2-44a4-83a3-177e8be6dbbd)
+
+As a site user, I want to have a contact form so that I can submit my inquiries, questions, or feedback easily.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9acbb7b4-93d0-4b73-a0fb-6144e13bd7f5)
+
+
+| USER STORY                                                                                            | RESULTS |
+|-------------------------------------------------------------------------------------------------------|---------|
+| As an admin, I want to enforce validation for all information entered by users to ensure accuracy and completeness. | PASS    |
+| As an admin, I want to configure an auto-response email system to provide users with confirmation of any submissions. | PASS    |
+| As an admin, I can manage some productivities for the website so that I can create, read, update, and delete details. | PASS    |
+
+</Details>
+
+<Details>
+
+  <Summary>Features NOT Implemented - Future Features</Summary>
+
+| USER STORY                                                                       | RESULTS |
+|----------------------------------------------------------------------------------|---------|
+| As a site user I can have a live chat option so that I can get quick assistance while browsing. | N/A     |
+| As a site user, I can search for specific recipes or content easily, so that I can quickly find relevant information and recipes matching my preferences. | N/A     |
+| As a site user, I can subscribe to a newsletter, so that I can receive regular updates, news, and notifications about new recipes, features, and promotions on the website. | N/A     |
+
+</Details>
 
 # Deployment
 
@@ -598,6 +759,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - ChatGPT: used this for getting the recipes for the dishes.
 - Favicon: to create favicon.
 - Fontawesome
+- Cloudinary: simplifies handling images and videos for web apps. 
 
 
 

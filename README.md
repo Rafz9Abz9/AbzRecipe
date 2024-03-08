@@ -683,9 +683,11 @@ As a site user, I can view the recipe details page so that I can gather detailed
 
 As a site user, I can view each recipe’s images, title, and brief description so that I can quickly assess the content and decide if the recipe aligns with my preferences.
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8c4f91cb-7872-4f9c-99d9-c1a113eed470)
 
 As a site user, I can view images of various dishes so that I can have a visual of what the dishes look like.
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fbdf6f43-15ee-4575-b48d-6e2e0e92fcf7)
 
 As a site user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
 

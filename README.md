@@ -1,5 +1,9 @@
 # ABZRECIPE
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/35ac0a6f-8721-4936-81fc-4592c81e8741)
+
+[LINK TO LIVE SITE](https://abzrecipe-72c82cf99b18.herokuapp.com/)
+
 # Table Contents
 1. [Introduction](#introduction)
 2. [Project Goals](#project-goals)
@@ -111,19 +115,19 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 - Home page also includes 2 images of dishes alog with their names, and a button that says 'Read More'. If user clicks on this button, it will take them to the recipe page of that particular dish.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61694321-0165-413f-b505-c8f20b68eaa6)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/65a54c27-8abb-4e95-bb86-1b3345585d3d)
 
 - Underneath the 2 images, there is a section named 'The Best Recipes'. This has 6 enticing images of some dishes.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5299aeaa-7aa8-4a3d-9ff2-793262d616ca)
- 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5417afbf-1870-4231-9006-d8d3e027a7e3)
+
 - There is also a feature titled 'Explore Deliciousness' which also includes a 'Discover More Recipes' button. If user clicks on this button, it will take user to the 'Recipes' page.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6ed1ab53-c0f5-4a85-8ab4-cb9dcd941f5b)
 
 - After this, there is a feature that displays some dishes and the amount of comments submitted for them.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fb90a7f4-59c4-45e9-a277-8568a0a041be)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/502b1d26-8610-492e-bd7c-812edee97868)
 
 - Just to make this website more appealing to the user, there is a quote displayed in a box and a cookbook offer. This was added to make the page look better.
 
@@ -162,7 +166,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## Login Page
 - This page requires a username and password field.
-- It also includes a 'Remember Me' feature with a box that a user can tick if they want their details to be remembered for easy access.
+- It also includes a 'Remember Me' feature but this has not been implemented, just like how it makes the login form look more appealing. 
 - It also includes a 'Login' and 'Register' button.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/368a8f33-5b57-4d50-b4dc-43b87aed4b52)
@@ -176,7 +180,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1a809e47-72a7-4120-a7c2-01fc8b31412d)
 
 ## Profile Page
-- This page includes details of the user: first name, last name, username, emaial, phone number, address, country.
+- This page includes details of the user: first name, last name, username, email, phone number, address, country.
 - The username and email fields will be automatically filled in because to access the profile page, the user must be logged in.
 - User can edit their details.
 
@@ -321,9 +325,13 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 # Testing
 
-## Manual Testing
+## Code Validation
 
 ### W3C HTML Validation
+
+<Details>
+
+<Summary>Home Page</Summary>
 
 1. Errors found:
 
@@ -331,10 +339,72 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 2. After fixing the errors:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bd704225-404d-49e2-a139-79ca69c37154)  
+
+</Details>
+
+<Details>
+
+<Summary>About Us Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Contact Us Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Register Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Login Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Profile Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Favourites Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Recipes Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+<Summary>Recipe Details Page</Summary>
+
+  
+</Details>
 
 ### W3C CSS Validation
-  
+
+<Details>
+
+<Summary>CSS Validation</Summary>
+
 1. Errors found:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/16fb4045-3d79-428f-86dc-7a1b0d69b3fc)
@@ -342,9 +412,30 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 2. After fixing the errors:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9405d7e4-59c6-4372-a3a8-b5bdf043d2d5)
+  
+</Details>
 
 ### JavaScript Validation
-- JavaScript from Bootstrap file. 
+- JavaScript from Bootstrap file.
+- I did test for these files: map-active.js and active.js.
+- Map-active.js file showed no warnings.
+- Active.js file showed a missing semicolon in one of the lines which was amended.
+
+<Details>
+
+<Summary>Map-active.js File</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/e8c3175c-45bf-476b-993a-49ce3c2e3192)
+
+</Details>
+
+<Details>
+
+<Summary>Active.js File</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/bebcb757-fb81-4869-b315-6cd225c76c2b)
+
+</Details>
 
 ### PEP8 Validation
 - No errors found.
@@ -387,6 +478,78 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ### Profile Page
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
+
+# Manual Testing
+
+<Details>
+
+  <Summary>Account Registration Tests</Summary>
+
+| Test                                | Result |
+|-------------------------------------|--------|
+| User can create an account         | Pass   |
+| Verified User can log into account | Pass   |
+| User can log out of account        | Pass   |
+| User is notified of logging in     | Pass   |
+| User is notified of logging out    | Pass   |
+| User receives email verification   | Pass   |
+
+</Details>
+
+<Details>
+
+  <Summary>User Navigation Tests</Summary>
+
+| Test                                            | Result |
+|-------------------------------------------------|--------|
+| User can navigate to recipes                   | Pass   |
+| User can access recipe details                 | Pass   |
+| Logged In User can navigate to the profile section | Pass   |
+| Logged In User can edit their profile information | Pass   |
+| Logged In User can access favourites page      | Pass   |
+| Logged In User can save recipes                | Pass   |
+| User can leave a comment under recipes         | Pass   |
+| User can access the contact page and form      | Pass   |
+| All links on footer open to correct pages      | Pass   |
+| All links on Heading Navigation open to correct option | Pass   |
+
+</Details>
+
+<Details>
+
+  <Summary>Account Security Tests</Summary>
+
+| Test                                                 | Result |
+|------------------------------------------------------|--------|
+| Unregistered user cannot access profile page         | Pass   |
+| Registered user can access profile page              | Pass   |
+| All users can access the contact form page          | Pass   |
+| Unregistered user cannot save recipes               | Pass   |
+| Registered user can save recipes                    | Pass   |
+| All users can post a comment under recipes          | Pass   |
+| All users can view comments posted by other users   | Pass   |
+
+</Details>
+
+<Details>
+
+  <Summary>Profile Tests</Summary>
+
+| Test                                                 | Result |
+|------------------------------------------------------|--------|
+| Unregistered user cannot access profile page         | Pass   |
+| Registered user can access profile page              | Pass   |
+| Registered user can see their details on the profile page | Pass   |
+| Registered user can update their first name         | Pass   |
+| Registered user can update their last name          | Pass   |
+| Registered user can update their email              | Pass   |
+| Registered user can update their username           | Pass   |
+| Registered user can update their phone number       | Pass   |
+| Registered user can update their address           | Pass   |
+| Registered user can update country                 | Pass   |
+
+</Details>
+
 
 # Deployment
 

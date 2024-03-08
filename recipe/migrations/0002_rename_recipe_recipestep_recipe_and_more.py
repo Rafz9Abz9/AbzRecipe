@@ -23,9 +23,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='RecipeCategory',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='recipe.category')),
-                ('recipe', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='recipe.recipe')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
+                ('category', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='recipe.category')),
+                ('recipe', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='recipe.recipe')),
             ],
         ),
     ]

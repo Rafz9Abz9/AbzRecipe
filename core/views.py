@@ -29,6 +29,8 @@ from django.template.defaulttags import register
 
 
 ...
+
+
 @register.filter
 def get_item(dictionary, key):
     return dictionary.get(key)
@@ -37,20 +39,23 @@ def get_item(dictionary, key):
 def index(request):
     if request.POST:
         pass
-    
-    best_recipes = Recipe.objects.filter(special=True).order_by('-created_at') 
-    recipes = Recipe.objects.all().order_by('-created_at') 
-    other_recipes = Recipe.objects.filter(special=False).order_by('-created_at') 
+
+    best_recipes = Recipe.objects.filter(special=True).order_by('-created_at')
+    recipes = Recipe.objects.all().order_by('-created_at')
+    other_recipes = Recipe.objects.filter(
+        special=False).order_by('-created_at')
     shuffled_recipes = list(recipes)
     shuffled_best_recipes = list(best_recipes)
     shuffle(shuffled_recipes)
     shuffle(shuffled_best_recipes)
 
-        # Get all comments
+    # Get all comments
     comments = Comment.objects.all()
     # Get comment counts for each recipe
-    comment_counts = Comment.objects.values('recipe').annotate(count=Count('recipe'))
-    comment_count_dict = {item['recipe']: item['count'] for item in comment_counts}
+    comment_counts = Comment.objects.values(
+        'recipe').annotate(count=Count('recipe'))
+    comment_count_dict = {item['recipe']: item['count']
+                          for item in comment_counts}
 
     return render(request, 'index.html', {
         'limited_best_recipe': shuffled_best_recipes[:6],
@@ -69,22 +74,23 @@ def register(request):
             # create user profile
             new_profile = Profile.objects.create(user=user, id_user=user.id)
             new_profile.save()
-            
+
             user.is_active = False
             user.save()
             # email subject here
             email_subject = 'Activate Your Account'
             # email body
-           
+
             token = token_generator.make_token(user)
             uidb64 = urlsafe_base64_encode(force_bytes(user.pk))
             link = reverse('activate', kwargs={
                 'uidb64': uidb64, 'token': token
             })
-            
+
             domain = get_current_site(request).domain
             activate_url = 'http://'+domain+link
-            email_body = "Hi " + user.username+ " Please use this link to veify your account\n"+activate_url
+            email_body = "Hi " + user.username + \
+                " Please use this link to veify your account\n"+activate_url
             try:
                 # setup email
                 email = EmailMessage(
@@ -96,23 +102,24 @@ def register(request):
                 )
                 # send email
                 email.send(fail_silently=False)
-                
-                messages.success(request, "Registration Successful, check your mailbox to activate your accouint before login")
+
+                messages.success(
+                    request, "Registration Successful, check your mailbox to activate your accouint before login")
                 return redirect('login')
             except Exception as e:
                 print(f"Error sending email: {e}")
-                
 
-    
     form = RegistrationForm()
 
     return render(request, 'auth/register.html', {'form': form})
+
 
 def logout_view(request):
     logout(request)
     messages.success(request, "You've been logged out successfully")
     # Redirect to login
     return redirect('login')
+
 
 def login_view(request):
     if request.method == 'POST':
@@ -126,7 +133,7 @@ def login_view(request):
             return redirect('home')
         else:
             messages.error(request, "Invalid Credentials")
-    
+
     form = LoginForm()
 
     return render(request, 'auth/login.html', {'form': form})
@@ -139,26 +146,26 @@ def about(request):
     all_categories = Category.objects.all()
 
     return render(request, 'about/about.html',
-        {
-        'all_recipe_count': all_recipe_count,
-        'all_categories':all_categories
-    })
+                  {
+                      'all_recipe_count': all_recipe_count,
+                      'all_categories': all_categories
+                  })
 
 
 def contact(request):
     if request.method == 'POST':
-       contact_form = ContactForm(request.POST)
+        contact_form = ContactForm(request.POST)
 
-       if contact_form.is_valid():
+        if contact_form.is_valid():
 
-        contact = contact_form.save()
+            contact = contact_form.save()
 
-        email_subject = '@abzrecipehotdesk'
-        email_msg = " Your message has been submitted. We'll get in touch with you soon."       
-        email_body = "Hi " + contact.name + email_msg
-        try:
-                     # setup email
-            email = EmailMessage(
+            email_subject = '@abzrecipehotdesk'
+            email_msg = " Your message has been submitted. We'll get in touch with you soon."
+            email_body = "Hi " + contact.name + email_msg
+            try:
+                # setup email
+                email = EmailMessage(
                     email_subject,
                     email_body,
                     "noreply@abzrecipe.com",
@@ -166,21 +173,21 @@ def contact(request):
                     headers={"Message-ID": "abzrecipe"},
                 )
                 # send email
-            email.send(fail_silently=False)
-            messages.success(request, "Comment submitted successfully")
-            return redirect('contact')
-        except Exception as e:
-            print(f"Error sending email: {e}")
-       
-       else:
-        messages.error(request, "Invalid Form")
+                email.send(fail_silently=False)
+                messages.success(request, "Comment submitted successfully")
+                return redirect('contact')
+            except Exception as e:
+                print(f"Error sending email: {e}")
+
+        else:
+            messages.error(request, "Invalid Form")
 
     contact_form = ContactForm()
 
     return render(request, 'contact/contact.html',
-        {
-            'contact_form': contact_form,
-        })
+                  {
+                      'contact_form': contact_form,
+                  })
 
 
 @login_required(login_url='login')
@@ -196,12 +203,12 @@ def update_profile_view(request):
             profile.save()
             messages.success(request, 'Profile updated successfully')
             # redirect to profile
-            return redirect('profile') 
+            return redirect('profile')
         else:
             messages.error(request, "Error  in Completing profile update")
 
     form = ProfileUpdateForm()
-    
+
     if request.user.is_authenticated:
         user = request.user
         profile, created = Profile.objects.get_or_create(user=user)
@@ -222,8 +229,6 @@ def update_profile_view(request):
     return render(request, 'profile/profile.html', {'form': form})
 
 
-
-
 class VerifivationView(View):
     def get(self, request, uidb64, token):
         try:
@@ -232,18 +237,16 @@ class VerifivationView(View):
             greetings = "You're Welcome "+user.username + "Account activated successfully."
             if user.is_active:
                 messages.info(request, "user account is alreeady acivated.")
-                login(request,user)
+                login(request, user)
                 # Redirect to a success page, e.g., user's profile page
                 messages.success(request, greetings)
                 return redirect("home")
             user.is_active = True
             user.save()
-            login(request,user)
+            login(request, user)
             messages.success(request, greetings)
             return redirect("home")
-            
+
         except Exception as ex:
             messages.error(request, "Error Activating Your Account.")
         return redirect("login")
-    
-    

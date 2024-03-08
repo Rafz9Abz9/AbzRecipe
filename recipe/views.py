@@ -18,7 +18,8 @@ def recipes(request):
     category = request.GET.get('category')
 
     if category:
-        recipe_ids = RecipeCategory.objects.filter(category=category).values_list('recipe_id', flat=True)
+        recipe_ids = RecipeCategory.objects.filter(
+            category=category).values_list('recipe_id', flat=True)
         all_recipe = Recipe.objects.filter(id__in=recipe_ids)
 
     paginator = Paginator(all_recipe, 8)
@@ -50,7 +51,7 @@ def recipe_detail(request, recipe_id):
             email_subject = '@abzrecipehotdesk'
             email_msg = " Your comment has been submitted."
             email_body = "Hi " + comment.name + email_msg
-       
+
             try:
                 email = EmailMessage(
                     email_subject,
@@ -83,7 +84,8 @@ def recipe_detail(request, recipe_id):
     steps = RecipeStep.objects.filter(recipe=recipe)
     recipe_categories = RecipeCategory.objects.filter(recipe=recipe)
     related_recipes = Recipe.objects.filter(
-        recipecategory__category__in=recipe_categories.values_list('category', flat=True)
+        recipecategory__category__in=recipe_categories.values_list(
+            'category', flat=True)
     ).exclude(pk=recipe_id).distinct()
 
     comments = Comment.objects.filter(recipe=recipe)
@@ -91,7 +93,8 @@ def recipe_detail(request, recipe_id):
     like_by_user = ''
 
     if request.user.is_authenticated:
-        like_by_user = FavoriteRecipe.objects.filter(user=request.user, recipe=recipe)
+        like_by_user = FavoriteRecipe.objects.filter(
+            user=request.user, recipe=recipe)
 
     return render(request, 'recipe/recipe.html', {
         'comment_form': comment_form,

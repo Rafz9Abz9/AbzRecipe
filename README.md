@@ -161,8 +161,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa72bcb5-5bf7-4d4d-8b62-9f000ab801c6)
 
 ## Login Page
-- This page requires a username and password field.
-- It also includes a 'Remember Me' feature but this has not been implemented, just like how it makes the login form look more appealing. 
+- This page consists of a username and password field.
 - It also includes a 'Login' and 'Register' button.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/89996aeb-7b5b-4912-abb6-6b13c25da799)
@@ -234,18 +233,18 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - The page also has the 'Categories' feature displayed on the right side of the page. The categories include these sections: 'All, Breakfast, Lunch, Dinner, Soups, Salads, Beverages, Snacks, and Desserts'.
 - Just to make this website more appealing to the user, there is a quote displayed in a box and a newsletter that will be part of a future implementation. This was added to make the page look better.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/17ad862f-ed1a-4761-8336-3547e05ed112)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/47670331-4776-4f92-8d21-82dec7d93d87)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d25f81e5-1cc6-47ad-8bf1-56c681514277)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fd9ca92d-7178-482c-91da-497219dcce53)
 
 ## Recipe Page
 - This page has the ingredients, steps, and a comment section that allows the user to leave a comment under the dish.
 - For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section that allows the user to leave a comment under the recipe of the dish, and a favorite feature that allows the user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page.
 - There is a feature that says 'Other Recipes' which includes some images of the other dishes.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fa789733-2856-4353-848c-90d56ebe83d0)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/55d5aaca-92ce-4d67-8574-73e0423e5d51)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/71b51fd8-9ded-4852-9ce5-516364984268)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1515dcdf-93c8-4aad-abdd-2e99f3c20a55)
 
 - The above image shows that no comment has been submited, but once a user submits a comment, it will be displayed for everyone to see. User does not have to be logged in for them to leave a comment. For future implementation, user will have to be logged in to leave a comment.
 
@@ -264,23 +263,23 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/073f97df-f677-4817-a2b5-368ff9255c71)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a973e126-f2db-4dfc-a876-d5d4828ecbb6)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2161f6c2-a16e-4feb-a140-61b88d516529)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6257fe55-9ff8-4732-a6ed-cb55e757b5f2)
 
 - User can favorite a dish. Unfavorited shows a yellow heart. Favorited dish shows a purple heart.
 
 - Unfavorited
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f27ce44c-ed9c-452f-b18d-23917c6652af)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/49881bc4-e599-4e9a-acd1-8c8150ec9b1f)
 
 - Favorited
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2f098c74-3bfc-443a-b1db-705650219f1f)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9a76ee46-a38b-465b-acef-6326957bbd5c)
 
 - User can unfavorite a dish
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0c7b87d7-282f-4bb1-8b79-8f326118929f)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8c2a5023-9af9-4a55-9768-8968edfe29fb)
 
 # Technologies Used
   

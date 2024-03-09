@@ -72,11 +72,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 This is a video converted to GIF of the what the process of the website looks like:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0f726267-afa9-48e8-8bbc-0f23a6386418)
+![abzrecipe-gif](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/60b1d3da-87c9-4fee-bc78-ad6a0bc589a1)
 
 This is the **Register** and **Login** process:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/44a61eaf-e3f6-44d5-a729-cbf85b9a6fb9)
+![abzrecipe-login-register-gif](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b380ccfc-d635-43b1-af39-b9d56f515daf)
 
 ## CRUD Functionality
 - Create: users can create a comment under different recipes when logged in and can save their favorite recipes.

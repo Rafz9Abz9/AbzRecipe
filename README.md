@@ -70,6 +70,14 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 # Features
 
+This is a video converted to GIF of the what the process of the website looks like:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0f726267-afa9-48e8-8bbc-0f23a6386418)
+
+This is the **Register** and **Login** process:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/44a61eaf-e3f6-44d5-a729-cbf85b9a6fb9)
+
 ## CRUD Functionality
 - Create: users can create a comment under different recipes when logged in and can save their favorite recipes.
 - Read: users can view their saved recipes in the favorite's page when logged in.
@@ -313,6 +321,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - GitHub and Git: collaborate seamlessly, track changes, and manage project's version control.
 - Visual Studio Code: for writing code.
 - PostgreSQL: for efficient data storage.
+- Cloudinary: simplifies handling images and videos for web apps. 
 - Lighthouse Testing: ensures high performance, accessibility, and SEO standards for web application.
 - CL PEP8 Validator: maintain consistent and readable Python code by adhering to PEP8 style guidelines.
 - W3C CSS and HTML Validator: validate and ensure compliance with web standards for CSS and HTML code.
@@ -758,7 +767,8 @@ As a site user, I want to have a contact form so that I can submit my inquiries,
 - ChatGPT: used this for getting the recipes for the dishes.
 - Favicon: to create favicon.
 - Fontawesome
-- Cloudinary: simplifies handling images and videos for web apps. 
+- Gyazo: used this to record website process so that I can show the various features and functionalities.
+- Ezgif: used to convert video to GIF.
 
 
 

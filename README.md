@@ -245,9 +245,9 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fd9ca92d-7178-482c-91da-497219dcce53)
 
-## Recipe Page
+## Recipe Details Page
 - This page has the ingredients, steps, and a comment section that allows the user to leave a comment under the dish.
-- For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section that allows the user to leave a comment under the recipe of the dish, and a favorite feature that allows the user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page.
+- For example, the 'Yam and Egg Sauce' dish has the title, the image, and the introduction, along with a button that says 'Read More'. If the user clicks on the button, it will take the user to a page that has the ingredients, steps, a comment section that allows registered user to leave a comment under the recipe of the dish, and a favorite feature that allows registered user to favorite the recipe. Once that is favorited, it will be saved to the 'Favorite Recipe' page and comments posted by the user will be saved to the 'Comments' page.
 - There is a feature that says 'Other Recipes' which includes some images of the other dishes.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/55d5aaca-92ce-4d67-8574-73e0423e5d51)

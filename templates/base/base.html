@@ -185,6 +185,7 @@
                                         {% if user.is_authenticated %}
                                             <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
                                             <a  class="dropdown-item" href="{% url 'favorite' %}">Favorite Recipes</a>
+                                            <a  class="dropdown-item" href="{% url 'user_comments' %}">My Comments</a>
                                             <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
                                           
                                         {% else %}

@@ -8,7 +8,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <form method="POST" action="{% url 'update_comment'%}" class="update_comment_form">
+            <form method="POST" action="{% url 'update_comment' comment_id=comment.id%}" class="update_comment_form">
               {%csrf_token%}
                 <div class="form-group">
                   <label for="name{{comment.id}}">Name</label>

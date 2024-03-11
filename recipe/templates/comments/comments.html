@@ -28,7 +28,7 @@
                     </td>
                     <td class="remove-col">
                         <button class="btn btn-outline" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit Info</button>
-                        <a href="{% url 'delete_comment' comment_id=comment.id%}" class="btn-remove" title="Delete Review"><i class="icon-close"></i></a>
+                        <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn-remove" title="Delete Review"><i class="icon-close"></i></a>
                     </td>
                 </tr>
 

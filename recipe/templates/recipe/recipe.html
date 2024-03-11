@@ -133,7 +133,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-form-area">
-                        <form action="{% url 'recipe_detail' recipe_id=recipe.id %}" method="post">
+                        <form action="{% url 'comment_to_recipe' recipe_id=recipe.id %}" method="post">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-12 col-lg-6">

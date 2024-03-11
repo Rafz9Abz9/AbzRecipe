@@ -40,34 +40,7 @@ def recipes(request):
 
 
 def recipe_detail(request, recipe_id):
-    if request.method == 'POST':
-        comment_form = CommentForm(request.POST)
-        if comment_form.is_valid():
-            comment = comment_form.save(commit=False)
-            recipe = get_object_or_404(Recipe, pk=recipe_id)
-            comment.recipe = recipe
-            comment.save()
-
-            email_subject = '@abzrecipehotdesk'
-            email_msg = " Your comment has been submitted."
-            email_body = "Hi " + comment.name + email_msg
-
-            try:
-                email = EmailMessage(
-                    email_subject,
-                    email_body,
-                    "noreply@abzrecipe.com",
-                    [comment.email],
-                    headers={"Message-ID": "abzrecipe"},
-                )
-                email.send(fail_silently=False)
-                messages.success(request, "Comment submitted successfully")
-                return redirect('recipe_detail', recipe_id=recipe_id)
-            except Exception as e:
-                print(f"Error sending email: {e}")
-        else:
-            messages.error(request, "Invalid form")
-
+    
     comment_form = CommentForm()
 
     if request.user.is_authenticated:
@@ -107,6 +80,70 @@ def recipe_detail(request, recipe_id):
         'recipe_favorite_list': recipe_favorite_list,
         'like_by_user': like_by_user
     })
+    
+    
+
+def comment_to_recipe(request, recipe_id):
+    if request.method == 'POST':
+        comment_form = CommentForm(request.POST)
+        if request.user.is_authenticated:
+            if comment_form.is_valid():
+                comment = comment_form.save(commit=False)
+                recipe = get_object_or_404(Recipe, pk=recipe_id)
+                comment.recipe = recipe
+                comment.save()
+
+                email_subject = '@abzrecipehotdesk'
+                email_msg = " Your comment has been submitted."
+                email_body = "Hi " + comment.name + email_msg
+
+                try:
+                    email = EmailMessage(
+                        email_subject,
+                        email_body,
+                        "noreply@abzrecipe.com",
+                        [comment.email],
+                        headers={"Message-ID": "abzrecipe"},
+                    )
+                    email.send(fail_silently=False)
+                    messages.success(request, "Comment submitted successfully")
+                    return redirect('recipe_detail', recipe_id=recipe_id)
+                except Exception as e:
+                    print(f"Error sending email: {e}")
+            else:
+                messages.error(request, "Invalid form")
+        else:
+            messages.warning(request, 'Only authenticated user is allowed to add comment')
+        
+    comment_form = CommentForm()
+
+    if request.user.is_authenticated:
+        user = request.user
+        initial_data = {
+            'name': user.username,
+            'email': user.email,
+        }
+        comment_form = CommentForm(instance=user, initial=initial_data)
+
+    return render(request, 'recipe/recipe.html', {'comment_form':comment_form})
+
+
+def user_comments(request):
+    comments = None
+    if request.user.is_authenticated:
+        comments = Comment.objects.filter(email=request.user.email)
+    else:
+        messages.warning(request, 'Only Authenticated user is allow to access this page')
+        return redirect('login')
+    return render(request, 'comments/comments.html', {'comments': comments})
+
+def update_comment(request, recipe_id):
+    if request.method == 'POST':
+        if request.user.is_authenticated:
+            pass
+        else:
+            messages.warning(request, 'Only authenticated user is allowed to add comment')
+    return render(request, 'recipe/recipe.html')
 
 
 def delete_comment(request, recipe_id, comment_id):

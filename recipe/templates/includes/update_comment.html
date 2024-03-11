@@ -1,0 +1,39 @@
+<div class="modal fade"  id="updateCommentModal{{comment.id}}">
+    <div class="modal-dialog" >
+      <div class="modal-content w-100 px-5 py-4">
+        <div class="modal-header">
+          <h5 class="modal-title">username - Edit Info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form method="POST" action="{% url 'update_comment'%}" class="update_comment_form">
+              {%csrf_token%}
+                <div class="form-group">
+                  <label for="name{{comment.id}}">Name</label>
+                  <input type="text" class="form-control" id="name{{comment.id}}" name="name"  value="{% if comment.name|length > 0%} {{comment.name}}  {% endif %}" placeholder="Name here..">
+                </div>
+
+                <div class="form-group">
+                  <label for="email{{comment.id}}">Email</label>
+                  <input type="email" class="form-control" id="email{{comment.id}}" name="email" value="{% if comment.email|length > 0%} {{comment.email}}  {% endif %}" placeholder="Email here..">
+                </div>
+
+                <div class="form-group">
+                  <label for="title{{comment.id}}">Title</label>
+                  <input type="text" class="form-control" id="title{{comment.id}}" name="title" value="{% if comment.title|length > 0%} {{comment.title}}  {% endif %}" placeholder="Comment title here..">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <textarea type="message{{comment.id}}" class="form-control" id="message{{comment.id}}" name="message" value="{% if comment.message|length > 0%} {{comment.message}}  {% endif %}" placeholder="email here..">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-sm update_comment_btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

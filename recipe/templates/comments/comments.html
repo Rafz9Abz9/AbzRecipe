@@ -57,9 +57,9 @@
                             
                         {% endfor %}
                         {% else %}
+                            <tr><td>No comment yet.</td></tr>
+                            {% comment %} {% include 'includes/update_comment.html' %} {% endcomment %}
                         {% endif %}
-                        {% comment %} {% include 'includes/update_comment.html' with comment=comment %} {% endcomment %}
-                        <tr><td>No comment yet.</td></tr>
                 </tbody>
             </table>
         </div>

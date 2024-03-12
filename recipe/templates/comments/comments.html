@@ -51,15 +51,15 @@
                                 <td class="col-12 col-md-4 d-flex align-items-center">
                                     <button class="btn btn-sm btn-outline-success mb-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit</button>
 
-                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger" title="Delete Review">Delete</a>
+                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger mb-1" title="Delete Comment">Delete</a>
                                 </td>
                             </tr>
                             
                         {% endfor %}
                         {% else %}
-                            {% comment %} {% include 'includes/update_comment.html' with comment=comment %} {% endcomment %}
+                        {% endif %}
+                        {% comment %} {% include 'includes/update_comment.html' with comment=comment %} {% endcomment %}
                         <tr><td>No comment yet.</td></tr>
-                    {% endif %}
                 </tbody>
             </table>
         </div>

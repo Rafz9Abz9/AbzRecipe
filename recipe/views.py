@@ -6,6 +6,7 @@ from .forms import CommentForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMessage
+from django.http import HttpResponseRedirect
 
 
 def recipes(request):
@@ -156,6 +157,7 @@ def delete_comment(request, recipe_id, comment_id):
             if comment and comment.name == user.username:
                 comment.delete()
                 messages.success(request, 'Comment deleted successfully')
+                return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
             else:
                 messages.error(request, 'Comment not found')
         else:

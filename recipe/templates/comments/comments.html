@@ -11,7 +11,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-text text-center text-capitalize">
-                        <h2>{{ user.first_name }}  |  My Comments</h2>  
+                        <h2>{{ user.username }}  |  My Comments</h2>  
                     
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                                             <img src="{{ comment.recipe.image.url }}" alt="recipe image" width="60">
                                         </a>
                                         
-                                        <<span>
+                                        <<span class="ml-1 text-nowrap">
                                             <a href="#">{{comment.recipe.title}}</a>
                                         </span>
                                     </div>
@@ -50,8 +50,8 @@
                                     <h5>{{comment.message}}</h5>
                                 </td>
                                 <td class="remove-col">
-                                    <button class="btn btn-outline" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit Info</button>
-                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-outline-danger" title="Delete Review">Delete</a>
+                                    <button class="btn btn-sm btn-outline-success mb-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit Info</button>
+                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger" title="Delete Review">Delete</a>
                                 </td>
                             </tr>
                             

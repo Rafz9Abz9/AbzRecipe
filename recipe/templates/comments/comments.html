@@ -1,41 +1,66 @@
+{% extends 'base/base.html'%}
+
+{% block title %}  |  My Comments{% endblock %}
+
 {% load static %}
-<table class="table table-wishlist table-mobile">
-    <thead>
-        <tr>
-            <th>Recipe</th>
-            <th>Title</th>
-            <th>Comment</th>
-            <th></th>
-        </tr>
-    </thead>
 
-    <tbody>
-        {% if comments %}
-            {%for comment in comments%}
-                <tr>
-                    <td>
-                        <div>
-                            <h3>
-                                <a href="#">{{comment.recipe.title}}</a>
-                            </h3>
-                        </div>
-                    </td>
-                    <td class="comment-col">
-                        <h5>{{comment.title}}</h5>
-                    </td>
-                    <td class="comment-col">
-                        <h5>{{comment.message}}</h5>
-                    </td>
-                    <td class="remove-col">
-                        <button class="btn btn-outline" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit Info</button>
-                        <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn-remove" title="Delete Review"><i class="icon-close"></i></a>
-                    </td>
-                </tr>
+{% block content %}
 
-                {% include 'includes/update_comment.html' with comment=comment %}
-            {% endfor %}
-        {% else %}
-            <tr><td>No comment yet.</td></tr>
-        {% endif %}
-    </tbody>
-</table>
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/breadcumb1.jpg' %})">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-text text-center text-capitalize">
+                    <h2>{{ user.first_name }}  |  My Comments</h2>  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+<div class="section-padding-80">
+    <table class="table table-wishlist table-mobile">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>Title</th>
+                <th>Comment</th>
+                <th></th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            {% if comments %}
+                {%for comment in comments%}
+                    <tr>
+                        <td>
+                            <div>
+                                <h3>
+                                    <a href="#">{{comment.recipe.title}}</a>
+                                </h3>
+                            </div>
+                        </td>
+                        <td class="comment-col">
+                            <h5>{{comment.title}}</h5>
+                        </td>
+                        <td class="comment-col">
+                            <h5>{{comment.message}}</h5>
+                        </td>
+                        <td class="remove-col">
+                            <button class="btn btn-outline" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit Info</button>
+                            <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn-remove" title="Delete Review"><i class="icon-close"></i></a>
+                        </td>
+                    </tr>
+    
+                    {% include 'includes/update_comment.html' with comment=comment %}
+                {% endfor %}
+            {% else %}
+                <tr><td>No comment yet.</td></tr>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+{% endblockblock %}

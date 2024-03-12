@@ -24,9 +24,9 @@
             <table class="table table-mobile">
                 <thead class="d-none d-md-block">
                     <tr>
-                        <th>Recipe</th>
-                        <th>Comment</th>
-                        <th>Action</th>
+                        <th class="col-12 col-md-4">Recipe</th>
+                        <th class="col-12 col-md-4">Comment</th>
+                        <th class="col-12 col-md-4">Action</th>
                     </tr>
                 </thead>
             
@@ -49,7 +49,7 @@
                                     <h5>{{comment.message}}</h5>
                                 </td>
                                 <td class="col-12 col-md-4 d-flex align-items-center">
-                                    <button class="btn btn-sm btn-outline-success mb-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit</button>
+                                    <button class="btn btn-sm btn-outline-success mb-1" data-toggle="modal" data-target="#updateCommentModal">Edit</button>
 
                                     <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger mb-1" title="Delete Comment">Delete</a>
                                 </td>
@@ -58,7 +58,7 @@
                         {% endfor %}
                         {% else %}
                             <tr><td>No comment yet.</td></tr>
-                            {% comment %} {% include 'includes/update_comment.html' %} {% endcomment %}
+                            {% include 'includes/update_comment.html' %}
                         {% endif %}
                 </tbody>
             </table>

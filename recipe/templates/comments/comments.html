@@ -22,7 +22,7 @@
     <div class="section-padding-80">
         <div class="container">
             <table class="table table-mobile">
-                <thead>
+                <thead class="d-none d-md-block">
                     <tr>
                         <th>Recipe</th>
                         <th>Comment</th>
@@ -33,24 +33,24 @@
                 <tbody>
                     {% if comments %}
                         {%for comment in comments%}
-                            <tr>
-                                <td>
-                                    <div class="">
+                            <tr class="row">
+                                <td class="col-12 col-md-4">
+                                    <div>
                                         <a href="#" class="mr-1">
                                             <img src="{{ comment.recipe.image.url }}" alt="recipe image" width="60">
                                         </a>
-                                        
-                                        <<span class="ml-1 text-nowrap">
+                                        <span class="ml-1 text-nowrap">
                                             <a href="#">{{comment.recipe.title}}</a>
                                         </span>
                                     </div>
                                 </td>
                                
-                                <td class="comment-col">
+                                <td class="col-12 col-md-4">
                                     <h5>{{comment.message}}</h5>
                                 </td>
-                                <td class="remove-col">
-                                    <button class="btn btn-sm btn-outline-success mb-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit Info</button>
+                                <td class="col-12 col-md-4">
+                                    <button class="btn btn-sm btn-outline-success mb-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit</button>
+
                                     <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger" title="Delete Review">Delete</a>
                                 </td>
                             </tr>

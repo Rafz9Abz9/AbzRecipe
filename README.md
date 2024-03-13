@@ -497,6 +497,8 @@ This is the **Register** and **Login** process:
 
 </Details>
 
+<Details>
+  
 <Summary>My Comments Page</Summary>
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/90120baa-51b1-4874-a41e-f7b50eb0f9de)

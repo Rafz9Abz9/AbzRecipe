@@ -115,6 +115,7 @@ def comment_to_recipe(request, recipe_id):
                 messages.error(request, "Invalid form")
         else:
             messages.error(request, 'Only authenticated user is allowed to add comment')
+            return redirect('login')
         
 
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

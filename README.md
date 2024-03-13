@@ -905,3 +905,4 @@ As a registered user, I can delete comments I posted under recipes so that I can
 - ChatGPT: used this for getting the recipes for the dishes.
 - Favicon: to create favicon.
 - Fontawesome
+- DrawSQL: to create database schema for the website.

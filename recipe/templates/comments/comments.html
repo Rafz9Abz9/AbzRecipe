@@ -54,7 +54,7 @@
                                     <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger mb-1" title="Delete Comment">Delete</a>
                                 </td>
                             </tr>
-                            {% include 'includes/update_comment.html' %}
+                            {% include 'includes/update_comment.html' with comment=comment%}
                         {% endfor %}
                         {% else %}
                             <tr><td>No comment yet.</td></tr>

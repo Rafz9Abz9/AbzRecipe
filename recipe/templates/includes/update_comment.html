@@ -11,9 +11,10 @@
             {{comment}}
             <form method="POST" action="" class="update_comment_form">
               {%csrf_token%}
-                {% comment %} <div class="form-group">
+              {% if comment%}
+                <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name"  value="{% if comment.name|length > 0%} {{comment.name}}  {% endif %}" placeholder="Name here..">
+                  <input type="text" class="form-control" id="name" name="name"  value="{% if comment.name|length > 0 %} {{comment.name}}  {% endif %}" placeholder="Name here..">
                 </div>
 
                 <div class="form-group">
@@ -24,7 +25,8 @@
                 <div class="form-group">
                   <label for="email">Email address</label>
                   <textarea type="message" class="form-control" id="message" name="message" value="{% if comment.message|length > 0%} {{comment.message}}  {% endif %}" placeholder="email here..">
-                </div> {% endcomment %}
+                </div>
+             {% endif %}
             </form> 
         </div>
         <div class="modal-footer">

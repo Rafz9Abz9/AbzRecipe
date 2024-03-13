@@ -8,13 +8,12 @@
           </button>
         </div>
         <div class="modal-body">
-            {{comment}}
             <form method="POST" action="" class="update_comment_form">
               {%csrf_token%}
               {% if comment%}
                 <div class="form-group">
                   <label for="name+{{comment.id}}">Name</label>
-                  <input type="text" class="form-control" id="name+{{comment.id}}" name="name"  value="" placeholder="Name here.. /">
+                  <input type="text" class="form-control" id="name+{{comment.id}}" name="name"  value="{{comment.name}}" placeholder="Name here.. " />
                 </div>
 
                 <div class="form-group">

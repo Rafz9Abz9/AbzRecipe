@@ -70,6 +70,78 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6a57bc21-da94-4e90-b50b-840eae5d7b70)
 
+# Wireframes
+
+<Details>
+
+  <Summary>Home Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9ae4f54b-8214-48bd-ba97-c6a34e96a213)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a20dcbe8-1eca-49f1-9896-1b7b4f1a6289)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a29f1b3b-8805-44c0-8d9d-ade6c26e4ed2)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fe39e60e-0ef6-426d-ad98-4779525d4609)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7ad16ca2-4e68-4fbb-b512-a0d3ee9640c5)
+
+
+  
+</Details>
+
+<Details>
+
+  <Summary>About Us Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>Contact Us Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>Recipes Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>Recipe Details Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>Home Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>Profile Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>Favorites Page</Summary>
+
+  
+</Details>
+
+<Details>
+
+  <Summary>My Comments Page</Summary>
+
+  
+</Details>
+
 # Features
 
 This is a video converted to GIF of the what the process of the website looks like:

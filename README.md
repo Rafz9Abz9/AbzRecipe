@@ -354,22 +354,20 @@ This is the **Register** and **Login** process:
 - This page consists of the comments that a user has posted.
 - User has the ability to **edit** and **delete** their comments on this page. On the recipe details page, user can only post and delete comments. But on the 'My Comments' page, user can edit and delete their comments.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b389402d-de1d-496c-a663-59af2adaaf61)
-
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6715dcf0-1ba7-44cb-bfb8-ef27beaafd57)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8f643f51-acec-4561-b449-ec2564f51452)
 
 - This is the **'Edit'** option. Once it's selected by the user, a pop-up box appears which allows user to edit their comment.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ebc1576c-a34c-4bd1-8368-5a6f56ddc3e7)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8ae30c42-6287-4185-96bc-e66a8ab86153)
 
 - Once comment has been updated, user will receive a notification that looks like this:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/17bb0fa7-7904-4d11-846c-073df0da99e6)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/e3acf22b-8797-42af-b203-b8647eda750d)
 
 - User can also **Delete** their comment and will be notified of a successful delete. It will look like this:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa25f39a-abad-460b-89e6-cc5f6667b758)
- 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ed7541ff-49a4-4149-8267-ded6d839f635)
+
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
 

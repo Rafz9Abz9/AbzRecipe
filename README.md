@@ -34,7 +34,9 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Ability to view recipes of dishes.
 - Ability to save their favorite recipes.
 - Ability to access their saved recipes in a separate page for easy access.
-- Ability to leave a comment under recipes.
+- Ability to post a comment for recipes.
+- Ability to edit comments made for recipes.
+- Ability to delete comments made for recipes.
 
 ## Website Owner Goals
 - Provide ingredients and steps to various dishes.
@@ -68,6 +70,86 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6a57bc21-da94-4e90-b50b-840eae5d7b70)
 
+# Wireframes
+
+<Details>
+
+  <Summary>Home Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9ae4f54b-8214-48bd-ba97-c6a34e96a213)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a20dcbe8-1eca-49f1-9896-1b7b4f1a6289)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/a29f1b3b-8805-44c0-8d9d-ade6c26e4ed2)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fe39e60e-0ef6-426d-ad98-4779525d4609)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7ad16ca2-4e68-4fbb-b512-a0d3ee9640c5)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c845e7ff-9765-4ae5-8e2e-97ece8debe06)
+
+</Details>
+
+<Details>
+
+  <Summary>About Us Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fea1b52d-2460-4d35-9ed4-6c987770250c)
+
+</Details>
+
+<Details>
+
+  <Summary>Contact Us Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6ee201b0-dcd4-4ee5-bdf6-7748bb02a58b)
+
+</Details>
+
+<Details>
+
+  <Summary>Recipes Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/28b59f8b-c23e-443c-8925-d1faee799317)
+
+</Details>
+
+<Details>
+
+  <Summary>Recipe Details Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/4aab3760-bc9d-4c99-a9da-6728ec0b39cb)
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f60a2f5b-11b7-4657-b74c-4f5a5ccf4bb8)
+
+</Details>
+
+<Details>
+
+  <Summary>Profile Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7e5bbd69-82ff-4bde-9876-93ea68c81fb7)
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/4839634b-306b-49e5-b08e-9e274d2ec3d3)
+
+</Details>
+
+<Details>
+
+  <Summary>Favorites Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1b98f2c3-6737-483c-8328-ef9adc57d041)
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/eb455a4f-2e84-458d-ae4c-145395158a21)
+
+</Details>
+
+<Details>
+
+  <Summary>My Comments Page</Summary>
+
+  - Ended up editing the edit and delete button: instead of them being underneath each other, I displayed them beside each other as it looks better this way.
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/dea01da4-260d-4d4c-9e78-ded6fe184e2d)
+
+</Details>
+
 # Features
 
 This is a video converted to GIF of the what the process of the website looks like:
@@ -80,8 +162,8 @@ This is the **Register** and **Login** process:
 
 ## CRUD Functionality
 - Create: users can create a comment under different recipes when logged in and can save their favorite recipes.
-- Read: users can view their saved recipes in the favorite's page when logged in.
-- Update: users can update their profile details when logged in.
+- Read: users can view their saved recipes in the favorite's page when logged in and view comments they posted in 'my comments' page.
+- Update: users can update their profile details when logged in. Users can also edit comments they made for recipes.
 - Delete: users can delete the comments that they made under recipes when logged in. 
 - Admin CRUD functionality implementation done from the Django Admin dashboard.
 
@@ -90,7 +172,7 @@ This is the **Register** and **Login** process:
 - Users can receive a notification notifying them that their registration was successful.
 - Users can receive an email with a link to activate their account.
 - Users can log in from the login page.
-- Users can receive a notification notifying them that their login was successful.
+- Users can receive a notification notifying them that their login and logout was successful.
 - Authorisation is required in order to update the profile page, save favorite recipes, view the saved recipes, and write a comment under the recipes.
 
 1. Register Page
@@ -254,7 +336,7 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1515dcdf-93c8-4aad-abdd-2e99f3c20a55)
 
-- The above image shows that no comment has been submited, but once a user submits a comment, it will be displayed for everyone to see. User does not have to be logged in for them to leave a comment. For future implementation, user will have to be logged in to leave a comment.
+- The above image shows that no comment has been submited, but once a user submits a comment, it will be displayed for everyone to see. 
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/554d35c4-edf8-4c3f-8919-e78b4c6a42ba)
 
@@ -268,6 +350,26 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2ee1eeae-d204-48d7-8dce-ae51605d8a04)
 
+## My Comments Page
+- This page consists of the comments that a user has posted.
+- User has the ability to **edit** and **delete** their comments on this page. On the recipe details page, user can only post and delete comments. But on the 'My Comments' page, user can edit and delete their comments.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b389402d-de1d-496c-a663-59af2adaaf61)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6715dcf0-1ba7-44cb-bfb8-ef27beaafd57)
+
+- This is the **'Edit'** option. Once it's selected by the user, a pop-up box appears which allows user to edit their comment.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ebc1576c-a34c-4bd1-8368-5a6f56ddc3e7)
+
+- Once comment has been updated, user will receive a notification that looks like this:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/17bb0fa7-7904-4d11-846c-073df0da99e6)
+
+- User can also **Delete** their comment and will be notified of a successful delete. It will look like this:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa25f39a-abad-460b-89e6-cc5f6667b758)
+ 
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
 
@@ -392,6 +494,14 @@ This is the **Register** and **Login** process:
 <Summary>Favourites Page</Summary>
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d0750add-5274-4823-ae6a-fc40168ebccf)
+
+</Details>
+
+<Details>
+  
+<Summary>My Comments Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/90120baa-51b1-4874-a41e-f7b50eb0f9de)
 
 </Details>
 
@@ -543,6 +653,18 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
 
+### My Comments page
+
+| ACTION                                                | PASS/FAIL |
+|-------------------------------------------------------|--------|
+| There is an edit button visible                       | PASS   |
+| There is a delete button visible                     | PASS   |
+| User can select the edit button and a pop-up box will appear | PASS   |
+| User can edit their comment and save it              | PASS   |
+| When user edits their comment, the new comment is displayed | PASS   |
+| When user deletes a comment, the comment is removed from the page | PASS   |
+
+
 ## Manual Testing
 
 <Details>
@@ -572,7 +694,8 @@ This is the **Register** and **Login** process:
 | Logged In User can edit their profile information | Pass   |
 | Logged In User can access favourites page      | Pass   |
 | Logged In User can save recipes                | Pass   |
-| User can leave a comment under recipes         | Pass   |
+| Logged In User can leave a comment under recipes | Pass   |
+| Logged In User can access the 'my comments' page. | Pass   |
 | User can access the contact page and form      | Pass   |
 | All links on footer open to correct pages      | Pass   |
 | All links on Heading Navigation open to correct option | Pass   |
@@ -590,7 +713,9 @@ This is the **Register** and **Login** process:
 | All users can access the contact form page          | Pass   |
 | Unregistered user cannot save recipes               | Pass   |
 | Registered user can save recipes                    | Pass   |
-| All users can post a comment under recipes          | Pass   |
+| Registered user can post a comment under recipes   | Pass   |
+| Registered user can access 'my comments' page.    | PASS    |
+| Registered user can edit comments they made for recipes. | PASS    |
 | All users can view comments posted by other users   | Pass   |
 
 </Details>
@@ -623,10 +748,13 @@ This is the **Register** and **Login** process:
 | Registered User     | Can access profile page.                                        | PASS    |
 | Registered User     | Can save a recipe.                                              | PASS    |
 | Registered User     | Can access favourites page.                                     | PASS    |
+| Registered User     | Can access 'my comments' page.                                  | PASS    |
+| Registered User     | Can edit comments they made for recipes.                        | PASS    |
 | Unregistered User   | Can’t access profile page                                       | PASS    |
 | Unregistered User   | Can’t save a recipe.                                            | PASS    |
+| Unregistered User   | Can’t comment under recipes.                                    | PASS    |
+| Unregistered User   | Can’t access 'my comments' page.                                | PASS    |
 | Unregistered User   | Can’t access favourites page.                                   | PASS    |
-| All Users           | Can leave a comment under recipes.                              | PASS    |
 | All Users           | Can access contact page.                                        | PASS    |
 | All Users           | Can access the contact form and submit an enquiry.              | PASS    |
 | All Users           | Can access the recipes pages.                                   | PASS    |
@@ -693,13 +821,13 @@ As a site user, I can view images of various dishes so that I can have a visual 
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fbdf6f43-15ee-4575-b48d-6e2e0e92fcf7)
 
-As a site user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
+As a registered user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7e27ccc3-a480-4a9c-afd6-58668534f509)
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/056b03ed-6e6f-41ef-97a7-ddd7819caa4e)
 
-As a site user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
+As a registered user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1753ec83-3ef2-44a4-83a3-177e8be6dbbd)
 

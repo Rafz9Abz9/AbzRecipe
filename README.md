@@ -9,11 +9,12 @@
 2. [Project Goals](#project-goals)
 3. [User Experience](#user-experience)
 4. [Agile Methodologies](#agile-methodologies)
-5. [Features](#features)
-6. [Technologies Used](#technologies-used)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+5. [Data Model](#data-model)
+6. [Features](#features)
+7. [Technologies Used](#technologies-used)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
 
 # Introduction
 ABZRECIPE is a user-friendly recipe platform designed to make your cooking experience enjoyable and hassle-free. With a vast collection of mouthwatering recipes, each offering a visual feast of images, detailed ingredient lists, and step-by-step instructions, you’ll find the perfect recipe for any occasion. The path to the heart is through the stomach, and with this website, the journey would be more delightful and accessible than ever. This recipe website is your passport to a world of culinary creativity, where you can explore, create, and savour delicious dishes from every corner of the globe.
@@ -69,6 +70,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/93e19b79-497a-460a-8a89-06b28707d85a)
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6a57bc21-da94-4e90-b50b-840eae5d7b70)
+
+# Data Model
+- I created a clear and organized layout for the database in order to make building the website easier and I used DrawSQL to create the database.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/adbb7ec2-0af8-4a87-9f89-b75e211cead3)
 
 # Wireframes
 

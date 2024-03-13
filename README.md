@@ -653,6 +653,18 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
 
+### My Comments page
+
+| ACTION                                                | PASS/FAIL |
+|-------------------------------------------------------|--------|
+| There is an edit button visible                       | PASS   |
+| There is a delete button visible                     | PASS   |
+| User can select the edit button and a pop-up box will appear | PASS   |
+| User can edit their comment and save it              | PASS   |
+| When user edits their comment, the new comment is displayed | PASS   |
+| When user deletes a comment, the comment is removed from the page | PASS   |
+
+
 ## Manual Testing
 
 <Details>

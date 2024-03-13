@@ -118,15 +118,7 @@ def comment_to_recipe(request, recipe_id):
         
     comment_form = CommentForm()
 
-    if request.user.is_authenticated:
-        user = request.user
-        initial_data = {
-            'name': user.username,
-            'email': user.email,
-        }
-        comment_form = CommentForm(instance=user, initial=initial_data)
-
-    return render(request, 'recipe/recipe.html', {'comment_form':comment_form})
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
 def user_comments(request):

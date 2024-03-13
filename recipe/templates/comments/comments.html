@@ -36,11 +36,11 @@
                             <tr class="row">
                                 <td class="col-12 col-md-4">
                                     <div>
-                                        <a href="#" class="mr-1">
+                                        <a href="{% url 'recipe_detail' recipe_id=comment.recipe.id %}" class="mr-1">
                                             <img src="{{ comment.recipe.image.url }}" alt="recipe image" width="60">
                                         </a>
                                         <span class="ml-1 text-nowrap">
-                                            <a href="#">{{comment.recipe.title}}</a>
+                                            <a href="{% url 'recipe_detail' recipe_id=comment.recipe.id %}">{{comment.recipe.title}}</a>
                                         </span>
                                     </div>
                                 </td>

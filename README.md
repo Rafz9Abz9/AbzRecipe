@@ -254,7 +254,7 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1515dcdf-93c8-4aad-abdd-2e99f3c20a55)
 
-- The above image shows that no comment has been submited, but once a user submits a comment, it will be displayed for everyone to see. User does not have to be logged in for them to leave a comment. For future implementation, user will have to be logged in to leave a comment.
+- The above image shows that no comment has been submited, but once a user submits a comment, it will be displayed for everyone to see. 
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/554d35c4-edf8-4c3f-8919-e78b4c6a42ba)
 
@@ -268,6 +268,26 @@ This is the **Register** and **Login** process:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2ee1eeae-d204-48d7-8dce-ae51605d8a04)
 
+## My Comments Page
+- This page consists of the comments that a user has posted.
+- User has the ability to **edit** and **delete** their comments on this page. On the recipe details page, user can only post and delete comments. But on the 'My Comments' page, user can edit and delete their comments.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b389402d-de1d-496c-a663-59af2adaaf61)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6715dcf0-1ba7-44cb-bfb8-ef27beaafd57)
+
+- This is the **'Edit'** option. Once it's selected by the user, a pop-up box appears which allows user to edit their comment.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ebc1576c-a34c-4bd1-8368-5a6f56ddc3e7)
+
+- Once comment has been updated, user will receive a notification that looks like this:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/17bb0fa7-7904-4d11-846c-073df0da99e6)
+
+- User can also **Delete** their comment and will be notified of a successful delete. It will look like this:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa25f39a-abad-460b-89e6-cc5f6667b758)
+ 
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
 
@@ -392,6 +412,12 @@ This is the **Register** and **Login** process:
 <Summary>Favourites Page</Summary>
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/d0750add-5274-4823-ae6a-fc40168ebccf)
+
+</Details>
+
+<Summary>My Comments Page</Summary>
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/90120baa-51b1-4874-a41e-f7b50eb0f9de)
 
 </Details>
 

@@ -144,6 +144,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
   <Summary>My Comments Page</Summary>
 
+  - Ended up editing the edit and delete button: insetad of them being underneath each other, I displayed them beside each other as it looks better this way.
+
   ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/dea01da4-260d-4d4c-9e78-ded6fe184e2d)
 
 </Details>

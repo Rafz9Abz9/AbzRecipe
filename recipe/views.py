@@ -149,7 +149,7 @@ def update_comment(request, comment_id):
             messages.success(request, f'Comment on {comment.recipe.title} updated successfully')
         else:
             messages.warning(request, 'Only authenticated user is allowed to add comment')
-    return render(request, 'recipe/recipe.html')
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
 def delete_comment(request, recipe_id, comment_id):

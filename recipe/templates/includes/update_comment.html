@@ -14,17 +14,17 @@
               {% if comment%}
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name"  value="{% if comment.name|length > 0 %} {{comment.name}}  {% endif %}" placeholder="Name here..">
+                  <input type="text" class="form-control" id="name" name="name"  value="" placeholder="Name here..">
                 </div>
 
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" value="{% if comment.email|length > 0%} {{comment.email}}  {% endif %}" placeholder="Email here..">
+                  <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email here..">
                 </div>
 
                 <div class="form-group">
                   <label for="email">Email address</label>
-                  <textarea type="message" class="form-control" id="message" name="message" value="{% if comment.message|length > 0%} {{comment.message}}  {% endif %}" placeholder="email here..">
+                  <textarea type="message" class="form-control" id="message" name="message" value="" placeholder="email here..">
                 </div>
              {% endif %}
             </form> 

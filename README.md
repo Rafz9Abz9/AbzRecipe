@@ -82,64 +82,70 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fe39e60e-0ef6-426d-ad98-4779525d4609)
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7ad16ca2-4e68-4fbb-b512-a0d3ee9640c5)
 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c845e7ff-9765-4ae5-8e2e-97ece8debe06)
 
-  
 </Details>
 
 <Details>
 
   <Summary>About Us Page</Summary>
 
-  
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fea1b52d-2460-4d35-9ed4-6c987770250c)
+
 </Details>
 
 <Details>
 
   <Summary>Contact Us Page</Summary>
 
-  
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6ee201b0-dcd4-4ee5-bdf6-7748bb02a58b)
+
 </Details>
 
 <Details>
 
   <Summary>Recipes Page</Summary>
 
-  
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/28b59f8b-c23e-443c-8925-d1faee799317)
+
 </Details>
 
 <Details>
 
   <Summary>Recipe Details Page</Summary>
 
-  
-</Details>
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/4aab3760-bc9d-4c99-a9da-6728ec0b39cb)
 
-<Details>
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/f60a2f5b-11b7-4657-b74c-4f5a5ccf4bb8)
 
-  <Summary>Home Page</Summary>
-
-  
 </Details>
 
 <Details>
 
   <Summary>Profile Page</Summary>
 
-  
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7e5bbd69-82ff-4bde-9876-93ea68c81fb7)
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/4839634b-306b-49e5-b08e-9e274d2ec3d3)
+
 </Details>
 
 <Details>
 
   <Summary>Favorites Page</Summary>
 
-  
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1b98f2c3-6737-483c-8328-ef9adc57d041)
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/eb455a4f-2e84-458d-ae4c-145395158a21)
+
 </Details>
 
 <Details>
 
   <Summary>My Comments Page</Summary>
 
-  
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/dea01da4-260d-4d4c-9e78-ded6fe184e2d)
+
 </Details>
 
 # Features

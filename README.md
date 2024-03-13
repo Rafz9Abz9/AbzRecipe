@@ -833,6 +833,20 @@ As a site user, I want to have a contact form so that I can submit my inquiries,
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9acbb7b4-93d0-4b73-a0fb-6144e13bd7f5)
 
+As a registered user, I can access a dedicated page to view all my comments, so that I can track and manage my contributions.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/274fcd1f-a5c3-4d5a-929f-8bbff6f60fbf)
+
+As a registered user, I can edit my comments, so that I can improve and update my contributions as needed.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/cb9c6af4-d118-4098-b6d8-ed7674b44914)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1b05edd0-838a-4add-9d19-cd7a175e1f19)
+
+As a registered user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61f5d501-8d18-4f12-950f-17d7cd24cfed)
+
 
 | USER STORY                                                                                            | RESULTS |
 |-------------------------------------------------------------------------------------------------------|---------|

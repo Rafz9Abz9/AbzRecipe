@@ -34,7 +34,9 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - Ability to view recipes of dishes.
 - Ability to save their favorite recipes.
 - Ability to access their saved recipes in a separate page for easy access.
-- Ability to leave a comment under recipes.
+- Ability to post a comment for recipes.
+- Ability to edit comments made for recipes.
+- Ability to delete comments made for recipes.
 
 ## Website Owner Goals
 - Provide ingredients and steps to various dishes.
@@ -80,8 +82,8 @@ This is the **Register** and **Login** process:
 
 ## CRUD Functionality
 - Create: users can create a comment under different recipes when logged in and can save their favorite recipes.
-- Read: users can view their saved recipes in the favorite's page when logged in.
-- Update: users can update their profile details when logged in.
+- Read: users can view their saved recipes in the favorite's page when logged in and view comments they posted in 'my comments' page.
+- Update: users can update their profile details when logged in. Users can also edit comments they made for recipes.
 - Delete: users can delete the comments that they made under recipes when logged in. 
 - Admin CRUD functionality implementation done from the Django Admin dashboard.
 
@@ -90,7 +92,7 @@ This is the **Register** and **Login** process:
 - Users can receive a notification notifying them that their registration was successful.
 - Users can receive an email with a link to activate their account.
 - Users can log in from the login page.
-- Users can receive a notification notifying them that their login was successful.
+- Users can receive a notification notifying them that their login and logout was successful.
 - Authorisation is required in order to update the profile page, save favorite recipes, view the saved recipes, and write a comment under the recipes.
 
 1. Register Page
@@ -598,7 +600,8 @@ This is the **Register** and **Login** process:
 | Logged In User can edit their profile information | Pass   |
 | Logged In User can access favourites page      | Pass   |
 | Logged In User can save recipes                | Pass   |
-| User can leave a comment under recipes         | Pass   |
+| Logged In User can leave a comment under recipes | Pass   |
+| Logged In User can access the 'my comments' page. | Pass   |
 | User can access the contact page and form      | Pass   |
 | All links on footer open to correct pages      | Pass   |
 | All links on Heading Navigation open to correct option | Pass   |
@@ -616,7 +619,9 @@ This is the **Register** and **Login** process:
 | All users can access the contact form page          | Pass   |
 | Unregistered user cannot save recipes               | Pass   |
 | Registered user can save recipes                    | Pass   |
-| All users can post a comment under recipes          | Pass   |
+| Registered user can post a comment under recipes   | Pass   |
+| Registered user can access 'my comments' page.    | PASS    |
+| Registered user can edit comments they made for recipes. | PASS    |
 | All users can view comments posted by other users   | Pass   |
 
 </Details>
@@ -649,10 +654,13 @@ This is the **Register** and **Login** process:
 | Registered User     | Can access profile page.                                        | PASS    |
 | Registered User     | Can save a recipe.                                              | PASS    |
 | Registered User     | Can access favourites page.                                     | PASS    |
+| Registered User     | Can access 'my comments' page.                                  | PASS    |
+| Registered User     | Can edit comments they made for recipes.                        | PASS    |
 | Unregistered User   | Can’t access profile page                                       | PASS    |
 | Unregistered User   | Can’t save a recipe.                                            | PASS    |
+| Unregistered User   | Can’t comment under recipes.                                    | PASS    |
+| Unregistered User   | Can’t access 'my comments' page.                                | PASS    |
 | Unregistered User   | Can’t access favourites page.                                   | PASS    |
-| All Users           | Can leave a comment under recipes.                              | PASS    |
 | All Users           | Can access contact page.                                        | PASS    |
 | All Users           | Can access the contact form and submit an enquiry.              | PASS    |
 | All Users           | Can access the recipes pages.                                   | PASS    |
@@ -719,13 +727,13 @@ As a site user, I can view images of various dishes so that I can have a visual 
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/fbdf6f43-15ee-4575-b48d-6e2e0e92fcf7)
 
-As a site user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
+As a registered user, I can add a comment under recipes so that I can share my thoughts, experiences, or modifications related to the recipe with the community.	
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/7e27ccc3-a480-4a9c-afd6-58668534f509)
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/056b03ed-6e6f-41ef-97a7-ddd7819caa4e)
 
-As a site user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
+As a registered user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1753ec83-3ef2-44a4-83a3-177e8be6dbbd)
 

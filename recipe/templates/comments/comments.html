@@ -49,6 +49,7 @@
                                     <p>{{comment.message}}</p>
                                 </td>
                                 <td class="col-12 col-md-4 d-flex align-items-center">
+                                    <<input type="hidden" value="{{comment.id}}" class="comment_ids">
                                     <button class="btn btn-sm btn-outline-success mb-1 mr-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit</button>
 
                                     <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger mb-1" title="Delete Comment">Delete</a>
@@ -70,10 +71,15 @@
 
 {% block extrascripts %}
 <script>
-{% comment %} To Trigger Update Comment form submission {% endcomment %}
-$('.update_comment_btn').click(function (e) {
-    e.preventDefault();
-    $('.update_comment_form').submit();
-});
+
+    var comment_ids = document.querySelectorAll('comment_ids')
+    comment_ids.forEach(function(elem){
+        {% comment %} To Trigger Update Comment form submission {% endcomment %}
+        $(`#update_comment_btn${elem.value}`).click(function (e) {
+            e.preventDefault();
+            $(`#update_comment_form${elem.value}`).submit();
+        });
+
+    })
 </script>
 {% endblock %}

@@ -9,9 +9,9 @@
         </div>
         <div class="modal-body">
             {{comment}}
-            {% comment %} <form method="POST" action="" class="update_comment_form">
+            <form method="POST" action="" class="update_comment_form">
               {%csrf_token%}
-                <div class="form-group">
+                {% comment %} <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" class="form-control" id="name" name="name"  value="{% if comment.name|length > 0%} {{comment.name}}  {% endif %}" placeholder="Name here..">
                 </div>
@@ -22,14 +22,10 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="title">Title</label>
-                  <input type="text" class="form-control" id="title" name="title" value="{% if comment.title|length > 0%} {{comment.title}}  {% endif %}" placeholder="Comment title here..">
-                </div>
-                <div class="form-group">
                   <label for="email">Email address</label>
                   <textarea type="message" class="form-control" id="message" name="message" value="{% if comment.message|length > 0%} {{comment.message}}  {% endif %}" placeholder="email here..">
-                </div>
-            </form> {% endcomment %}
+                </div> {% endcomment %}
+            </form> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>

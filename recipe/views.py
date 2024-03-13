@@ -138,10 +138,15 @@ def user_comments(request):
         return redirect('login')
     return render(request, 'comments/comments.html', {'comments': comments})
 
-def update_comment(request, recipe_id):
+def update_comment(request, comment_id):
     if request.method == 'POST':
         if request.user.is_authenticated:
-            pass
+            comment = get_object_or_404(Comment, pk=comment_id)
+            
+            comment.name = request.POST.get('name')
+            comment.message = request.POST.get('message')
+            comment.save()
+            messages.success(request, f'Comment on {comment.recipe.title} updated successfully')
         else:
             messages.warning(request, 'Only authenticated user is allowed to add comment')
     return render(request, 'recipe/recipe.html')

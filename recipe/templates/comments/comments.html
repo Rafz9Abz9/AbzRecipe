@@ -65,3 +65,10 @@
         </div>
     </div>
 {% endblock %}
+
+
+{% comment %} To Trigger Update Comment form submission {% endcomment %}
+$('.update_comment_btn').click(function (e) {
+    e.preventDefault();
+    $('.update_comment_form').submit();
+});

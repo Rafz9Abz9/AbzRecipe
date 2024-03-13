@@ -73,8 +73,9 @@
 <script>
 
     var comment_ids = document.querySelectorAll('comment_ids')
+    console.log(comment_ids)
     comment_ids.forEach(function(elem){
-        {% comment %} To Trigger Update Comment form submission {% endcomment %}
+        console.log(elem)
         $(`#update_comment_btn${elem.value}`).click(function (e) {
             e.preventDefault();
             $(`#update_comment_form${elem.value}`).submit();

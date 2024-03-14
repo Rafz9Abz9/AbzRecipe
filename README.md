@@ -9,11 +9,12 @@
 2. [Project Goals](#project-goals)
 3. [User Experience](#user-experience)
 4. [Agile Methodologies](#agile-methodologies)
-5. [Features](#features)
-6. [Technologies Used](#technologies-used)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+5. [Data Model](#data-model)
+6. [Features](#features)
+7. [Technologies Used](#technologies-used)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
 
 # Introduction
 ABZRECIPE is a user-friendly recipe platform designed to make your cooking experience enjoyable and hassle-free. With a vast collection of mouthwatering recipes, each offering a visual feast of images, detailed ingredient lists, and step-by-step instructions, you’ll find the perfect recipe for any occasion. The path to the heart is through the stomach, and with this website, the journey would be more delightful and accessible than ever. This recipe website is your passport to a world of culinary creativity, where you can explore, create, and savour delicious dishes from every corner of the globe.
@@ -69,6 +70,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/93e19b79-497a-460a-8a89-06b28707d85a)
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6a57bc21-da94-4e90-b50b-840eae5d7b70)
+
+# Data Model
+- I created a clear and organized layout for the database in order to make building the website easier and I used DrawSQL to create the database.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/adbb7ec2-0af8-4a87-9f89-b75e211cead3)
 
 # Wireframes
 
@@ -151,14 +157,6 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 </Details>
 
 # Features
-
-This is a video converted to GIF of the what the process of the website looks like:
-
-![abzrecipe-gif](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/60b1d3da-87c9-4fee-bc78-ad6a0bc589a1)
-
-This is the **Register** and **Login** process:
-
-![abzrecipe-login-register-gif](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b380ccfc-d635-43b1-af39-b9d56f515daf)
 
 ## CRUD Functionality
 - Create: users can create a comment under different recipes when logged in and can save their favorite recipes.
@@ -354,22 +352,20 @@ This is the **Register** and **Login** process:
 - This page consists of the comments that a user has posted.
 - User has the ability to **edit** and **delete** their comments on this page. On the recipe details page, user can only post and delete comments. But on the 'My Comments' page, user can edit and delete their comments.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b389402d-de1d-496c-a663-59af2adaaf61)
-
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/6715dcf0-1ba7-44cb-bfb8-ef27beaafd57)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8f643f51-acec-4561-b449-ec2564f51452)
 
 - This is the **'Edit'** option. Once it's selected by the user, a pop-up box appears which allows user to edit their comment.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ebc1576c-a34c-4bd1-8368-5a6f56ddc3e7)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8ae30c42-6287-4185-96bc-e66a8ab86153)
 
 - Once comment has been updated, user will receive a notification that looks like this:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/17bb0fa7-7904-4d11-846c-073df0da99e6)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/e3acf22b-8797-42af-b203-b8647eda750d)
 
 - User can also **Delete** their comment and will be notified of a successful delete. It will look like this:
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/aa25f39a-abad-460b-89e6-cc5f6667b758)
- 
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ed7541ff-49a4-4149-8267-ded6d839f635)
+
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.
 
@@ -835,6 +831,20 @@ As a site user, I want to have a contact form so that I can submit my inquiries,
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/9acbb7b4-93d0-4b73-a0fb-6144e13bd7f5)
 
+As a registered user, I can access a dedicated page to view all my comments, so that I can track and manage my contributions.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/274fcd1f-a5c3-4d5a-929f-8bbff6f60fbf)
+
+As a registered user, I can edit my comments, so that I can improve and update my contributions as needed.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/cb9c6af4-d118-4098-b6d8-ed7674b44914)
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/1b05edd0-838a-4add-9d19-cd7a175e1f19)
+
+As a registered user, I can delete comments I posted under recipes so that I can maintain control over my contributions and ensure the accuracy and relevancy of the content displayed on the website.
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/61f5d501-8d18-4f12-950f-17d7cd24cfed)
+
 
 | USER STORY                                                                                            | RESULTS |
 |-------------------------------------------------------------------------------------------------------|---------|
@@ -895,10 +905,4 @@ As a site user, I want to have a contact form so that I can submit my inquiries,
 - ChatGPT: used this for getting the recipes for the dishes.
 - Favicon: to create favicon.
 - Fontawesome
-- Gyazo: used this to record website process so that I can show the various features and functionalities.
-- Ezgif: used to convert video to GIF.
-
-
-
-
-
+- DrawSQL: to create database schema for the website.

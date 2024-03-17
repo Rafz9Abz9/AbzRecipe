@@ -628,41 +628,76 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ## General Testing
 
-### Home Page
+<Details>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/65b19fc2-dc0f-45ba-923b-af50659cc163)
+  <Summary>Home Page</Summary>
 
-### About Us Page
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/65b19fc2-dc0f-45ba-923b-af50659cc163)
+  
+</Details>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/903d7a8b-91f8-41ec-b3da-85e72caad3fa)
+<Details>
 
-### Recipes Page
+  <Summary>About Us Page</Summary>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8e3c9482-8e7b-47f3-b1c9-624410eec389)
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/903d7a8b-91f8-41ec-b3da-85e72caad3fa)
+  
+</Details>
 
-### Contact Page
+<Details>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b45e83cf-a0a9-4d39-9ce8-22babe662787)
+  <Summary>Recipes Page</Summary>
 
-### Login Page
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/8e3c9482-8e7b-47f3-b1c9-624410eec389)
+  
+</Details>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/04739cf8-8fae-4c50-85d2-3d737b47b643)
+<Details>
 
-### Register Page
+  <Summary>Contact Page</Summary>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c4ed0631-2d5b-406a-a460-027321d534dd)
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/b45e83cf-a0a9-4d39-9ce8-22babe662787)
+  
+</Details>
 
-### Favorite Recipe Page
+<Details>
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3e7d4799-ecad-4560-9eb3-ad3cf6edd20d)
+  <Summary>Login Page</Summary>
 
-### Profile Page
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/04739cf8-8fae-4c50-85d2-3d737b47b643)
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
+</Details>
 
-### My Comments page
+<Details>
 
-| ACTION                                                | PASS/FAIL |
+  <Summary>Register Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/c4ed0631-2d5b-406a-a460-027321d534dd)
+  
+</Details>
+
+<Details>
+
+  <Summary>Favorite Recipe Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/3e7d4799-ecad-4560-9eb3-ad3cf6edd20d)
+  
+</Details>
+
+
+<Details>
+
+  <Summary>Profile Page</Summary>
+
+  ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/5237e8d2-f1f5-4001-ab49-fe893606ace0)
+  
+</Details>
+
+<Details>
+
+  <Summary>My Comments Page</Summary>
+
+  | ACTION                                                | PASS/FAIL |
 |-------------------------------------------------------|--------|
 | There is an edit button visible                       | PASS   |
 | There is a delete button visible                     | PASS   |
@@ -670,6 +705,7 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 | User can edit their comment and save it              | PASS   |
 | When user edits their comment, the new comment is displayed | PASS   |
 | When user deletes a comment, the comment is removed from the page | PASS   |
+</Details>
 
 
 ## Manual Testing
@@ -913,7 +949,17 @@ As a registered user, I can delete comments I posted under recipes so that I can
 2. DEBUG - set to True for development, False for production.
 
 # Credits
+
+## Media
 - ChatGPT: used this for getting the recipes for the dishes.
 - Favicon: to create favicon.
 - Fontawesome
 - DrawSQL: to create database schema for the website.
+- Slack: watched videos and notes of plans and guides on how to start and complete the project.
+- Code Institute README template was used as an inspiration for my README.md file.
+- Bootstrap was used as a template for the front-end development of the website.
+
+## Acknowledgements
+- Slack Community for the helpful materials.
+- Code Institute for their helpful materials and support.
+- My mentor Antonio Rodriguez for his advices and support.

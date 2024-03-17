@@ -50,12 +50,13 @@
                                 </td>
                                 <td class="col-12 col-md-4 d-flex align-items-center">
                                     <input type="hidden" value="{{comment.id}}" class="comment_ids" />
-                                    <button class="btn btn-sm btn-outline-success mb-1 mr-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}">Edit</button>
+                                    <button class="btn btn-sm btn-outline-success mb-1 mr-1" data-toggle="modal" data-target="#updateCommentModal{{comment.id}}"  title="Edit Comment">Edit</button>
 
-                                    <a href="{% url 'delete_comment' recipe_id=comment.recipe.id  comment_id=comment.id%}" class="btn btn-sm btn-outline-danger mb-1" title="Delete Comment">Delete</a>
+                                    <a href="#" class="btn btn-sm btn-outline-danger mb-1" title="Delete Comment" data-toggle="modal" data-target="#confirmDeleteModal{{comment.id}}">Delete</a>
                                 </td>
                             </tr>
                             {% include 'includes/update_comment.html' with comment=comment%}
+                            {% include 'includes/confirm_delete_modal.html' with recipe_id=comment.recipe.id comment_id=comment.id%}
                         {% endfor %}
                         {% else %}
                             <tr><td>No comment yet.</td></tr>

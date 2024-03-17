@@ -74,7 +74,8 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 # Data Model
 - I created a clear and organized layout for the database in order to make building the website easier and I used DrawSQL to create the database.
 
-![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/adbb7ec2-0af8-4a87-9f89-b75e211cead3)
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/0e18f918-64a7-4a4f-9f5a-57a4fcc14084)
+
 
 # Wireframes
 

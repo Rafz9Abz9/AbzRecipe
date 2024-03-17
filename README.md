@@ -935,6 +935,13 @@ As a registered user, I can delete comments I posted under recipes so that I can
 6. Trigger the deployment process by selecting the "Deploy Branch" button.
 7. After the deployment is complete, access the app by clicking the "Open App" button.
 
+**Heroku Config Vars**
+Add the following Config Vars in Heroku:
+- SECRET_KEY value
+- CLOUDINARY_URL
+- DATABASE_URL
+- DISABLE_COLLECTSTATIC = 1
+
 ### Environment Variables
 - If using a Postgres database:
 1. DATABASE_URL - the URL for your Postgres database.

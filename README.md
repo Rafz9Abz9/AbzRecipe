@@ -348,6 +348,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/2ee1eeae-d204-48d7-8dce-ae51605d8a04)
 
+- When user wants to delete their comment, they'll recieve a confirmation for the action, which looks like this:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/be593c97-fd4e-4435-a810-c4a7cd73e56d)
+
+
 ## My Comments Page
 - This page consists of the comments that a user has posted.
 - User has the ability to **edit** and **delete** their comments on this page. On the recipe details page, user can only post and delete comments. But on the 'My Comments' page, user can edit and delete their comments.
@@ -365,6 +370,11 @@ The primary goal of ABZRECIPE is to empower users by creating a comprehensive on
 - User can also **Delete** their comment and will be notified of a successful delete. It will look like this:
 
 ![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/ed7541ff-49a4-4149-8267-ded6d839f635)
+
+- When user wants to delete their comment, they'll recieve a confirmation for the action, which looks like this:
+
+![image](https://github.com/Rafz9Abz9/ABZRECIPE/assets/126483536/34fc2ada-0c27-4bdc-8421-20476994a121)
+
 
 ## Favorites Page
 - This page includes all the dishes that the user has favorited.This is to make it easier for the user to access in the future without having to scroll through a number of dishes. Contributes to the purpose of making it a user-friendly website.

@@ -164,7 +164,7 @@
                                 <span style="font-style: italic;">{{comment.created_at}}</span>
                                 <p>{{ comment.message}}</p>
                                 {% if comment.name == request.user.username %}
-                                    <a href="#" data-toggle="modal" data-target="#confirmDeleteModal{{comment.id}} class="text-capitalize text-danger" style="font-style: italic;">delete comment</a>
+                                    <a href="#" data-toggle="modal" data-target="#confirmDeleteModal{{comment.id}}" class="text-capitalize text-danger" style="font-style: italic;">delete comment</a>
                                 {% endif %}
                                 <hr>
                                 {% include 'includes/confirm_delete_modal.html' with recipe_id=comment.recipe.id comment_id=comment.id%}
